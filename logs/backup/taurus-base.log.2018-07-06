@@ -1,0 +1,1109 @@
+2018-07-06  09:29:11.845 INFO  [tartedMain] [] o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@5e582297: startup date [Fri Jul 06 09:29:11 CST 2018]; root of context hierarchy
+2018-07-06  09:29:12.064 INFO  [nd-preinit] [] o.h.v.i.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2018-07-06  09:29:12.205 INFO  [tartedMain] [] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-07-06  09:29:12.283 INFO  [tartedMain] [] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$1127ecd7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-06  09:29:13.955 INFO  [tartedMain] [] c.c.t.b.TaurusBaseApplication - No active profile set, falling back to default profiles: default
+2018-07-06  09:29:13.986 INFO  [tartedMain] [] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@10b1cdec: startup date [Fri Jul 06 09:29:13 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@5e582297
+2018-07-06  09:29:16.548 INFO  [tartedMain] [] o.s.c.c.s.GenericScope - BeanFactory id=37cd122b-8e0d-3333-bab3-e86f4c2b1934
+2018-07-06  09:29:16.580 INFO  [tartedMain] [] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-07-06  09:29:16.736 INFO  [tartedMain] [] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f50de9da] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-06  09:29:16.923 INFO  [tartedMain] [] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.netflix.metrics.MetricsInterceptorConfiguration$MetricsRestTemplateConfiguration' of type [org.springframework.cloud.netflix.metrics.MetricsInterceptorConfiguration$MetricsRestTemplateConfiguration$$EnhancerBySpringCGLIB$$273a901b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-06  09:29:16.939 INFO  [tartedMain] [] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$1127ecd7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-06  09:29:18.064 INFO  [tartedMain] [] o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 9999 (http)
+2018-07-06  09:29:18.080 INFO  [tartedMain] [] o.a.c.c.StandardService - Starting service [Tomcat]
+2018-07-06  09:29:18.080 INFO  [tartedMain] [] o.a.c.c.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.15
+2018-07-06  09:29:18.189 INFO  [tartStop-1] [] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+2018-07-06  09:29:18.189 INFO  [tartStop-1] [] o.s.w.c.ContextLoader - Root WebApplicationContext: initialization completed in 4203 ms
+2018-07-06  09:29:18.752 INFO  [tartStop-1] [] o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/taurus-base/*]
+2018-07-06  09:29:18.752 INFO  [tartStop-1] [] o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'com.cf.taurus.base.dbrouter.monitor.DruidStatViewServlet' to [/druid/*]
+2018-07-06  09:29:18.767 INFO  [tartStop-1] [] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'metricsFilter' to: [/*]
+2018-07-06  09:29:18.767 INFO  [tartStop-1] [] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-06  09:29:18.767 INFO  [tartStop-1] [] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-07-06  09:29:18.767 INFO  [tartStop-1] [] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-07-06  09:29:18.767 INFO  [tartStop-1] [] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-06  09:29:18.767 INFO  [tartStop-1] [] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2018-07-06  09:29:18.767 INFO  [tartStop-1] [] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'druidWebStatFilter' to urls: [/*]
+2018-07-06  09:29:18.767 INFO  [tartStop-1] [] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'applicationContextIdFilter' to: [/*]
+2018-07-06  09:29:18.939 DEBUG [tartedMain] [] c.c.t.b.d.c.DruidAutoConfiguration - DATASOURCE CONFIG: DruidProperties.DataSourceConfig(alias=main, driverClassName=com.mysql.jdbc.Driver, url=jdbc:mysql://47.97.163.100:3306/taurus?useUnicode=true&characterEncoding=utf8&useSSL=true, username=root, password=password, type=com.alibaba.druid.pool.DruidDataSource, testWhileIdle=true, testOnReturn=false, testOnBorrow=false, validationQuery=select 'x', filters=stat, minEvictableIdleTimeMillis=300000, initialSize=1, minIdle=1, maxActive=20, maxWait=60000, timeBetweenEvictionRunsMillis=60000, poolPreparedStatements=true, maxOpenPreparedStatements=20)
+2018-07-06  09:29:19.017 INFO  [tartedMain] [] c.c.t.b.d.c.DruidAutoConfiguration - DataBase route config success
+2018-07-06  09:29:22.145 INFO  [tartedMain] [] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@10b1cdec: startup date [Fri Jul 06 09:29:13 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@5e582297
+2018-07-06  09:29:22.520 INFO  [tartedMain] [] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/actor/getSkillDetailByName],methods=[GET]}" onto public com.cf.taurus.common.util.Response com.cf.taurus.base.provider.ActorProvider.getSkillDetailByName(java.lang.String)
+2018-07-06  09:29:22.522 INFO  [tartedMain] [] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/actor/getActors],methods=[POST]}" onto public com.cf.taurus.common.util.Response com.cf.taurus.base.provider.ActorProvider.getActors(com.cf.taurus.common.po.Actor)
+2018-07-06  09:29:22.522 INFO  [tartedMain] [] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/actor/getActorById],methods=[GET]}" onto public com.cf.taurus.common.util.Response com.cf.taurus.base.provider.ActorProvider.getActorById(java.lang.Integer)
+2018-07-06  09:29:22.523 INFO  [tartedMain] [] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/film/getFilmById],methods=[GET]}" onto public com.cf.taurus.common.util.Response com.cf.taurus.base.provider.FilmProvider.getFilmById(java.lang.Integer)
+2018-07-06  09:29:22.523 INFO  [tartedMain] [] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/film/getFilms],methods=[POST]}" onto public com.cf.taurus.common.util.Response com.cf.taurus.base.provider.FilmProvider.getFilms(com.cf.taurus.common.po.Film)
+2018-07-06  09:29:22.523 INFO  [tartedMain] [] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hint/getHintById],methods=[GET]}" onto public com.cf.taurus.common.util.Response com.cf.taurus.base.provider.HintProvider.getHintById(java.lang.Integer)
+2018-07-06  09:29:22.523 INFO  [tartedMain] [] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hint/saveHint],methods=[POST]}" onto public com.cf.taurus.common.util.Response com.cf.taurus.base.provider.HintProvider.saveHint(com.cf.taurus.common.po.Hint)
+2018-07-06  09:29:22.523 INFO  [tartedMain] [] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hint/getHints],methods=[POST]}" onto public com.cf.taurus.common.util.Response com.cf.taurus.base.provider.HintProvider.getHints(com.cf.taurus.common.po.Hint)
+2018-07-06  09:29:22.523 INFO  [tartedMain] [] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/sell/getAllSell],methods=[GET]}" onto public com.cf.taurus.common.util.Response com.cf.taurus.base.provider.SellProvider.getAllSell()
+2018-07-06  09:29:22.523 INFO  [tartedMain] [] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/checkPassword],methods=[GET]}" onto public com.cf.taurus.common.util.Response com.cf.taurus.base.provider.UserProvider.checkPassword(java.lang.Long,java.lang.String)
+2018-07-06  09:29:22.523 INFO  [tartedMain] [] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/getSummary],methods=[GET]}" onto public com.cf.taurus.common.util.Response com.cf.taurus.base.provider.UserProvider.getSummary()
+2018-07-06  09:29:22.523 INFO  [tartedMain] [] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/saveUserInfo],methods=[POST]}" onto public com.cf.taurus.common.util.Response com.cf.taurus.base.provider.UserProvider.saveUserInfo(com.cf.taurus.common.po.UserInfo)
+2018-07-06  09:29:22.523 INFO  [tartedMain] [] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/getUserInfoById],methods=[GET]}" onto public com.cf.taurus.common.util.Response com.cf.taurus.base.provider.UserProvider.getUserInfoById(java.lang.Long)
+2018-07-06  09:29:22.523 INFO  [tartedMain] [] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-06  09:29:22.523 INFO  [tartedMain] [] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-06  09:29:22.663 INFO  [tartedMain] [] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-06  09:29:22.663 INFO  [tartedMain] [] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-06  09:29:22.773 INFO  [tartedMain] [] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-06  09:29:24.304 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+2018-07-06  09:29:24.304 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-07-06  09:29:24.304 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-07-06  09:29:24.304 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-07-06  09:29:24.304 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/restart || /restart.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.restart.RestartMvcEndpoint.invoke()
+2018-07-06  09:29:24.304 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2018-07-06  09:29:24.304 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-07-06  09:29:24.320 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+2018-07-06  09:29:24.320 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+2018-07-06  09:29:24.320 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-07-06  09:29:24.320 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-07-06  09:29:24.320 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/shutdown || /shutdown.json],methods=[POST],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.ShutdownMvcEndpoint.invoke()
+2018-07-06  09:29:24.320 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/refresh || /refresh.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2018-07-06  09:29:24.320 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/resume || /resume.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2018-07-06  09:29:24.320 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-07-06  09:29:24.320 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2018-07-06  09:29:24.320 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-07-06  09:29:24.320 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/env],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.value(java.util.Map<java.lang.String, java.lang.String>)
+2018-07-06  09:29:24.320 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/env/reset],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.reset()
+2018-07-06  09:29:24.320 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/archaius || /archaius.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-07-06  09:29:24.320 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+2018-07-06  09:29:24.336 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/pause || /pause.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2018-07-06  09:29:24.336 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/features || /features.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-07-06  09:29:24.336 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2018-07-06  09:29:24.336 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-07-06  09:29:24.336 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-07-06  09:29:26.150 INFO  [tartedMain] [] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2018-07-06  09:29:27.307 INFO  [tartedMain] [] o.s.c.c.u.InetUtils - Cannot determine local hostname
+2018-07-06  09:29:28.057 WARN  [tartedMain] [] c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2018-07-06  09:29:28.057 INFO  [tartedMain] [] c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-07-06  09:29:28.151 WARN  [tartedMain] [] c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2018-07-06  09:29:28.151 INFO  [tartedMain] [] c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-07-06  09:29:28.557 INFO  [tartedMain] [] o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-07-06  09:29:28.573 INFO  [tartedMain] [] o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'environmentManager' has been autodetected for JMX exposure
+2018-07-06  09:29:28.589 INFO  [tartedMain] [] o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2018-07-06  09:29:28.589 INFO  [tartedMain] [] o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'refreshEndpoint' has been autodetected for JMX exposure
+2018-07-06  09:29:28.589 INFO  [tartedMain] [] o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'restartEndpoint' has been autodetected for JMX exposure
+2018-07-06  09:29:28.589 INFO  [tartedMain] [] o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'refreshScope' has been autodetected for JMX exposure
+2018-07-06  09:29:28.589 INFO  [tartedMain] [] o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2018-07-06  09:29:28.635 INFO  [tartedMain] [] o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'restartEndpoint': registering with JMX server as MBean [org.springframework.cloud.context.restart:name=restartEndpoint,type=RestartEndpoint]
+2018-07-06  09:29:28.651 INFO  [tartedMain] [] o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2018-07-06  09:29:28.667 INFO  [tartedMain] [] o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=10b1cdec,type=ConfigurationPropertiesRebinder]
+2018-07-06  09:29:28.682 INFO  [tartedMain] [] o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'refreshEndpoint': registering with JMX server as MBean [org.springframework.cloud.endpoint:name=refreshEndpoint,type=RefreshEndpoint]
+2018-07-06  09:29:28.682 INFO  [tartedMain] [] o.s.b.a.e.j.EndpointMBeanExporter - Registering beans for JMX exposure on startup
+2018-07-06  09:29:28.895 INFO  [tartedMain] [] o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 0
+2018-07-06  09:29:28.897 INFO  [tartedMain] [] o.s.b.a.e.j.EndpointMBeanExporter - Located managed bean 'auditEventsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=auditEventsEndpoint]
+2018-07-06  09:29:28.905 INFO  [tartedMain] [] o.s.b.a.e.j.EndpointMBeanExporter - Located managed bean 'featuresEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=featuresEndpoint]
+2018-07-06  09:29:28.916 INFO  [tartedMain] [] o.s.b.a.e.j.EndpointMBeanExporter - Located managed bean 'requestMappingEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=requestMappingEndpoint]
+2018-07-06  09:29:28.917 INFO  [tartedMain] [] o.s.b.a.e.j.EndpointMBeanExporter - Located managed bean 'environmentEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=environmentEndpoint]
+2018-07-06  09:29:28.919 INFO  [tartedMain] [] o.s.b.a.e.j.EndpointMBeanExporter - Located managed bean 'healthEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=healthEndpoint]
+2018-07-06  09:29:28.921 INFO  [tartedMain] [] o.s.b.a.e.j.EndpointMBeanExporter - Located managed bean 'beansEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=beansEndpoint]
+2018-07-06  09:29:28.923 INFO  [tartedMain] [] o.s.b.a.e.j.EndpointMBeanExporter - Located managed bean 'infoEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=infoEndpoint]
+2018-07-06  09:29:28.926 INFO  [tartedMain] [] o.s.b.a.e.j.EndpointMBeanExporter - Located managed bean 'loggersEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=loggersEndpoint]
+2018-07-06  09:29:28.930 INFO  [tartedMain] [] o.s.b.a.e.j.EndpointMBeanExporter - Located managed bean 'metricsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=metricsEndpoint]
+2018-07-06  09:29:28.932 INFO  [tartedMain] [] o.s.b.a.e.j.EndpointMBeanExporter - Located managed bean 'traceEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=traceEndpoint]
+2018-07-06  09:29:28.933 INFO  [tartedMain] [] o.s.b.a.e.j.EndpointMBeanExporter - Located managed bean 'dumpEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=dumpEndpoint]
+2018-07-06  09:29:28.935 INFO  [tartedMain] [] o.s.b.a.e.j.EndpointMBeanExporter - Located managed bean 'autoConfigurationReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=autoConfigurationReportEndpoint]
+2018-07-06  09:29:28.938 INFO  [tartedMain] [] o.s.b.a.e.j.EndpointMBeanExporter - Located managed bean 'shutdownEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=shutdownEndpoint]
+2018-07-06  09:29:28.943 INFO  [tartedMain] [] o.s.b.a.e.j.EndpointMBeanExporter - Located managed bean 'configurationPropertiesReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=configurationPropertiesReportEndpoint]
+2018-07-06  09:29:28.945 INFO  [tartedMain] [] o.s.b.a.e.j.EndpointMBeanExporter - Located managed bean 'archaiusEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=archaiusEndpoint]
+2018-07-06  09:29:28.959 INFO  [tartedMain] [] o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2018-07-06  09:29:29.005 INFO  [tartedMain] [] o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9999"]
+2018-07-06  09:29:29.040 INFO  [tartedMain] [] o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9999"]
+2018-07-06  09:29:29.075 INFO  [tartedMain] [] o.a.t.u.n.NioSelectorPool - Using a shared selector for servlet write/read
+2018-07-06  09:29:29.099 INFO  [tartedMain] [] o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 9999 (http)
+2018-07-06  09:29:29.110 INFO  [tartedMain] [] c.c.t.b.TaurusBaseApplication - Started TaurusBaseApplication in 19.418 seconds (JVM running for 24.618)
+2018-07-06  09:29:29.110 INFO  [tartedMain] [] c.c.t.b.TaurusBaseApplication - Server start success
+2018-07-06  09:39:21.535 INFO  [999-exec-2] [] o.a.c.c.C.[.[.[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-07-06  09:39:21.536 INFO  [999-exec-2] [] o.s.w.s.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-07-06  09:39:21.575 INFO  [999-exec-2] [] o.s.w.s.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 39 ms
+2018-07-06  09:39:23.111 INFO  [999-exec-2] [] c.a.d.p.DruidDataSource - {dataSource-1} inited
+2018-07-06  09:39:23.138 DEBUG [999-exec-2] [] c.c.t.b.d.F.selectByCondition - ==>  Preparing: select id, star, actor, `name`, film, `type`, tag, `require`, actor_num, is_good, t_action, t_drama, t_mystery, t_romance, t_horror, t_comedy, t_cartoon, t_music, actor1, actor2, actor3, actor4, actor5, actor6 from film where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  09:39:23.210 DEBUG [999-exec-2] [] c.c.t.b.d.F.selectByCondition - ==> Parameters: 0(Integer), 50(Integer)
+2018-07-06  09:39:23.308 DEBUG [999-exec-2] [] c.c.t.b.d.F.selectByCondition - <==      Total: 50
+2018-07-06  09:39:23.314 DEBUG [999-exec-2] [] c.c.t.b.d.F.countByCondition - ==>  Preparing: select count(1) from film where 1=1 
+2018-07-06  09:39:23.314 DEBUG [999-exec-2] [] c.c.t.b.d.F.countByCondition - ==> Parameters: 
+2018-07-06  09:39:23.332 DEBUG [999-exec-2] [] c.c.t.b.d.F.countByCondition - <==      Total: 1
+2018-07-06  09:45:35.370 DEBUG [999-exec-3] [] c.c.t.b.d.F.selectByCondition - ==>  Preparing: select id, star, actor, `name`, film, `type`, tag, `require`, actor_num, is_good, t_action, t_drama, t_mystery, t_romance, t_horror, t_comedy, t_cartoon, t_music, actor1, actor2, actor3, actor4, actor5, actor6 from film where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  09:45:35.371 DEBUG [999-exec-3] [] c.c.t.b.d.F.selectByCondition - ==> Parameters: 0(Integer), 50(Integer)
+2018-07-06  09:45:35.411 DEBUG [999-exec-3] [] c.c.t.b.d.F.selectByCondition - <==      Total: 50
+2018-07-06  09:45:35.411 DEBUG [999-exec-3] [] c.c.t.b.d.F.countByCondition - ==>  Preparing: select count(1) from film where 1=1 
+2018-07-06  09:45:35.411 DEBUG [999-exec-3] [] c.c.t.b.d.F.countByCondition - ==> Parameters: 
+2018-07-06  09:45:35.430 DEBUG [999-exec-3] [] c.c.t.b.d.F.countByCondition - <==      Total: 1
+2018-07-06  09:56:44.403 DEBUG [999-exec-5] [] c.c.t.b.d.F.selectByCondition - ==>  Preparing: select id, star, actor, `name`, film, `type`, tag, `require`, actor_num, is_good, t_action, t_drama, t_mystery, t_romance, t_horror, t_comedy, t_cartoon, t_music, actor1, actor2, actor3, actor4, actor5, actor6 from film where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  09:56:44.404 DEBUG [999-exec-5] [] c.c.t.b.d.F.selectByCondition - ==> Parameters: 0(Integer), 50(Integer)
+2018-07-06  09:56:44.429 DEBUG [999-exec-5] [] c.c.t.b.d.F.selectByCondition - <==      Total: 50
+2018-07-06  09:56:44.429 DEBUG [999-exec-5] [] c.c.t.b.d.F.countByCondition - ==>  Preparing: select count(1) from film where 1=1 
+2018-07-06  09:56:44.430 DEBUG [999-exec-5] [] c.c.t.b.d.F.countByCondition - ==> Parameters: 
+2018-07-06  09:56:44.487 DEBUG [999-exec-5] [] c.c.t.b.d.F.countByCondition - <==      Total: 1
+2018-07-06  09:57:34.112 DEBUG [999-exec-6] [] c.c.t.b.d.F.selectByCondition - ==>  Preparing: select id, star, actor, `name`, film, `type`, tag, `require`, actor_num, is_good, t_action, t_drama, t_mystery, t_romance, t_horror, t_comedy, t_cartoon, t_music, actor1, actor2, actor3, actor4, actor5, actor6 from film where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  09:57:34.112 DEBUG [999-exec-6] [] c.c.t.b.d.F.selectByCondition - ==> Parameters: 0(Integer), 50(Integer)
+2018-07-06  09:57:34.139 DEBUG [999-exec-6] [] c.c.t.b.d.F.selectByCondition - <==      Total: 50
+2018-07-06  09:57:34.140 DEBUG [999-exec-6] [] c.c.t.b.d.F.countByCondition - ==>  Preparing: select count(1) from film where 1=1 
+2018-07-06  09:57:34.140 DEBUG [999-exec-6] [] c.c.t.b.d.F.countByCondition - ==> Parameters: 
+2018-07-06  09:57:34.157 DEBUG [999-exec-6] [] c.c.t.b.d.F.countByCondition - <==      Total: 1
+2018-07-06  09:58:03.864 DEBUG [999-exec-7] [] c.c.t.b.d.F.selectByCondition - ==>  Preparing: select id, star, actor, `name`, film, `type`, tag, `require`, actor_num, is_good, t_action, t_drama, t_mystery, t_romance, t_horror, t_comedy, t_cartoon, t_music, actor1, actor2, actor3, actor4, actor5, actor6 from film where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  09:58:03.864 DEBUG [999-exec-7] [] c.c.t.b.d.F.selectByCondition - ==> Parameters: 0(Integer), 50(Integer)
+2018-07-06  09:58:03.886 DEBUG [999-exec-7] [] c.c.t.b.d.F.selectByCondition - <==      Total: 50
+2018-07-06  09:58:03.887 DEBUG [999-exec-7] [] c.c.t.b.d.F.countByCondition - ==>  Preparing: select count(1) from film where 1=1 
+2018-07-06  09:58:03.887 DEBUG [999-exec-7] [] c.c.t.b.d.F.countByCondition - ==> Parameters: 
+2018-07-06  09:58:03.904 DEBUG [999-exec-7] [] c.c.t.b.d.F.countByCondition - <==      Total: 1
+2018-07-06  09:58:22.337 DEBUG [999-exec-8] [] c.c.t.b.d.F.selectByCondition - ==>  Preparing: select id, star, actor, `name`, film, `type`, tag, `require`, actor_num, is_good, t_action, t_drama, t_mystery, t_romance, t_horror, t_comedy, t_cartoon, t_music, actor1, actor2, actor3, actor4, actor5, actor6 from film where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  09:58:22.338 DEBUG [999-exec-8] [] c.c.t.b.d.F.selectByCondition - ==> Parameters: 0(Integer), 50(Integer)
+2018-07-06  09:58:22.366 DEBUG [999-exec-8] [] c.c.t.b.d.F.selectByCondition - <==      Total: 50
+2018-07-06  09:58:22.367 DEBUG [999-exec-8] [] c.c.t.b.d.F.countByCondition - ==>  Preparing: select count(1) from film where 1=1 
+2018-07-06  09:58:22.367 DEBUG [999-exec-8] [] c.c.t.b.d.F.countByCondition - ==> Parameters: 
+2018-07-06  09:58:22.384 DEBUG [999-exec-8] [] c.c.t.b.d.F.countByCondition - <==      Total: 1
+2018-07-06  09:58:48.505 DEBUG [999-exec-9] [] c.c.t.b.d.F.selectByCondition - ==>  Preparing: select id, star, actor, `name`, film, `type`, tag, `require`, actor_num, is_good, t_action, t_drama, t_mystery, t_romance, t_horror, t_comedy, t_cartoon, t_music, actor1, actor2, actor3, actor4, actor5, actor6 from film where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  09:58:48.505 DEBUG [999-exec-9] [] c.c.t.b.d.F.selectByCondition - ==> Parameters: 0(Integer), 50(Integer)
+2018-07-06  09:58:48.529 DEBUG [999-exec-9] [] c.c.t.b.d.F.selectByCondition - <==      Total: 50
+2018-07-06  09:58:48.534 DEBUG [999-exec-9] [] c.c.t.b.d.F.countByCondition - ==>  Preparing: select count(1) from film where 1=1 
+2018-07-06  09:58:48.534 DEBUG [999-exec-9] [] c.c.t.b.d.F.countByCondition - ==> Parameters: 
+2018-07-06  09:58:48.559 DEBUG [999-exec-9] [] c.c.t.b.d.F.countByCondition - <==      Total: 1
+2018-07-06  09:59:06.644 DEBUG [99-exec-10] [] c.c.t.b.d.F.selectByCondition - ==>  Preparing: select id, star, actor, `name`, film, `type`, tag, `require`, actor_num, is_good, t_action, t_drama, t_mystery, t_romance, t_horror, t_comedy, t_cartoon, t_music, actor1, actor2, actor3, actor4, actor5, actor6 from film where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  09:59:06.647 DEBUG [99-exec-10] [] c.c.t.b.d.F.selectByCondition - ==> Parameters: 0(Integer), 50(Integer)
+2018-07-06  09:59:06.670 DEBUG [99-exec-10] [] c.c.t.b.d.F.selectByCondition - <==      Total: 50
+2018-07-06  09:59:06.672 DEBUG [99-exec-10] [] c.c.t.b.d.F.countByCondition - ==>  Preparing: select count(1) from film where 1=1 
+2018-07-06  09:59:06.674 DEBUG [99-exec-10] [] c.c.t.b.d.F.countByCondition - ==> Parameters: 
+2018-07-06  09:59:06.697 DEBUG [99-exec-10] [] c.c.t.b.d.F.countByCondition - <==      Total: 1
+2018-07-06  09:59:24.877 DEBUG [999-exec-2] [] c.c.t.b.d.F.selectByCondition - ==>  Preparing: select id, star, actor, `name`, film, `type`, tag, `require`, actor_num, is_good, t_action, t_drama, t_mystery, t_romance, t_horror, t_comedy, t_cartoon, t_music, actor1, actor2, actor3, actor4, actor5, actor6 from film where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  09:59:24.877 DEBUG [999-exec-2] [] c.c.t.b.d.F.selectByCondition - ==> Parameters: 0(Integer), 50(Integer)
+2018-07-06  09:59:24.912 DEBUG [999-exec-2] [] c.c.t.b.d.F.selectByCondition - <==      Total: 50
+2018-07-06  09:59:24.914 DEBUG [999-exec-2] [] c.c.t.b.d.F.countByCondition - ==>  Preparing: select count(1) from film where 1=1 
+2018-07-06  09:59:24.914 DEBUG [999-exec-2] [] c.c.t.b.d.F.countByCondition - ==> Parameters: 
+2018-07-06  09:59:24.947 DEBUG [999-exec-2] [] c.c.t.b.d.F.countByCondition - <==      Total: 1
+2018-07-06  09:59:56.397 DEBUG [999-exec-1] [] c.c.t.b.d.F.selectByCondition - ==>  Preparing: select id, star, actor, `name`, film, `type`, tag, `require`, actor_num, is_good, t_action, t_drama, t_mystery, t_romance, t_horror, t_comedy, t_cartoon, t_music, actor1, actor2, actor3, actor4, actor5, actor6 from film where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  09:59:56.398 DEBUG [999-exec-1] [] c.c.t.b.d.F.selectByCondition - ==> Parameters: 0(Integer), 50(Integer)
+2018-07-06  09:59:56.424 DEBUG [999-exec-1] [] c.c.t.b.d.F.selectByCondition - <==      Total: 50
+2018-07-06  09:59:56.424 DEBUG [999-exec-1] [] c.c.t.b.d.F.countByCondition - ==>  Preparing: select count(1) from film where 1=1 
+2018-07-06  09:59:56.424 DEBUG [999-exec-1] [] c.c.t.b.d.F.countByCondition - ==> Parameters: 
+2018-07-06  09:59:56.441 DEBUG [999-exec-1] [] c.c.t.b.d.F.countByCondition - <==      Total: 1
+2018-07-06  10:02:31.887 DEBUG [999-exec-4] [] c.c.t.b.d.F.selectByCondition - ==>  Preparing: select id, star, actor, `name`, film, `type`, tag, `require`, actor_num, is_good, t_action, t_drama, t_mystery, t_romance, t_horror, t_comedy, t_cartoon, t_music, actor1, actor2, actor3, actor4, actor5, actor6 from film where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  10:02:31.887 DEBUG [999-exec-4] [] c.c.t.b.d.F.selectByCondition - ==> Parameters: 0(Integer), 50(Integer)
+2018-07-06  10:02:31.909 DEBUG [999-exec-4] [] c.c.t.b.d.F.selectByCondition - <==      Total: 50
+2018-07-06  10:02:31.909 DEBUG [999-exec-4] [] c.c.t.b.d.F.countByCondition - ==>  Preparing: select count(1) from film where 1=1 
+2018-07-06  10:02:31.909 DEBUG [999-exec-4] [] c.c.t.b.d.F.countByCondition - ==> Parameters: 
+2018-07-06  10:02:31.926 DEBUG [999-exec-4] [] c.c.t.b.d.F.countByCondition - <==      Total: 1
+2018-07-06  10:03:17.376 DEBUG [999-exec-5] [] c.c.t.b.d.F.selectByCondition - ==>  Preparing: select id, star, actor, `name`, film, `type`, tag, `require`, actor_num, is_good, t_action, t_drama, t_mystery, t_romance, t_horror, t_comedy, t_cartoon, t_music, actor1, actor2, actor3, actor4, actor5, actor6 from film where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  10:03:17.376 DEBUG [999-exec-5] [] c.c.t.b.d.F.selectByCondition - ==> Parameters: 0(Integer), 50(Integer)
+2018-07-06  10:03:17.398 DEBUG [999-exec-5] [] c.c.t.b.d.F.selectByCondition - <==      Total: 50
+2018-07-06  10:03:17.399 DEBUG [999-exec-5] [] c.c.t.b.d.F.countByCondition - ==>  Preparing: select count(1) from film where 1=1 
+2018-07-06  10:03:17.399 DEBUG [999-exec-5] [] c.c.t.b.d.F.countByCondition - ==> Parameters: 
+2018-07-06  10:03:17.416 DEBUG [999-exec-5] [] c.c.t.b.d.F.countByCondition - <==      Total: 1
+2018-07-06  10:05:30.657 DEBUG [999-exec-7] [] c.c.t.b.d.F.selectByCondition - ==>  Preparing: select id, star, actor, `name`, film, `type`, tag, `require`, actor_num, is_good, t_action, t_drama, t_mystery, t_romance, t_horror, t_comedy, t_cartoon, t_music, actor1, actor2, actor3, actor4, actor5, actor6 from film where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  10:05:30.658 DEBUG [999-exec-7] [] c.c.t.b.d.F.selectByCondition - ==> Parameters: 0(Integer), 50(Integer)
+2018-07-06  10:05:30.681 DEBUG [999-exec-7] [] c.c.t.b.d.F.selectByCondition - <==      Total: 50
+2018-07-06  10:05:30.683 DEBUG [999-exec-7] [] c.c.t.b.d.F.countByCondition - ==>  Preparing: select count(1) from film where 1=1 
+2018-07-06  10:05:30.683 DEBUG [999-exec-7] [] c.c.t.b.d.F.countByCondition - ==> Parameters: 
+2018-07-06  10:05:30.700 DEBUG [999-exec-7] [] c.c.t.b.d.F.countByCondition - <==      Total: 1
+2018-07-06  10:06:13.764 DEBUG [999-exec-8] [] c.c.t.b.d.F.selectByCondition - ==>  Preparing: select id, star, actor, `name`, film, `type`, tag, `require`, actor_num, is_good, t_action, t_drama, t_mystery, t_romance, t_horror, t_comedy, t_cartoon, t_music, actor1, actor2, actor3, actor4, actor5, actor6 from film where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  10:06:13.764 DEBUG [999-exec-8] [] c.c.t.b.d.F.selectByCondition - ==> Parameters: 0(Integer), 50(Integer)
+2018-07-06  10:06:13.786 DEBUG [999-exec-8] [] c.c.t.b.d.F.selectByCondition - <==      Total: 50
+2018-07-06  10:06:13.787 DEBUG [999-exec-8] [] c.c.t.b.d.F.countByCondition - ==>  Preparing: select count(1) from film where 1=1 
+2018-07-06  10:06:13.787 DEBUG [999-exec-8] [] c.c.t.b.d.F.countByCondition - ==> Parameters: 
+2018-07-06  10:06:13.804 DEBUG [999-exec-8] [] c.c.t.b.d.F.countByCondition - <==      Total: 1
+2018-07-06  10:07:14.706 DEBUG [99-exec-10] [] c.c.t.b.d.F.selectByCondition - ==>  Preparing: select id, star, actor, `name`, film, `type`, tag, `require`, actor_num, is_good, t_action, t_drama, t_mystery, t_romance, t_horror, t_comedy, t_cartoon, t_music, actor1, actor2, actor3, actor4, actor5, actor6 from film where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  10:07:14.706 DEBUG [99-exec-10] [] c.c.t.b.d.F.selectByCondition - ==> Parameters: 0(Integer), 50(Integer)
+2018-07-06  10:07:14.726 DEBUG [99-exec-10] [] c.c.t.b.d.F.selectByCondition - <==      Total: 50
+2018-07-06  10:07:14.727 DEBUG [99-exec-10] [] c.c.t.b.d.F.countByCondition - ==>  Preparing: select count(1) from film where 1=1 
+2018-07-06  10:07:14.727 DEBUG [99-exec-10] [] c.c.t.b.d.F.countByCondition - ==> Parameters: 
+2018-07-06  10:07:14.744 DEBUG [99-exec-10] [] c.c.t.b.d.F.countByCondition - <==      Total: 1
+2018-07-06  11:04:28.608 DEBUG [999-exec-1] [] c.c.t.b.d.F.selectByCondition - ==>  Preparing: select id, star, actor, `name`, film, `type`, tag, `require`, actor_num, is_good, t_action, t_drama, t_mystery, t_romance, t_horror, t_comedy, t_cartoon, t_music, actor1, actor2, actor3, actor4, actor5, actor6 from film where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  11:04:28.610 DEBUG [999-exec-1] [] c.c.t.b.d.F.selectByCondition - ==> Parameters: 0(Integer), 50(Integer)
+2018-07-06  11:04:28.634 DEBUG [999-exec-1] [] c.c.t.b.d.F.selectByCondition - <==      Total: 50
+2018-07-06  11:04:28.637 DEBUG [999-exec-1] [] c.c.t.b.d.F.countByCondition - ==>  Preparing: select count(1) from film where 1=1 
+2018-07-06  11:04:28.637 DEBUG [999-exec-1] [] c.c.t.b.d.F.countByCondition - ==> Parameters: 
+2018-07-06  11:04:28.655 DEBUG [999-exec-1] [] c.c.t.b.d.F.countByCondition - <==      Total: 1
+2018-07-06  11:24:21.373 DEBUG [999-exec-4] [] c.c.t.b.d.F.selectByCondition - ==>  Preparing: select id, star, actor, `name`, film, `type`, tag, `require`, actor_num, is_good, t_action, t_drama, t_mystery, t_romance, t_horror, t_comedy, t_cartoon, t_music, actor1, actor2, actor3, actor4, actor5, actor6 from film where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  11:24:21.374 DEBUG [999-exec-4] [] c.c.t.b.d.F.selectByCondition - ==> Parameters: 0(Integer), 50(Integer)
+2018-07-06  11:24:21.396 DEBUG [999-exec-4] [] c.c.t.b.d.F.selectByCondition - <==      Total: 50
+2018-07-06  11:24:21.397 DEBUG [999-exec-4] [] c.c.t.b.d.F.countByCondition - ==>  Preparing: select count(1) from film where 1=1 
+2018-07-06  11:24:21.397 DEBUG [999-exec-4] [] c.c.t.b.d.F.countByCondition - ==> Parameters: 
+2018-07-06  11:24:21.418 DEBUG [999-exec-4] [] c.c.t.b.d.F.countByCondition - <==      Total: 1
+2018-07-06  11:24:59.203 DEBUG [999-exec-5] [] c.c.t.b.d.F.selectByCondition - ==>  Preparing: select id, star, actor, `name`, film, `type`, tag, `require`, actor_num, is_good, t_action, t_drama, t_mystery, t_romance, t_horror, t_comedy, t_cartoon, t_music, actor1, actor2, actor3, actor4, actor5, actor6 from film where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  11:24:59.203 DEBUG [999-exec-5] [] c.c.t.b.d.F.selectByCondition - ==> Parameters: 0(Integer), 50(Integer)
+2018-07-06  11:24:59.225 DEBUG [999-exec-5] [] c.c.t.b.d.F.selectByCondition - <==      Total: 50
+2018-07-06  11:24:59.225 DEBUG [999-exec-5] [] c.c.t.b.d.F.countByCondition - ==>  Preparing: select count(1) from film where 1=1 
+2018-07-06  11:24:59.226 DEBUG [999-exec-5] [] c.c.t.b.d.F.countByCondition - ==> Parameters: 
+2018-07-06  11:24:59.242 DEBUG [999-exec-5] [] c.c.t.b.d.F.countByCondition - <==      Total: 1
+2018-07-06  11:26:32.111 DEBUG [999-exec-7] [] c.c.t.b.d.F.selectByCondition - ==>  Preparing: select id, star, actor, `name`, film, `type`, tag, `require`, actor_num, is_good, t_action, t_drama, t_mystery, t_romance, t_horror, t_comedy, t_cartoon, t_music, actor1, actor2, actor3, actor4, actor5, actor6 from film where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  11:26:32.112 DEBUG [999-exec-7] [] c.c.t.b.d.F.selectByCondition - ==> Parameters: 0(Integer), 50(Integer)
+2018-07-06  11:26:32.133 DEBUG [999-exec-7] [] c.c.t.b.d.F.selectByCondition - <==      Total: 50
+2018-07-06  11:26:32.133 DEBUG [999-exec-7] [] c.c.t.b.d.F.countByCondition - ==>  Preparing: select count(1) from film where 1=1 
+2018-07-06  11:26:32.133 DEBUG [999-exec-7] [] c.c.t.b.d.F.countByCondition - ==> Parameters: 
+2018-07-06  11:26:32.151 DEBUG [999-exec-7] [] c.c.t.b.d.F.countByCondition - <==      Total: 1
+2018-07-06  11:26:53.615 DEBUG [999-exec-8] [] c.c.t.b.d.F.selectByCondition - ==>  Preparing: select id, star, actor, `name`, film, `type`, tag, `require`, actor_num, is_good, t_action, t_drama, t_mystery, t_romance, t_horror, t_comedy, t_cartoon, t_music, actor1, actor2, actor3, actor4, actor5, actor6 from film where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  11:26:53.616 DEBUG [999-exec-8] [] c.c.t.b.d.F.selectByCondition - ==> Parameters: 0(Integer), 50(Integer)
+2018-07-06  11:26:53.637 DEBUG [999-exec-8] [] c.c.t.b.d.F.selectByCondition - <==      Total: 50
+2018-07-06  11:26:53.637 DEBUG [999-exec-8] [] c.c.t.b.d.F.countByCondition - ==>  Preparing: select count(1) from film where 1=1 
+2018-07-06  11:26:53.637 DEBUG [999-exec-8] [] c.c.t.b.d.F.countByCondition - ==> Parameters: 
+2018-07-06  11:26:53.657 DEBUG [999-exec-8] [] c.c.t.b.d.F.countByCondition - <==      Total: 1
+2018-07-06  11:38:11.715 DEBUG [99-exec-10] [] c.c.t.b.d.F.selectByCondition - ==>  Preparing: select id, star, actor, `name`, film, `type`, tag, `require`, actor_num, is_good, t_action, t_drama, t_mystery, t_romance, t_horror, t_comedy, t_cartoon, t_music, actor1, actor2, actor3, actor4, actor5, actor6 from film where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  11:38:11.715 DEBUG [99-exec-10] [] c.c.t.b.d.F.selectByCondition - ==> Parameters: 0(Integer), 50(Integer)
+2018-07-06  11:38:11.737 DEBUG [99-exec-10] [] c.c.t.b.d.F.selectByCondition - <==      Total: 50
+2018-07-06  11:38:11.737 DEBUG [99-exec-10] [] c.c.t.b.d.F.countByCondition - ==>  Preparing: select count(1) from film where 1=1 
+2018-07-06  11:38:11.737 DEBUG [99-exec-10] [] c.c.t.b.d.F.countByCondition - ==> Parameters: 
+2018-07-06  11:38:11.754 DEBUG [99-exec-10] [] c.c.t.b.d.F.countByCondition - <==      Total: 1
+2018-07-06  11:38:51.339 DEBUG [999-exec-2] [] c.c.t.b.d.F.selectByCondition - ==>  Preparing: select id, star, actor, `name`, film, `type`, tag, `require`, actor_num, is_good, t_action, t_drama, t_mystery, t_romance, t_horror, t_comedy, t_cartoon, t_music, actor1, actor2, actor3, actor4, actor5, actor6 from film where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  11:38:51.339 DEBUG [999-exec-2] [] c.c.t.b.d.F.selectByCondition - ==> Parameters: 0(Integer), 50(Integer)
+2018-07-06  11:38:51.361 DEBUG [999-exec-2] [] c.c.t.b.d.F.selectByCondition - <==      Total: 50
+2018-07-06  11:38:51.362 DEBUG [999-exec-2] [] c.c.t.b.d.F.countByCondition - ==>  Preparing: select count(1) from film where 1=1 
+2018-07-06  11:38:51.362 DEBUG [999-exec-2] [] c.c.t.b.d.F.countByCondition - ==> Parameters: 
+2018-07-06  11:38:51.380 DEBUG [999-exec-2] [] c.c.t.b.d.F.countByCondition - <==      Total: 1
+2018-07-06  11:38:52.946 DEBUG [999-exec-1] [] c.c.t.b.d.F.selectByCondition - ==>  Preparing: select id, star, actor, `name`, film, `type`, tag, `require`, actor_num, is_good, t_action, t_drama, t_mystery, t_romance, t_horror, t_comedy, t_cartoon, t_music, actor1, actor2, actor3, actor4, actor5, actor6 from film where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  11:38:52.946 DEBUG [999-exec-1] [] c.c.t.b.d.F.selectByCondition - ==> Parameters: 0(Integer), 50(Integer)
+2018-07-06  11:38:52.997 DEBUG [999-exec-1] [] c.c.t.b.d.F.selectByCondition - <==      Total: 50
+2018-07-06  11:38:52.997 DEBUG [999-exec-1] [] c.c.t.b.d.F.countByCondition - ==>  Preparing: select count(1) from film where 1=1 
+2018-07-06  11:38:52.998 DEBUG [999-exec-1] [] c.c.t.b.d.F.countByCondition - ==> Parameters: 
+2018-07-06  11:38:53.048 DEBUG [999-exec-1] [] c.c.t.b.d.F.countByCondition - <==      Total: 1
+2018-07-06  11:39:00.872 DEBUG [999-exec-3] [] c.c.t.b.d.F.selectByCondition - ==>  Preparing: select id, star, actor, `name`, film, `type`, tag, `require`, actor_num, is_good, t_action, t_drama, t_mystery, t_romance, t_horror, t_comedy, t_cartoon, t_music, actor1, actor2, actor3, actor4, actor5, actor6 from film where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  11:39:00.873 DEBUG [999-exec-3] [] c.c.t.b.d.F.selectByCondition - ==> Parameters: 0(Integer), 50(Integer)
+2018-07-06  11:39:00.894 DEBUG [999-exec-3] [] c.c.t.b.d.F.selectByCondition - <==      Total: 50
+2018-07-06  11:39:00.894 DEBUG [999-exec-3] [] c.c.t.b.d.F.countByCondition - ==>  Preparing: select count(1) from film where 1=1 
+2018-07-06  11:39:00.894 DEBUG [999-exec-3] [] c.c.t.b.d.F.countByCondition - ==> Parameters: 
+2018-07-06  11:39:00.913 DEBUG [999-exec-3] [] c.c.t.b.d.F.countByCondition - <==      Total: 1
+2018-07-06  13:58:04.367 DEBUG [999-exec-5] [] c.c.t.b.d.F.selectByCondition - ==>  Preparing: select id, star, actor, `name`, film, `type`, tag, `require`, actor_num, is_good, t_action, t_drama, t_mystery, t_romance, t_horror, t_comedy, t_cartoon, t_music, actor1, actor2, actor3, actor4, actor5, actor6 from film where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  13:58:04.370 DEBUG [999-exec-5] [] c.c.t.b.d.F.selectByCondition - ==> Parameters: 0(Integer), 50(Integer)
+2018-07-06  13:58:04.395 DEBUG [999-exec-5] [] c.c.t.b.d.F.selectByCondition - <==      Total: 50
+2018-07-06  13:58:04.396 DEBUG [999-exec-5] [] c.c.t.b.d.F.countByCondition - ==>  Preparing: select count(1) from film where 1=1 
+2018-07-06  13:58:04.396 DEBUG [999-exec-5] [] c.c.t.b.d.F.countByCondition - ==> Parameters: 
+2018-07-06  13:58:04.413 DEBUG [999-exec-5] [] c.c.t.b.d.F.countByCondition - <==      Total: 1
+2018-07-06  13:58:27.835 DEBUG [999-exec-6] [] c.c.t.b.d.F.selectByCondition - ==>  Preparing: select id, star, actor, `name`, film, `type`, tag, `require`, actor_num, is_good, t_action, t_drama, t_mystery, t_romance, t_horror, t_comedy, t_cartoon, t_music, actor1, actor2, actor3, actor4, actor5, actor6 from film where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  13:58:27.835 DEBUG [999-exec-6] [] c.c.t.b.d.F.selectByCondition - ==> Parameters: 0(Integer), 50(Integer)
+2018-07-06  13:58:27.856 DEBUG [999-exec-6] [] c.c.t.b.d.F.selectByCondition - <==      Total: 50
+2018-07-06  13:58:27.857 DEBUG [999-exec-6] [] c.c.t.b.d.F.countByCondition - ==>  Preparing: select count(1) from film where 1=1 
+2018-07-06  13:58:27.857 DEBUG [999-exec-6] [] c.c.t.b.d.F.countByCondition - ==> Parameters: 
+2018-07-06  13:58:27.875 DEBUG [999-exec-6] [] c.c.t.b.d.F.countByCondition - <==      Total: 1
+2018-07-06  14:00:01.336 DEBUG [999-exec-8] [] c.c.t.b.d.F.selectByCondition - ==>  Preparing: select id, star, actor, `name`, film, `type`, tag, `require`, actor_num, is_good, t_action, t_drama, t_mystery, t_romance, t_horror, t_comedy, t_cartoon, t_music, actor1, actor2, actor3, actor4, actor5, actor6 from film where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  14:00:01.337 DEBUG [999-exec-8] [] c.c.t.b.d.F.selectByCondition - ==> Parameters: 0(Integer), 50(Integer)
+2018-07-06  14:00:01.358 DEBUG [999-exec-8] [] c.c.t.b.d.F.selectByCondition - <==      Total: 50
+2018-07-06  14:00:01.359 DEBUG [999-exec-8] [] c.c.t.b.d.F.countByCondition - ==>  Preparing: select count(1) from film where 1=1 
+2018-07-06  14:00:01.359 DEBUG [999-exec-8] [] c.c.t.b.d.F.countByCondition - ==> Parameters: 
+2018-07-06  14:00:01.375 DEBUG [999-exec-8] [] c.c.t.b.d.F.countByCondition - <==      Total: 1
+2018-07-06  14:00:07.550 DEBUG [999-exec-9] [] c.c.t.b.d.F.selectByCondition - ==>  Preparing: select id, star, actor, `name`, film, `type`, tag, `require`, actor_num, is_good, t_action, t_drama, t_mystery, t_romance, t_horror, t_comedy, t_cartoon, t_music, actor1, actor2, actor3, actor4, actor5, actor6 from film where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  14:00:07.550 DEBUG [999-exec-9] [] c.c.t.b.d.F.selectByCondition - ==> Parameters: 0(Integer), 50(Integer)
+2018-07-06  14:00:07.572 DEBUG [999-exec-9] [] c.c.t.b.d.F.selectByCondition - <==      Total: 50
+2018-07-06  14:00:07.572 DEBUG [999-exec-9] [] c.c.t.b.d.F.countByCondition - ==>  Preparing: select count(1) from film where 1=1 
+2018-07-06  14:00:07.572 DEBUG [999-exec-9] [] c.c.t.b.d.F.countByCondition - ==> Parameters: 
+2018-07-06  14:00:07.589 DEBUG [999-exec-9] [] c.c.t.b.d.F.countByCondition - <==      Total: 1
+2018-07-06  14:00:13.928 DEBUG [99-exec-10] [] c.c.t.b.d.F.selectByCondition - ==>  Preparing: select id, star, actor, `name`, film, `type`, tag, `require`, actor_num, is_good, t_action, t_drama, t_mystery, t_romance, t_horror, t_comedy, t_cartoon, t_music, actor1, actor2, actor3, actor4, actor5, actor6 from film where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  14:00:13.929 DEBUG [99-exec-10] [] c.c.t.b.d.F.selectByCondition - ==> Parameters: 0(Integer), 50(Integer)
+2018-07-06  14:00:13.950 DEBUG [99-exec-10] [] c.c.t.b.d.F.selectByCondition - <==      Total: 50
+2018-07-06  14:00:13.950 DEBUG [99-exec-10] [] c.c.t.b.d.F.countByCondition - ==>  Preparing: select count(1) from film where 1=1 
+2018-07-06  14:00:13.950 DEBUG [99-exec-10] [] c.c.t.b.d.F.countByCondition - ==> Parameters: 
+2018-07-06  14:00:13.967 DEBUG [99-exec-10] [] c.c.t.b.d.F.countByCondition - <==      Total: 1
+2018-07-06  14:00:17.821 DEBUG [999-exec-2] [] c.c.t.b.d.F.selectByCondition - ==>  Preparing: select id, star, actor, `name`, film, `type`, tag, `require`, actor_num, is_good, t_action, t_drama, t_mystery, t_romance, t_horror, t_comedy, t_cartoon, t_music, actor1, actor2, actor3, actor4, actor5, actor6 from film where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  14:00:17.822 DEBUG [999-exec-2] [] c.c.t.b.d.F.selectByCondition - ==> Parameters: 0(Integer), 50(Integer)
+2018-07-06  14:00:17.842 DEBUG [999-exec-2] [] c.c.t.b.d.F.selectByCondition - <==      Total: 50
+2018-07-06  14:00:17.843 DEBUG [999-exec-2] [] c.c.t.b.d.F.countByCondition - ==>  Preparing: select count(1) from film where 1=1 
+2018-07-06  14:00:17.843 DEBUG [999-exec-2] [] c.c.t.b.d.F.countByCondition - ==> Parameters: 
+2018-07-06  14:00:17.860 DEBUG [999-exec-2] [] c.c.t.b.d.F.countByCondition - <==      Total: 1
+2018-07-06  14:00:20.171 DEBUG [999-exec-1] [] c.c.t.b.d.F.selectByCondition - ==>  Preparing: select id, star, actor, `name`, film, `type`, tag, `require`, actor_num, is_good, t_action, t_drama, t_mystery, t_romance, t_horror, t_comedy, t_cartoon, t_music, actor1, actor2, actor3, actor4, actor5, actor6 from film where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  14:00:20.171 DEBUG [999-exec-1] [] c.c.t.b.d.F.selectByCondition - ==> Parameters: 0(Integer), 50(Integer)
+2018-07-06  14:00:20.192 DEBUG [999-exec-1] [] c.c.t.b.d.F.selectByCondition - <==      Total: 50
+2018-07-06  14:00:20.193 DEBUG [999-exec-1] [] c.c.t.b.d.F.countByCondition - ==>  Preparing: select count(1) from film where 1=1 
+2018-07-06  14:00:20.193 DEBUG [999-exec-1] [] c.c.t.b.d.F.countByCondition - ==> Parameters: 
+2018-07-06  14:00:20.210 DEBUG [999-exec-1] [] c.c.t.b.d.F.countByCondition - <==      Total: 1
+2018-07-06  14:00:28.016 DEBUG [999-exec-3] [] c.c.t.b.d.F.selectByCondition - ==>  Preparing: select id, star, actor, `name`, film, `type`, tag, `require`, actor_num, is_good, t_action, t_drama, t_mystery, t_romance, t_horror, t_comedy, t_cartoon, t_music, actor1, actor2, actor3, actor4, actor5, actor6 from film where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  14:00:28.016 DEBUG [999-exec-3] [] c.c.t.b.d.F.selectByCondition - ==> Parameters: 0(Integer), 50(Integer)
+2018-07-06  14:00:28.099 DEBUG [999-exec-3] [] c.c.t.b.d.F.selectByCondition - <==      Total: 50
+2018-07-06  14:00:28.100 DEBUG [999-exec-3] [] c.c.t.b.d.F.countByCondition - ==>  Preparing: select count(1) from film where 1=1 
+2018-07-06  14:00:28.100 DEBUG [999-exec-3] [] c.c.t.b.d.F.countByCondition - ==> Parameters: 
+2018-07-06  14:00:28.171 DEBUG [999-exec-3] [] c.c.t.b.d.F.countByCondition - <==      Total: 1
+2018-07-06  14:01:52.736 DEBUG [999-exec-5] [] c.c.t.b.d.F.selectByCondition - ==>  Preparing: select id, star, actor, `name`, film, `type`, tag, `require`, actor_num, is_good, t_action, t_drama, t_mystery, t_romance, t_horror, t_comedy, t_cartoon, t_music, actor1, actor2, actor3, actor4, actor5, actor6 from film where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  14:01:52.736 DEBUG [999-exec-5] [] c.c.t.b.d.F.selectByCondition - ==> Parameters: 0(Integer), 50(Integer)
+2018-07-06  14:01:52.758 DEBUG [999-exec-5] [] c.c.t.b.d.F.selectByCondition - <==      Total: 50
+2018-07-06  14:01:52.760 DEBUG [999-exec-5] [] c.c.t.b.d.F.countByCondition - ==>  Preparing: select count(1) from film where 1=1 
+2018-07-06  14:01:52.760 DEBUG [999-exec-5] [] c.c.t.b.d.F.countByCondition - ==> Parameters: 
+2018-07-06  14:01:52.777 DEBUG [999-exec-5] [] c.c.t.b.d.F.countByCondition - <==      Total: 1
+2018-07-06  14:02:08.474 DEBUG [999-exec-6] [] c.c.t.b.d.F.selectByCondition - ==>  Preparing: select id, star, actor, `name`, film, `type`, tag, `require`, actor_num, is_good, t_action, t_drama, t_mystery, t_romance, t_horror, t_comedy, t_cartoon, t_music, actor1, actor2, actor3, actor4, actor5, actor6 from film where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  14:02:08.475 DEBUG [999-exec-6] [] c.c.t.b.d.F.selectByCondition - ==> Parameters: 0(Integer), 50(Integer)
+2018-07-06  14:02:08.496 DEBUG [999-exec-6] [] c.c.t.b.d.F.selectByCondition - <==      Total: 50
+2018-07-06  14:02:08.497 DEBUG [999-exec-6] [] c.c.t.b.d.F.countByCondition - ==>  Preparing: select count(1) from film where 1=1 
+2018-07-06  14:02:08.497 DEBUG [999-exec-6] [] c.c.t.b.d.F.countByCondition - ==> Parameters: 
+2018-07-06  14:02:08.514 DEBUG [999-exec-6] [] c.c.t.b.d.F.countByCondition - <==      Total: 1
+2018-07-06  14:04:23.747 DEBUG [999-exec-8] [] c.c.t.b.d.F.selectByCondition - ==>  Preparing: select id, star, actor, `name`, film, `type`, tag, `require`, actor_num, is_good, t_action, t_drama, t_mystery, t_romance, t_horror, t_comedy, t_cartoon, t_music, actor1, actor2, actor3, actor4, actor5, actor6 from film where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  14:04:23.747 DEBUG [999-exec-8] [] c.c.t.b.d.F.selectByCondition - ==> Parameters: 0(Integer), 50(Integer)
+2018-07-06  14:04:23.768 DEBUG [999-exec-8] [] c.c.t.b.d.F.selectByCondition - <==      Total: 50
+2018-07-06  14:04:23.768 DEBUG [999-exec-8] [] c.c.t.b.d.F.countByCondition - ==>  Preparing: select count(1) from film where 1=1 
+2018-07-06  14:04:23.768 DEBUG [999-exec-8] [] c.c.t.b.d.F.countByCondition - ==> Parameters: 
+2018-07-06  14:04:23.785 DEBUG [999-exec-8] [] c.c.t.b.d.F.countByCondition - <==      Total: 1
+2018-07-06  14:04:35.279 DEBUG [999-exec-9] [] c.c.t.b.d.F.selectByCondition - ==>  Preparing: select id, star, actor, `name`, film, `type`, tag, `require`, actor_num, is_good, t_action, t_drama, t_mystery, t_romance, t_horror, t_comedy, t_cartoon, t_music, actor1, actor2, actor3, actor4, actor5, actor6 from film where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  14:04:35.279 DEBUG [999-exec-9] [] c.c.t.b.d.F.selectByCondition - ==> Parameters: 0(Integer), 50(Integer)
+2018-07-06  14:04:35.300 DEBUG [999-exec-9] [] c.c.t.b.d.F.selectByCondition - <==      Total: 50
+2018-07-06  14:04:35.301 DEBUG [999-exec-9] [] c.c.t.b.d.F.countByCondition - ==>  Preparing: select count(1) from film where 1=1 
+2018-07-06  14:04:35.301 DEBUG [999-exec-9] [] c.c.t.b.d.F.countByCondition - ==> Parameters: 
+2018-07-06  14:04:35.318 DEBUG [999-exec-9] [] c.c.t.b.d.F.countByCondition - <==      Total: 1
+2018-07-06  14:04:44.320 DEBUG [99-exec-10] [] c.c.t.b.d.F.selectByCondition - ==>  Preparing: select id, star, actor, `name`, film, `type`, tag, `require`, actor_num, is_good, t_action, t_drama, t_mystery, t_romance, t_horror, t_comedy, t_cartoon, t_music, actor1, actor2, actor3, actor4, actor5, actor6 from film where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  14:04:44.320 DEBUG [99-exec-10] [] c.c.t.b.d.F.selectByCondition - ==> Parameters: 0(Integer), 50(Integer)
+2018-07-06  14:04:44.341 DEBUG [99-exec-10] [] c.c.t.b.d.F.selectByCondition - <==      Total: 50
+2018-07-06  14:04:44.342 DEBUG [99-exec-10] [] c.c.t.b.d.F.countByCondition - ==>  Preparing: select count(1) from film where 1=1 
+2018-07-06  14:04:44.342 DEBUG [99-exec-10] [] c.c.t.b.d.F.countByCondition - ==> Parameters: 
+2018-07-06  14:04:44.359 DEBUG [99-exec-10] [] c.c.t.b.d.F.countByCondition - <==      Total: 1
+2018-07-06  14:04:56.538 DEBUG [999-exec-2] [] c.c.t.b.d.F.selectByCondition - ==>  Preparing: select id, star, actor, `name`, film, `type`, tag, `require`, actor_num, is_good, t_action, t_drama, t_mystery, t_romance, t_horror, t_comedy, t_cartoon, t_music, actor1, actor2, actor3, actor4, actor5, actor6 from film where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  14:04:56.538 DEBUG [999-exec-2] [] c.c.t.b.d.F.selectByCondition - ==> Parameters: 0(Integer), 50(Integer)
+2018-07-06  14:04:56.559 DEBUG [999-exec-2] [] c.c.t.b.d.F.selectByCondition - <==      Total: 50
+2018-07-06  14:04:56.560 DEBUG [999-exec-2] [] c.c.t.b.d.F.countByCondition - ==>  Preparing: select count(1) from film where 1=1 
+2018-07-06  14:04:56.560 DEBUG [999-exec-2] [] c.c.t.b.d.F.countByCondition - ==> Parameters: 
+2018-07-06  14:04:56.577 DEBUG [999-exec-2] [] c.c.t.b.d.F.countByCondition - <==      Total: 1
+2018-07-06  14:04:59.363 DEBUG [999-exec-1] [] c.c.t.b.d.F.selectByCondition - ==>  Preparing: select id, star, actor, `name`, film, `type`, tag, `require`, actor_num, is_good, t_action, t_drama, t_mystery, t_romance, t_horror, t_comedy, t_cartoon, t_music, actor1, actor2, actor3, actor4, actor5, actor6 from film where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  14:04:59.363 DEBUG [999-exec-1] [] c.c.t.b.d.F.selectByCondition - ==> Parameters: 0(Integer), 50(Integer)
+2018-07-06  14:04:59.386 DEBUG [999-exec-1] [] c.c.t.b.d.F.selectByCondition - <==      Total: 50
+2018-07-06  14:04:59.387 DEBUG [999-exec-1] [] c.c.t.b.d.F.countByCondition - ==>  Preparing: select count(1) from film where 1=1 
+2018-07-06  14:04:59.387 DEBUG [999-exec-1] [] c.c.t.b.d.F.countByCondition - ==> Parameters: 
+2018-07-06  14:04:59.404 DEBUG [999-exec-1] [] c.c.t.b.d.F.countByCondition - <==      Total: 1
+2018-07-06  14:05:10.569 DEBUG [999-exec-3] [] c.c.t.b.d.F.selectByCondition - ==>  Preparing: select id, star, actor, `name`, film, `type`, tag, `require`, actor_num, is_good, t_action, t_drama, t_mystery, t_romance, t_horror, t_comedy, t_cartoon, t_music, actor1, actor2, actor3, actor4, actor5, actor6 from film where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  14:05:10.569 DEBUG [999-exec-3] [] c.c.t.b.d.F.selectByCondition - ==> Parameters: 0(Integer), 50(Integer)
+2018-07-06  14:05:10.590 DEBUG [999-exec-3] [] c.c.t.b.d.F.selectByCondition - <==      Total: 50
+2018-07-06  14:05:10.590 DEBUG [999-exec-3] [] c.c.t.b.d.F.countByCondition - ==>  Preparing: select count(1) from film where 1=1 
+2018-07-06  14:05:10.590 DEBUG [999-exec-3] [] c.c.t.b.d.F.countByCondition - ==> Parameters: 
+2018-07-06  14:05:10.607 DEBUG [999-exec-3] [] c.c.t.b.d.F.countByCondition - <==      Total: 1
+2018-07-06  14:07:02.806 DEBUG [999-exec-5] [] c.c.t.b.d.F.selectByCondition - ==>  Preparing: select id, star, actor, `name`, film, `type`, tag, `require`, actor_num, is_good, t_action, t_drama, t_mystery, t_romance, t_horror, t_comedy, t_cartoon, t_music, actor1, actor2, actor3, actor4, actor5, actor6 from film where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  14:07:02.807 DEBUG [999-exec-5] [] c.c.t.b.d.F.selectByCondition - ==> Parameters: 0(Integer), 50(Integer)
+2018-07-06  14:07:02.828 DEBUG [999-exec-5] [] c.c.t.b.d.F.selectByCondition - <==      Total: 50
+2018-07-06  14:07:02.828 DEBUG [999-exec-5] [] c.c.t.b.d.F.countByCondition - ==>  Preparing: select count(1) from film where 1=1 
+2018-07-06  14:07:02.828 DEBUG [999-exec-5] [] c.c.t.b.d.F.countByCondition - ==> Parameters: 
+2018-07-06  14:07:02.845 DEBUG [999-exec-5] [] c.c.t.b.d.F.countByCondition - <==      Total: 1
+2018-07-06  14:07:23.020 DEBUG [999-exec-6] [] c.c.t.b.d.F.selectByCondition - ==>  Preparing: select id, star, actor, `name`, film, `type`, tag, `require`, actor_num, is_good, t_action, t_drama, t_mystery, t_romance, t_horror, t_comedy, t_cartoon, t_music, actor1, actor2, actor3, actor4, actor5, actor6 from film where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  14:07:23.021 DEBUG [999-exec-6] [] c.c.t.b.d.F.selectByCondition - ==> Parameters: 0(Integer), 50(Integer)
+2018-07-06  14:07:23.042 DEBUG [999-exec-6] [] c.c.t.b.d.F.selectByCondition - <==      Total: 50
+2018-07-06  14:07:23.042 DEBUG [999-exec-6] [] c.c.t.b.d.F.countByCondition - ==>  Preparing: select count(1) from film where 1=1 
+2018-07-06  14:07:23.042 DEBUG [999-exec-6] [] c.c.t.b.d.F.countByCondition - ==> Parameters: 
+2018-07-06  14:07:23.059 DEBUG [999-exec-6] [] c.c.t.b.d.F.countByCondition - <==      Total: 1
+2018-07-06  14:14:44.510 DEBUG [999-exec-8] [] c.c.t.b.d.F.selectByCondition - ==>  Preparing: select id, star, actor, `name`, film, `type`, tag, `require`, actor_num, is_good, t_action, t_drama, t_mystery, t_romance, t_horror, t_comedy, t_cartoon, t_music, actor1, actor2, actor3, actor4, actor5, actor6 from film where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  14:14:44.510 DEBUG [999-exec-8] [] c.c.t.b.d.F.selectByCondition - ==> Parameters: 0(Integer), 50(Integer)
+2018-07-06  14:14:44.537 DEBUG [999-exec-8] [] c.c.t.b.d.F.selectByCondition - <==      Total: 50
+2018-07-06  14:14:44.538 DEBUG [999-exec-8] [] c.c.t.b.d.F.countByCondition - ==>  Preparing: select count(1) from film where 1=1 
+2018-07-06  14:14:44.538 DEBUG [999-exec-8] [] c.c.t.b.d.F.countByCondition - ==> Parameters: 
+2018-07-06  14:14:44.555 DEBUG [999-exec-8] [] c.c.t.b.d.F.countByCondition - <==      Total: 1
+2018-07-06  14:18:15.271 DEBUG [99-exec-10] [] c.c.t.b.d.F.selectByCondition - ==>  Preparing: select id, star, actor, `name`, film, `type`, tag, `require`, actor_num, is_good, t_action, t_drama, t_mystery, t_romance, t_horror, t_comedy, t_cartoon, t_music, actor1, actor2, actor3, actor4, actor5, actor6 from film where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  14:18:15.271 DEBUG [99-exec-10] [] c.c.t.b.d.F.selectByCondition - ==> Parameters: 0(Integer), 50(Integer)
+2018-07-06  14:18:15.292 DEBUG [99-exec-10] [] c.c.t.b.d.F.selectByCondition - <==      Total: 50
+2018-07-06  14:18:15.292 DEBUG [99-exec-10] [] c.c.t.b.d.F.countByCondition - ==>  Preparing: select count(1) from film where 1=1 
+2018-07-06  14:18:15.292 DEBUG [99-exec-10] [] c.c.t.b.d.F.countByCondition - ==> Parameters: 
+2018-07-06  14:18:15.313 DEBUG [99-exec-10] [] c.c.t.b.d.F.countByCondition - <==      Total: 1
+2018-07-06  14:18:59.657 DEBUG [999-exec-2] [] c.c.t.b.d.F.selectByCondition - ==>  Preparing: select id, star, actor, `name`, film, `type`, tag, `require`, actor_num, is_good, t_action, t_drama, t_mystery, t_romance, t_horror, t_comedy, t_cartoon, t_music, actor1, actor2, actor3, actor4, actor5, actor6 from film where 1=1 AND actor like concat('%', ? ,'%') OR `name` like concat('%', ? ,'%') OR film like concat('%', ? ,'%') ORDER BY star DESC LIMIT ?,? 
+2018-07-06  14:18:59.665 DEBUG [999-exec-2] [] c.c.t.b.d.F.selectByCondition - ==> Parameters: 大闹(String), 大闹(String), 大闹(String), 0(Integer), 50(Integer)
+2018-07-06  14:18:59.687 DEBUG [999-exec-2] [] c.c.t.b.d.F.selectByCondition - <==      Total: 3
+2018-07-06  14:18:59.688 DEBUG [999-exec-2] [] c.c.t.b.d.F.countByCondition - ==>  Preparing: select count(1) from film where 1=1 AND actor like concat('%', ? ,'%') OR `name` like concat('%', ? ,'%') OR film like concat('%', ? ,'%') 
+2018-07-06  14:18:59.688 DEBUG [999-exec-2] [] c.c.t.b.d.F.countByCondition - ==> Parameters: 大闹(String), 大闹(String), 大闹(String)
+2018-07-06  14:18:59.707 DEBUG [999-exec-2] [] c.c.t.b.d.F.countByCondition - <==      Total: 1
+2018-07-06  14:19:53.770 DEBUG [999-exec-1] [] c.c.t.b.d.F.selectByCondition - ==>  Preparing: select id, star, actor, `name`, film, `type`, tag, `require`, actor_num, is_good, t_action, t_drama, t_mystery, t_romance, t_horror, t_comedy, t_cartoon, t_music, actor1, actor2, actor3, actor4, actor5, actor6 from film where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  14:19:53.771 DEBUG [999-exec-1] [] c.c.t.b.d.F.selectByCondition - ==> Parameters: 0(Integer), 50(Integer)
+2018-07-06  14:19:53.791 DEBUG [999-exec-1] [] c.c.t.b.d.F.selectByCondition - <==      Total: 50
+2018-07-06  14:19:53.791 DEBUG [999-exec-1] [] c.c.t.b.d.F.countByCondition - ==>  Preparing: select count(1) from film where 1=1 
+2018-07-06  14:19:53.792 DEBUG [999-exec-1] [] c.c.t.b.d.F.countByCondition - ==> Parameters: 
+2018-07-06  14:19:53.808 DEBUG [999-exec-1] [] c.c.t.b.d.F.countByCondition - <==      Total: 1
+2018-07-06  14:19:59.632 DEBUG [999-exec-3] [] c.c.t.b.d.F.selectByCondition - ==>  Preparing: select id, star, actor, `name`, film, `type`, tag, `require`, actor_num, is_good, t_action, t_drama, t_mystery, t_romance, t_horror, t_comedy, t_cartoon, t_music, actor1, actor2, actor3, actor4, actor5, actor6 from film where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  14:19:59.632 DEBUG [999-exec-3] [] c.c.t.b.d.F.selectByCondition - ==> Parameters: 0(Integer), 50(Integer)
+2018-07-06  14:19:59.654 DEBUG [999-exec-3] [] c.c.t.b.d.F.selectByCondition - <==      Total: 50
+2018-07-06  14:19:59.655 DEBUG [999-exec-3] [] c.c.t.b.d.F.countByCondition - ==>  Preparing: select count(1) from film where 1=1 
+2018-07-06  14:19:59.655 DEBUG [999-exec-3] [] c.c.t.b.d.F.countByCondition - ==> Parameters: 
+2018-07-06  14:19:59.672 DEBUG [999-exec-3] [] c.c.t.b.d.F.countByCondition - <==      Total: 1
+2018-07-06  14:20:05.893 DEBUG [999-exec-4] [] c.c.t.b.d.F.selectByCondition - ==>  Preparing: select id, star, actor, `name`, film, `type`, tag, `require`, actor_num, is_good, t_action, t_drama, t_mystery, t_romance, t_horror, t_comedy, t_cartoon, t_music, actor1, actor2, actor3, actor4, actor5, actor6 from film where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  14:20:05.893 DEBUG [999-exec-4] [] c.c.t.b.d.F.selectByCondition - ==> Parameters: 0(Integer), 50(Integer)
+2018-07-06  14:20:05.914 DEBUG [999-exec-4] [] c.c.t.b.d.F.selectByCondition - <==      Total: 50
+2018-07-06  14:20:05.915 DEBUG [999-exec-4] [] c.c.t.b.d.F.countByCondition - ==>  Preparing: select count(1) from film where 1=1 
+2018-07-06  14:20:05.915 DEBUG [999-exec-4] [] c.c.t.b.d.F.countByCondition - ==> Parameters: 
+2018-07-06  14:20:05.932 DEBUG [999-exec-4] [] c.c.t.b.d.F.countByCondition - <==      Total: 1
+2018-07-06  14:20:31.342 DEBUG [999-exec-5] [] c.c.t.b.d.F.selectByCondition - ==>  Preparing: select id, star, actor, `name`, film, `type`, tag, `require`, actor_num, is_good, t_action, t_drama, t_mystery, t_romance, t_horror, t_comedy, t_cartoon, t_music, actor1, actor2, actor3, actor4, actor5, actor6 from film where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  14:20:31.343 DEBUG [999-exec-5] [] c.c.t.b.d.F.selectByCondition - ==> Parameters: 0(Integer), 50(Integer)
+2018-07-06  14:20:31.363 DEBUG [999-exec-5] [] c.c.t.b.d.F.selectByCondition - <==      Total: 50
+2018-07-06  14:20:31.364 DEBUG [999-exec-5] [] c.c.t.b.d.F.countByCondition - ==>  Preparing: select count(1) from film where 1=1 
+2018-07-06  14:20:31.364 DEBUG [999-exec-5] [] c.c.t.b.d.F.countByCondition - ==> Parameters: 
+2018-07-06  14:20:31.381 DEBUG [999-exec-5] [] c.c.t.b.d.F.countByCondition - <==      Total: 1
+2018-07-06  14:21:19.734 DEBUG [999-exec-7] [] c.c.t.b.d.F.selectByCondition - ==>  Preparing: select id, star, actor, `name`, film, `type`, tag, `require`, actor_num, is_good, t_action, t_drama, t_mystery, t_romance, t_horror, t_comedy, t_cartoon, t_music, actor1, actor2, actor3, actor4, actor5, actor6 from film where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  14:21:19.734 DEBUG [999-exec-7] [] c.c.t.b.d.F.selectByCondition - ==> Parameters: 0(Integer), 50(Integer)
+2018-07-06  14:21:19.771 DEBUG [999-exec-7] [] c.c.t.b.d.F.selectByCondition - <==      Total: 50
+2018-07-06  14:21:19.772 DEBUG [999-exec-7] [] c.c.t.b.d.F.countByCondition - ==>  Preparing: select count(1) from film where 1=1 
+2018-07-06  14:21:19.772 DEBUG [999-exec-7] [] c.c.t.b.d.F.countByCondition - ==> Parameters: 
+2018-07-06  14:21:19.797 DEBUG [999-exec-7] [] c.c.t.b.d.F.countByCondition - <==      Total: 1
+2018-07-06  14:21:24.039 DEBUG [999-exec-8] [] c.c.t.b.d.F.selectByCondition - ==>  Preparing: select id, star, actor, `name`, film, `type`, tag, `require`, actor_num, is_good, t_action, t_drama, t_mystery, t_romance, t_horror, t_comedy, t_cartoon, t_music, actor1, actor2, actor3, actor4, actor5, actor6 from film where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  14:21:24.039 DEBUG [999-exec-8] [] c.c.t.b.d.F.selectByCondition - ==> Parameters: 0(Integer), 50(Integer)
+2018-07-06  14:21:24.060 DEBUG [999-exec-8] [] c.c.t.b.d.F.selectByCondition - <==      Total: 50
+2018-07-06  14:21:24.061 DEBUG [999-exec-8] [] c.c.t.b.d.F.countByCondition - ==>  Preparing: select count(1) from film where 1=1 
+2018-07-06  14:21:24.061 DEBUG [999-exec-8] [] c.c.t.b.d.F.countByCondition - ==> Parameters: 
+2018-07-06  14:21:24.078 DEBUG [999-exec-8] [] c.c.t.b.d.F.countByCondition - <==      Total: 1
+2018-07-06  14:23:34.444 DEBUG [99-exec-10] [] c.c.t.b.d.F.selectByCondition - ==>  Preparing: select id, star, actor, `name`, film, `type`, tag, `require`, actor_num, is_good, t_action, t_drama, t_mystery, t_romance, t_horror, t_comedy, t_cartoon, t_music, actor1, actor2, actor3, actor4, actor5, actor6 from film where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  14:23:34.444 DEBUG [99-exec-10] [] c.c.t.b.d.F.selectByCondition - ==> Parameters: 0(Integer), 50(Integer)
+2018-07-06  14:23:34.465 DEBUG [99-exec-10] [] c.c.t.b.d.F.selectByCondition - <==      Total: 50
+2018-07-06  14:23:34.466 DEBUG [99-exec-10] [] c.c.t.b.d.F.countByCondition - ==>  Preparing: select count(1) from film where 1=1 
+2018-07-06  14:23:34.466 DEBUG [99-exec-10] [] c.c.t.b.d.F.countByCondition - ==> Parameters: 
+2018-07-06  14:23:34.483 DEBUG [99-exec-10] [] c.c.t.b.d.F.countByCondition - <==      Total: 1
+2018-07-06  14:23:40.237 DEBUG [999-exec-2] [] c.c.t.b.d.F.selectByCondition - ==>  Preparing: select id, star, actor, `name`, film, `type`, tag, `require`, actor_num, is_good, t_action, t_drama, t_mystery, t_romance, t_horror, t_comedy, t_cartoon, t_music, actor1, actor2, actor3, actor4, actor5, actor6 from film where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  14:23:40.238 DEBUG [999-exec-2] [] c.c.t.b.d.F.selectByCondition - ==> Parameters: 0(Integer), 50(Integer)
+2018-07-06  14:23:40.258 DEBUG [999-exec-2] [] c.c.t.b.d.F.selectByCondition - <==      Total: 50
+2018-07-06  14:23:40.258 DEBUG [999-exec-2] [] c.c.t.b.d.F.countByCondition - ==>  Preparing: select count(1) from film where 1=1 
+2018-07-06  14:23:40.259 DEBUG [999-exec-2] [] c.c.t.b.d.F.countByCondition - ==> Parameters: 
+2018-07-06  14:23:40.276 DEBUG [999-exec-2] [] c.c.t.b.d.F.countByCondition - <==      Total: 1
+2018-07-06  14:23:48.734 DEBUG [999-exec-1] [] c.c.t.b.d.F.selectByCondition - ==>  Preparing: select id, star, actor, `name`, film, `type`, tag, `require`, actor_num, is_good, t_action, t_drama, t_mystery, t_romance, t_horror, t_comedy, t_cartoon, t_music, actor1, actor2, actor3, actor4, actor5, actor6 from film where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  14:23:48.734 DEBUG [999-exec-1] [] c.c.t.b.d.F.selectByCondition - ==> Parameters: 0(Integer), 50(Integer)
+2018-07-06  14:23:48.755 DEBUG [999-exec-1] [] c.c.t.b.d.F.selectByCondition - <==      Total: 50
+2018-07-06  14:23:48.756 DEBUG [999-exec-1] [] c.c.t.b.d.F.countByCondition - ==>  Preparing: select count(1) from film where 1=1 
+2018-07-06  14:23:48.756 DEBUG [999-exec-1] [] c.c.t.b.d.F.countByCondition - ==> Parameters: 
+2018-07-06  14:23:48.772 DEBUG [999-exec-1] [] c.c.t.b.d.F.countByCondition - <==      Total: 1
+2018-07-06  14:23:51.240 DEBUG [999-exec-3] [] c.c.t.b.d.F.selectByCondition - ==>  Preparing: select id, star, actor, `name`, film, `type`, tag, `require`, actor_num, is_good, t_action, t_drama, t_mystery, t_romance, t_horror, t_comedy, t_cartoon, t_music, actor1, actor2, actor3, actor4, actor5, actor6 from film where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  14:23:51.240 DEBUG [999-exec-3] [] c.c.t.b.d.F.selectByCondition - ==> Parameters: 1(Integer), 50(Integer)
+2018-07-06  14:23:51.261 DEBUG [999-exec-3] [] c.c.t.b.d.F.selectByCondition - <==      Total: 50
+2018-07-06  14:23:51.262 DEBUG [999-exec-3] [] c.c.t.b.d.F.countByCondition - ==>  Preparing: select count(1) from film where 1=1 
+2018-07-06  14:23:51.262 DEBUG [999-exec-3] [] c.c.t.b.d.F.countByCondition - ==> Parameters: 
+2018-07-06  14:23:51.279 DEBUG [999-exec-3] [] c.c.t.b.d.F.countByCondition - <==      Total: 1
+2018-07-06  14:23:56.705 DEBUG [999-exec-4] [] c.c.t.b.d.F.selectByCondition - ==>  Preparing: select id, star, actor, `name`, film, `type`, tag, `require`, actor_num, is_good, t_action, t_drama, t_mystery, t_romance, t_horror, t_comedy, t_cartoon, t_music, actor1, actor2, actor3, actor4, actor5, actor6 from film where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  14:23:56.706 DEBUG [999-exec-4] [] c.c.t.b.d.F.selectByCondition - ==> Parameters: 2(Integer), 50(Integer)
+2018-07-06  14:23:56.727 DEBUG [999-exec-4] [] c.c.t.b.d.F.selectByCondition - <==      Total: 50
+2018-07-06  14:23:56.728 DEBUG [999-exec-4] [] c.c.t.b.d.F.countByCondition - ==>  Preparing: select count(1) from film where 1=1 
+2018-07-06  14:23:56.728 DEBUG [999-exec-4] [] c.c.t.b.d.F.countByCondition - ==> Parameters: 
+2018-07-06  14:23:56.745 DEBUG [999-exec-4] [] c.c.t.b.d.F.countByCondition - <==      Total: 1
+2018-07-06  14:26:51.376 DEBUG [999-exec-6] [] c.c.t.b.d.F.selectByCondition - ==>  Preparing: select id, star, actor, `name`, film, `type`, tag, `require`, actor_num, is_good, t_action, t_drama, t_mystery, t_romance, t_horror, t_comedy, t_cartoon, t_music, actor1, actor2, actor3, actor4, actor5, actor6 from film where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  14:26:51.376 DEBUG [999-exec-6] [] c.c.t.b.d.F.selectByCondition - ==> Parameters: 0(Integer), 50(Integer)
+2018-07-06  14:26:51.396 DEBUG [999-exec-6] [] c.c.t.b.d.F.selectByCondition - <==      Total: 50
+2018-07-06  14:26:51.397 DEBUG [999-exec-6] [] c.c.t.b.d.F.countByCondition - ==>  Preparing: select count(1) from film where 1=1 
+2018-07-06  14:26:51.397 DEBUG [999-exec-6] [] c.c.t.b.d.F.countByCondition - ==> Parameters: 
+2018-07-06  14:26:51.414 DEBUG [999-exec-6] [] c.c.t.b.d.F.countByCondition - <==      Total: 1
+2018-07-06  14:27:26.651 DEBUG [999-exec-8] [] c.c.t.b.d.S.getAllSell - ==>  Preparing: select id, street, level1, level2, level3, level4 from sell 
+2018-07-06  14:27:26.651 DEBUG [999-exec-8] [] c.c.t.b.d.S.getAllSell - ==> Parameters: 
+2018-07-06  14:27:26.673 DEBUG [999-exec-8] [] c.c.t.b.d.S.getAllSell - <==      Total: 20
+2018-07-06  14:27:26.686 DEBUG [999-exec-7] [] c.c.t.b.d.A.countByCondition - ==>  Preparing: select count(1) from actor where 1=1 
+2018-07-06  14:27:26.687 DEBUG [999-exec-7] [] c.c.t.b.d.A.countByCondition - ==> Parameters: 
+2018-07-06  14:27:26.704 DEBUG [999-exec-7] [] c.c.t.b.d.A.countByCondition - <==      Total: 1
+2018-07-06  14:27:26.705 DEBUG [999-exec-7] [] c.c.t.b.d.F.countByCondition - ==>  Preparing: select count(1) from film where 1=1 
+2018-07-06  14:27:26.705 DEBUG [999-exec-7] [] c.c.t.b.d.F.countByCondition - ==> Parameters: 
+2018-07-06  14:27:26.722 DEBUG [999-exec-7] [] c.c.t.b.d.F.countByCondition - <==      Total: 1
+2018-07-06  14:27:26.723 DEBUG [999-exec-7] [] c.c.t.b.d.H.countByCondition - ==>  Preparing: select count(1) from hint where deleted = 1 
+2018-07-06  14:27:26.723 DEBUG [999-exec-7] [] c.c.t.b.d.H.countByCondition - ==> Parameters: 
+2018-07-06  14:27:26.740 DEBUG [999-exec-7] [] c.c.t.b.d.H.countByCondition - <==      Total: 1
+2018-07-06  14:27:30.840 DEBUG [999-exec-9] [] c.c.t.b.d.A.countByCondition - ==>  Preparing: select count(1) from actor where 1=1 
+2018-07-06  14:27:30.840 DEBUG [999-exec-9] [] c.c.t.b.d.A.countByCondition - ==> Parameters: 
+2018-07-06  14:27:30.858 DEBUG [999-exec-9] [] c.c.t.b.d.A.countByCondition - <==      Total: 1
+2018-07-06  14:27:30.858 DEBUG [99-exec-10] [] c.c.t.b.d.S.getAllSell - ==>  Preparing: select id, street, level1, level2, level3, level4 from sell 
+2018-07-06  14:27:30.858 DEBUG [99-exec-10] [] c.c.t.b.d.S.getAllSell - ==> Parameters: 
+2018-07-06  14:27:30.879 DEBUG [99-exec-10] [] c.c.t.b.d.S.getAllSell - <==      Total: 20
+2018-07-06  14:27:30.879 DEBUG [999-exec-9] [] c.c.t.b.d.F.countByCondition - ==>  Preparing: select count(1) from film where 1=1 
+2018-07-06  14:27:30.880 DEBUG [999-exec-9] [] c.c.t.b.d.F.countByCondition - ==> Parameters: 
+2018-07-06  14:27:30.897 DEBUG [999-exec-9] [] c.c.t.b.d.F.countByCondition - <==      Total: 1
+2018-07-06  14:27:30.897 DEBUG [999-exec-9] [] c.c.t.b.d.H.countByCondition - ==>  Preparing: select count(1) from hint where deleted = 1 
+2018-07-06  14:27:30.897 DEBUG [999-exec-9] [] c.c.t.b.d.H.countByCondition - ==> Parameters: 
+2018-07-06  14:27:30.916 DEBUG [999-exec-9] [] c.c.t.b.d.H.countByCondition - <==      Total: 1
+2018-07-06  14:27:45.934 DEBUG [999-exec-2] [] c.c.t.b.d.F.selectByCondition - ==>  Preparing: select id, star, actor, `name`, film, `type`, tag, `require`, actor_num, is_good, t_action, t_drama, t_mystery, t_romance, t_horror, t_comedy, t_cartoon, t_music, actor1, actor2, actor3, actor4, actor5, actor6 from film where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  14:27:45.935 DEBUG [999-exec-2] [] c.c.t.b.d.F.selectByCondition - ==> Parameters: 0(Integer), 50(Integer)
+2018-07-06  14:27:45.957 DEBUG [999-exec-2] [] c.c.t.b.d.F.selectByCondition - <==      Total: 50
+2018-07-06  14:27:45.958 DEBUG [999-exec-2] [] c.c.t.b.d.F.countByCondition - ==>  Preparing: select count(1) from film where 1=1 
+2018-07-06  14:27:45.958 DEBUG [999-exec-2] [] c.c.t.b.d.F.countByCondition - ==> Parameters: 
+2018-07-06  14:27:45.974 DEBUG [999-exec-2] [] c.c.t.b.d.F.countByCondition - <==      Total: 1
+2018-07-06  14:27:48.612 DEBUG [999-exec-1] [] c.c.t.b.d.F.selectByCondition - ==>  Preparing: select id, star, actor, `name`, film, `type`, tag, `require`, actor_num, is_good, t_action, t_drama, t_mystery, t_romance, t_horror, t_comedy, t_cartoon, t_music, actor1, actor2, actor3, actor4, actor5, actor6 from film where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  14:27:48.612 DEBUG [999-exec-1] [] c.c.t.b.d.F.selectByCondition - ==> Parameters: 0(Integer), 50(Integer)
+2018-07-06  14:27:48.633 DEBUG [999-exec-1] [] c.c.t.b.d.F.selectByCondition - <==      Total: 50
+2018-07-06  14:27:48.633 DEBUG [999-exec-1] [] c.c.t.b.d.F.countByCondition - ==>  Preparing: select count(1) from film where 1=1 
+2018-07-06  14:27:48.634 DEBUG [999-exec-1] [] c.c.t.b.d.F.countByCondition - ==> Parameters: 
+2018-07-06  14:27:48.650 DEBUG [999-exec-1] [] c.c.t.b.d.F.countByCondition - <==      Total: 1
+2018-07-06  14:44:22.949 DEBUG [999-exec-5] [] c.c.t.b.d.A.selectByCondition - ==>  Preparing: select id, name, real_name, star, sex, country, type1, type2, strong, property, tag_film, tag_character, skill1, skill2, skill3, skill4, skill5, skill6 from actor where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  14:44:22.949 DEBUG [999-exec-5] [] c.c.t.b.d.A.selectByCondition - ==> Parameters: 0(Integer), 30(Integer)
+2018-07-06  14:44:22.996 DEBUG [999-exec-5] [] c.c.t.b.d.A.selectByCondition - <==      Total: 30
+2018-07-06  14:44:22.997 DEBUG [999-exec-5] [] c.c.t.b.d.A.countByCondition - ==>  Preparing: select count(1) from actor where 1=1 
+2018-07-06  14:44:22.997 DEBUG [999-exec-5] [] c.c.t.b.d.A.countByCondition - ==> Parameters: 
+2018-07-06  14:44:23.014 DEBUG [999-exec-5] [] c.c.t.b.d.A.countByCondition - <==      Total: 1
+2018-07-06  14:45:08.169 DEBUG [999-exec-6] [] c.c.t.b.d.A.selectByCondition - ==>  Preparing: select id, name, real_name, star, sex, country, type1, type2, strong, property, tag_film, tag_character, skill1, skill2, skill3, skill4, skill5, skill6 from actor where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  14:45:08.169 DEBUG [999-exec-6] [] c.c.t.b.d.A.selectByCondition - ==> Parameters: 0(Integer), 30(Integer)
+2018-07-06  14:45:08.194 DEBUG [999-exec-6] [] c.c.t.b.d.A.selectByCondition - <==      Total: 30
+2018-07-06  14:45:08.195 DEBUG [999-exec-6] [] c.c.t.b.d.A.countByCondition - ==>  Preparing: select count(1) from actor where 1=1 
+2018-07-06  14:45:08.195 DEBUG [999-exec-6] [] c.c.t.b.d.A.countByCondition - ==> Parameters: 
+2018-07-06  14:45:08.210 DEBUG [999-exec-6] [] c.c.t.b.d.A.countByCondition - <==      Total: 1
+2018-07-06  14:45:40.437 DEBUG [999-exec-8] [] c.c.t.b.d.A.selectByCondition - ==>  Preparing: select id, name, real_name, star, sex, country, type1, type2, strong, property, tag_film, tag_character, skill1, skill2, skill3, skill4, skill5, skill6 from actor where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  14:45:40.437 DEBUG [999-exec-8] [] c.c.t.b.d.A.selectByCondition - ==> Parameters: 0(Integer), 30(Integer)
+2018-07-06  14:45:40.461 DEBUG [999-exec-8] [] c.c.t.b.d.A.selectByCondition - <==      Total: 30
+2018-07-06  14:45:40.462 DEBUG [999-exec-8] [] c.c.t.b.d.A.countByCondition - ==>  Preparing: select count(1) from actor where 1=1 
+2018-07-06  14:45:40.462 DEBUG [999-exec-8] [] c.c.t.b.d.A.countByCondition - ==> Parameters: 
+2018-07-06  14:45:40.479 DEBUG [999-exec-8] [] c.c.t.b.d.A.countByCondition - <==      Total: 1
+2018-07-06  14:45:49.751 DEBUG [999-exec-7] [] c.c.t.b.d.A.selectByCondition - ==>  Preparing: select id, name, real_name, star, sex, country, type1, type2, strong, property, tag_film, tag_character, skill1, skill2, skill3, skill4, skill5, skill6 from actor where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  14:45:49.751 DEBUG [999-exec-7] [] c.c.t.b.d.A.selectByCondition - ==> Parameters: 0(Integer), 30(Integer)
+2018-07-06  14:45:49.770 DEBUG [999-exec-7] [] c.c.t.b.d.A.selectByCondition - <==      Total: 30
+2018-07-06  14:45:49.771 DEBUG [999-exec-7] [] c.c.t.b.d.A.countByCondition - ==>  Preparing: select count(1) from actor where 1=1 
+2018-07-06  14:45:49.771 DEBUG [999-exec-7] [] c.c.t.b.d.A.countByCondition - ==> Parameters: 
+2018-07-06  14:45:49.788 DEBUG [999-exec-7] [] c.c.t.b.d.A.countByCondition - <==      Total: 1
+2018-07-06  14:46:42.622 DEBUG [99-exec-10] [] c.c.t.b.d.A.selectByCondition - ==>  Preparing: select id, name, real_name, star, sex, country, type1, type2, strong, property, tag_film, tag_character, skill1, skill2, skill3, skill4, skill5, skill6 from actor where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  14:46:42.622 DEBUG [99-exec-10] [] c.c.t.b.d.A.selectByCondition - ==> Parameters: 0(Integer), 30(Integer)
+2018-07-06  14:46:42.642 DEBUG [99-exec-10] [] c.c.t.b.d.A.selectByCondition - <==      Total: 30
+2018-07-06  14:46:42.642 DEBUG [99-exec-10] [] c.c.t.b.d.A.countByCondition - ==>  Preparing: select count(1) from actor where 1=1 
+2018-07-06  14:46:42.642 DEBUG [99-exec-10] [] c.c.t.b.d.A.countByCondition - ==> Parameters: 
+2018-07-06  14:46:42.658 DEBUG [99-exec-10] [] c.c.t.b.d.A.countByCondition - <==      Total: 1
+2018-07-06  14:46:44.370 DEBUG [999-exec-9] [] c.c.t.b.d.A.selectByCondition - ==>  Preparing: select id, name, real_name, star, sex, country, type1, type2, strong, property, tag_film, tag_character, skill1, skill2, skill3, skill4, skill5, skill6 from actor where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  14:46:44.370 DEBUG [999-exec-9] [] c.c.t.b.d.A.selectByCondition - ==> Parameters: 30(Integer), 30(Integer)
+2018-07-06  14:46:44.389 DEBUG [999-exec-9] [] c.c.t.b.d.A.selectByCondition - <==      Total: 30
+2018-07-06  14:46:44.390 DEBUG [999-exec-9] [] c.c.t.b.d.A.countByCondition - ==>  Preparing: select count(1) from actor where 1=1 
+2018-07-06  14:46:44.390 DEBUG [999-exec-9] [] c.c.t.b.d.A.countByCondition - ==> Parameters: 
+2018-07-06  14:46:44.406 DEBUG [999-exec-9] [] c.c.t.b.d.A.countByCondition - <==      Total: 1
+2018-07-06  14:47:01.289 DEBUG [999-exec-2] [] c.c.t.b.d.A.selectByCondition - ==>  Preparing: select id, name, real_name, star, sex, country, type1, type2, strong, property, tag_film, tag_character, skill1, skill2, skill3, skill4, skill5, skill6 from actor where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  14:47:01.290 DEBUG [999-exec-2] [] c.c.t.b.d.A.selectByCondition - ==> Parameters: 0(Integer), 30(Integer)
+2018-07-06  14:47:01.310 DEBUG [999-exec-2] [] c.c.t.b.d.A.selectByCondition - <==      Total: 30
+2018-07-06  14:47:01.310 DEBUG [999-exec-2] [] c.c.t.b.d.A.countByCondition - ==>  Preparing: select count(1) from actor where 1=1 
+2018-07-06  14:47:01.310 DEBUG [999-exec-2] [] c.c.t.b.d.A.countByCondition - ==> Parameters: 
+2018-07-06  14:47:01.333 DEBUG [999-exec-2] [] c.c.t.b.d.A.countByCondition - <==      Total: 1
+2018-07-06  14:47:11.167 DEBUG [999-exec-1] [] c.c.t.b.d.A.selectByCondition - ==>  Preparing: select id, name, real_name, star, sex, country, type1, type2, strong, property, tag_film, tag_character, skill1, skill2, skill3, skill4, skill5, skill6 from actor where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  14:47:11.167 DEBUG [999-exec-1] [] c.c.t.b.d.A.selectByCondition - ==> Parameters: 0(Integer), 30(Integer)
+2018-07-06  14:47:11.186 DEBUG [999-exec-1] [] c.c.t.b.d.A.selectByCondition - <==      Total: 30
+2018-07-06  14:47:11.187 DEBUG [999-exec-1] [] c.c.t.b.d.A.countByCondition - ==>  Preparing: select count(1) from actor where 1=1 
+2018-07-06  14:47:11.187 DEBUG [999-exec-1] [] c.c.t.b.d.A.countByCondition - ==> Parameters: 
+2018-07-06  14:47:11.204 DEBUG [999-exec-1] [] c.c.t.b.d.A.countByCondition - <==      Total: 1
+2018-07-06  14:47:24.838 DEBUG [999-exec-3] [] c.c.t.b.d.A.selectByCondition - ==>  Preparing: select id, name, real_name, star, sex, country, type1, type2, strong, property, tag_film, tag_character, skill1, skill2, skill3, skill4, skill5, skill6 from actor where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  14:47:24.838 DEBUG [999-exec-3] [] c.c.t.b.d.A.selectByCondition - ==> Parameters: 0(Integer), 30(Integer)
+2018-07-06  14:47:24.857 DEBUG [999-exec-3] [] c.c.t.b.d.A.selectByCondition - <==      Total: 30
+2018-07-06  14:47:24.858 DEBUG [999-exec-3] [] c.c.t.b.d.A.countByCondition - ==>  Preparing: select count(1) from actor where 1=1 
+2018-07-06  14:47:24.858 DEBUG [999-exec-3] [] c.c.t.b.d.A.countByCondition - ==> Parameters: 
+2018-07-06  14:47:24.874 DEBUG [999-exec-3] [] c.c.t.b.d.A.countByCondition - <==      Total: 1
+2018-07-06  14:47:54.613 DEBUG [999-exec-4] [] c.c.t.b.d.A.selectByCondition - ==>  Preparing: select id, name, real_name, star, sex, country, type1, type2, strong, property, tag_film, tag_character, skill1, skill2, skill3, skill4, skill5, skill6 from actor where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  14:47:54.614 DEBUG [999-exec-4] [] c.c.t.b.d.A.selectByCondition - ==> Parameters: 30(Integer), 30(Integer)
+2018-07-06  14:47:54.635 DEBUG [999-exec-4] [] c.c.t.b.d.A.selectByCondition - <==      Total: 30
+2018-07-06  14:47:54.635 DEBUG [999-exec-4] [] c.c.t.b.d.A.countByCondition - ==>  Preparing: select count(1) from actor where 1=1 
+2018-07-06  14:47:54.635 DEBUG [999-exec-4] [] c.c.t.b.d.A.countByCondition - ==> Parameters: 
+2018-07-06  14:47:54.652 DEBUG [999-exec-4] [] c.c.t.b.d.A.countByCondition - <==      Total: 1
+2018-07-06  14:47:57.136 DEBUG [999-exec-5] [] c.c.t.b.d.A.selectByCondition - ==>  Preparing: select id, name, real_name, star, sex, country, type1, type2, strong, property, tag_film, tag_character, skill1, skill2, skill3, skill4, skill5, skill6 from actor where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  14:47:57.136 DEBUG [999-exec-5] [] c.c.t.b.d.A.selectByCondition - ==> Parameters: 60(Integer), 30(Integer)
+2018-07-06  14:47:57.154 DEBUG [999-exec-5] [] c.c.t.b.d.A.selectByCondition - <==      Total: 7
+2018-07-06  14:47:57.155 DEBUG [999-exec-5] [] c.c.t.b.d.A.countByCondition - ==>  Preparing: select count(1) from actor where 1=1 
+2018-07-06  14:47:57.155 DEBUG [999-exec-5] [] c.c.t.b.d.A.countByCondition - ==> Parameters: 
+2018-07-06  14:47:57.172 DEBUG [999-exec-5] [] c.c.t.b.d.A.countByCondition - <==      Total: 1
+2018-07-06  14:47:57.507 DEBUG [999-exec-6] [] c.c.t.b.d.A.selectByCondition - ==>  Preparing: select id, name, real_name, star, sex, country, type1, type2, strong, property, tag_film, tag_character, skill1, skill2, skill3, skill4, skill5, skill6 from actor where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  14:47:57.507 DEBUG [999-exec-6] [] c.c.t.b.d.A.selectByCondition - ==> Parameters: 90(Integer), 30(Integer)
+2018-07-06  14:47:57.524 DEBUG [999-exec-6] [] c.c.t.b.d.A.selectByCondition - <==      Total: 0
+2018-07-06  14:48:44.932 DEBUG [999-exec-8] [] c.c.t.b.d.A.selectByCondition - ==>  Preparing: select id, name, real_name, star, sex, country, type1, type2, strong, property, tag_film, tag_character, skill1, skill2, skill3, skill4, skill5, skill6 from actor where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  14:48:44.933 DEBUG [999-exec-8] [] c.c.t.b.d.A.selectByCondition - ==> Parameters: 0(Integer), 30(Integer)
+2018-07-06  14:48:44.951 DEBUG [999-exec-8] [] c.c.t.b.d.A.selectByCondition - <==      Total: 30
+2018-07-06  14:48:44.952 DEBUG [999-exec-8] [] c.c.t.b.d.A.countByCondition - ==>  Preparing: select count(1) from actor where 1=1 
+2018-07-06  14:48:44.952 DEBUG [999-exec-8] [] c.c.t.b.d.A.countByCondition - ==> Parameters: 
+2018-07-06  14:48:44.968 DEBUG [999-exec-8] [] c.c.t.b.d.A.countByCondition - <==      Total: 1
+2018-07-06  14:51:09.669 DEBUG [99-exec-10] [] c.c.t.b.d.A.selectByCondition - ==>  Preparing: select id, name, real_name, star, sex, country, type1, type2, strong, property, tag_film, tag_character, skill1, skill2, skill3, skill4, skill5, skill6 from actor where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  14:51:09.669 DEBUG [99-exec-10] [] c.c.t.b.d.A.selectByCondition - ==> Parameters: 0(Integer), 30(Integer)
+2018-07-06  14:51:09.689 DEBUG [99-exec-10] [] c.c.t.b.d.A.selectByCondition - <==      Total: 30
+2018-07-06  14:51:09.689 DEBUG [99-exec-10] [] c.c.t.b.d.A.countByCondition - ==>  Preparing: select count(1) from actor where 1=1 
+2018-07-06  14:51:09.689 DEBUG [99-exec-10] [] c.c.t.b.d.A.countByCondition - ==> Parameters: 
+2018-07-06  14:51:09.705 DEBUG [99-exec-10] [] c.c.t.b.d.A.countByCondition - <==      Total: 1
+2018-07-06  14:51:16.811 DEBUG [999-exec-9] [] c.c.t.b.d.A.selectByCondition - ==>  Preparing: select id, name, real_name, star, sex, country, type1, type2, strong, property, tag_film, tag_character, skill1, skill2, skill3, skill4, skill5, skill6 from actor where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  14:51:16.811 DEBUG [999-exec-9] [] c.c.t.b.d.A.selectByCondition - ==> Parameters: 0(Integer), 30(Integer)
+2018-07-06  14:51:16.831 DEBUG [999-exec-9] [] c.c.t.b.d.A.selectByCondition - <==      Total: 30
+2018-07-06  14:51:16.832 DEBUG [999-exec-9] [] c.c.t.b.d.A.countByCondition - ==>  Preparing: select count(1) from actor where 1=1 
+2018-07-06  14:51:16.832 DEBUG [999-exec-9] [] c.c.t.b.d.A.countByCondition - ==> Parameters: 
+2018-07-06  14:51:16.848 DEBUG [999-exec-9] [] c.c.t.b.d.A.countByCondition - <==      Total: 1
+2018-07-06  14:51:20.537 DEBUG [999-exec-2] [] c.c.t.b.d.A.selectByCondition - ==>  Preparing: select id, name, real_name, star, sex, country, type1, type2, strong, property, tag_film, tag_character, skill1, skill2, skill3, skill4, skill5, skill6 from actor where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  14:51:20.537 DEBUG [999-exec-2] [] c.c.t.b.d.A.selectByCondition - ==> Parameters: 0(Integer), 30(Integer)
+2018-07-06  14:51:20.557 DEBUG [999-exec-2] [] c.c.t.b.d.A.selectByCondition - <==      Total: 30
+2018-07-06  14:51:20.559 DEBUG [999-exec-2] [] c.c.t.b.d.A.countByCondition - ==>  Preparing: select count(1) from actor where 1=1 
+2018-07-06  14:51:20.559 DEBUG [999-exec-2] [] c.c.t.b.d.A.countByCondition - ==> Parameters: 
+2018-07-06  14:51:20.577 DEBUG [999-exec-2] [] c.c.t.b.d.A.countByCondition - <==      Total: 1
+2018-07-06  14:51:28.879 DEBUG [999-exec-1] [] c.c.t.b.d.A.selectByCondition - ==>  Preparing: select id, name, real_name, star, sex, country, type1, type2, strong, property, tag_film, tag_character, skill1, skill2, skill3, skill4, skill5, skill6 from actor where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  14:51:28.879 DEBUG [999-exec-1] [] c.c.t.b.d.A.selectByCondition - ==> Parameters: 0(Integer), 30(Integer)
+2018-07-06  14:51:28.898 DEBUG [999-exec-1] [] c.c.t.b.d.A.selectByCondition - <==      Total: 30
+2018-07-06  14:51:28.899 DEBUG [999-exec-1] [] c.c.t.b.d.A.countByCondition - ==>  Preparing: select count(1) from actor where 1=1 
+2018-07-06  14:51:28.899 DEBUG [999-exec-1] [] c.c.t.b.d.A.countByCondition - ==> Parameters: 
+2018-07-06  14:51:28.915 DEBUG [999-exec-1] [] c.c.t.b.d.A.countByCondition - <==      Total: 1
+2018-07-06  14:52:48.037 DEBUG [999-exec-4] [] c.c.t.b.d.A.selectByCondition - ==>  Preparing: select id, name, real_name, star, sex, country, type1, type2, strong, property, tag_film, tag_character, skill1, skill2, skill3, skill4, skill5, skill6 from actor where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  14:52:48.037 DEBUG [999-exec-4] [] c.c.t.b.d.A.selectByCondition - ==> Parameters: 0(Integer), 30(Integer)
+2018-07-06  14:52:48.056 DEBUG [999-exec-4] [] c.c.t.b.d.A.selectByCondition - <==      Total: 30
+2018-07-06  14:52:48.057 DEBUG [999-exec-4] [] c.c.t.b.d.A.countByCondition - ==>  Preparing: select count(1) from actor where 1=1 
+2018-07-06  14:52:48.057 DEBUG [999-exec-4] [] c.c.t.b.d.A.countByCondition - ==> Parameters: 
+2018-07-06  14:52:48.074 DEBUG [999-exec-4] [] c.c.t.b.d.A.countByCondition - <==      Total: 1
+2018-07-06  14:52:58.687 DEBUG [999-exec-5] [] c.c.t.b.d.A.selectByCondition - ==>  Preparing: select id, name, real_name, star, sex, country, type1, type2, strong, property, tag_film, tag_character, skill1, skill2, skill3, skill4, skill5, skill6 from actor where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  14:52:58.687 DEBUG [999-exec-5] [] c.c.t.b.d.A.selectByCondition - ==> Parameters: 0(Integer), 30(Integer)
+2018-07-06  14:52:58.706 DEBUG [999-exec-5] [] c.c.t.b.d.A.selectByCondition - <==      Total: 30
+2018-07-06  14:52:58.707 DEBUG [999-exec-5] [] c.c.t.b.d.A.countByCondition - ==>  Preparing: select count(1) from actor where 1=1 
+2018-07-06  14:52:58.707 DEBUG [999-exec-5] [] c.c.t.b.d.A.countByCondition - ==> Parameters: 
+2018-07-06  14:52:58.723 DEBUG [999-exec-5] [] c.c.t.b.d.A.countByCondition - <==      Total: 1
+2018-07-06  14:54:12.763 DEBUG [999-exec-8] [] c.c.t.b.d.A.selectByCondition - ==>  Preparing: select id, name, real_name, star, sex, country, type1, type2, strong, property, tag_film, tag_character, skill1, skill2, skill3, skill4, skill5, skill6 from actor where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  14:54:12.763 DEBUG [999-exec-8] [] c.c.t.b.d.A.selectByCondition - ==> Parameters: 0(Integer), 30(Integer)
+2018-07-06  14:54:12.783 DEBUG [999-exec-8] [] c.c.t.b.d.A.selectByCondition - <==      Total: 30
+2018-07-06  14:54:12.783 DEBUG [999-exec-8] [] c.c.t.b.d.A.countByCondition - ==>  Preparing: select count(1) from actor where 1=1 
+2018-07-06  14:54:12.783 DEBUG [999-exec-8] [] c.c.t.b.d.A.countByCondition - ==> Parameters: 
+2018-07-06  14:54:12.799 DEBUG [999-exec-8] [] c.c.t.b.d.A.countByCondition - <==      Total: 1
+2018-07-06  14:55:11.960 DEBUG [999-exec-7] [] c.c.t.b.d.A.selectByCondition - ==>  Preparing: select id, name, real_name, star, sex, country, type1, type2, strong, property, tag_film, tag_character, skill1, skill2, skill3, skill4, skill5, skill6 from actor where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  14:55:11.960 DEBUG [999-exec-7] [] c.c.t.b.d.A.selectByCondition - ==> Parameters: 0(Integer), 30(Integer)
+2018-07-06  14:55:11.980 DEBUG [999-exec-7] [] c.c.t.b.d.A.selectByCondition - <==      Total: 30
+2018-07-06  14:55:11.980 DEBUG [999-exec-7] [] c.c.t.b.d.A.countByCondition - ==>  Preparing: select count(1) from actor where 1=1 
+2018-07-06  14:55:11.981 DEBUG [999-exec-7] [] c.c.t.b.d.A.countByCondition - ==> Parameters: 
+2018-07-06  14:55:11.997 DEBUG [999-exec-7] [] c.c.t.b.d.A.countByCondition - <==      Total: 1
+2018-07-06  14:55:45.629 DEBUG [99-exec-10] [] c.c.t.b.d.A.selectByCondition - ==>  Preparing: select id, name, real_name, star, sex, country, type1, type2, strong, property, tag_film, tag_character, skill1, skill2, skill3, skill4, skill5, skill6 from actor where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  14:55:45.629 DEBUG [99-exec-10] [] c.c.t.b.d.A.selectByCondition - ==> Parameters: 0(Integer), 30(Integer)
+2018-07-06  14:55:45.654 DEBUG [99-exec-10] [] c.c.t.b.d.A.selectByCondition - <==      Total: 30
+2018-07-06  14:55:45.654 DEBUG [99-exec-10] [] c.c.t.b.d.A.countByCondition - ==>  Preparing: select count(1) from actor where 1=1 
+2018-07-06  14:55:45.655 DEBUG [99-exec-10] [] c.c.t.b.d.A.countByCondition - ==> Parameters: 
+2018-07-06  14:55:45.671 DEBUG [99-exec-10] [] c.c.t.b.d.A.countByCondition - <==      Total: 1
+2018-07-06  14:56:18.419 DEBUG [999-exec-9] [] c.c.t.b.d.A.selectByCondition - ==>  Preparing: select id, name, real_name, star, sex, country, type1, type2, strong, property, tag_film, tag_character, skill1, skill2, skill3, skill4, skill5, skill6 from actor where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  14:56:18.419 DEBUG [999-exec-9] [] c.c.t.b.d.A.selectByCondition - ==> Parameters: 0(Integer), 30(Integer)
+2018-07-06  14:56:18.438 DEBUG [999-exec-9] [] c.c.t.b.d.A.selectByCondition - <==      Total: 30
+2018-07-06  14:56:18.439 DEBUG [999-exec-9] [] c.c.t.b.d.A.countByCondition - ==>  Preparing: select count(1) from actor where 1=1 
+2018-07-06  14:56:18.439 DEBUG [999-exec-9] [] c.c.t.b.d.A.countByCondition - ==> Parameters: 
+2018-07-06  14:56:18.456 DEBUG [999-exec-9] [] c.c.t.b.d.A.countByCondition - <==      Total: 1
+2018-07-06  14:56:51.970 DEBUG [999-exec-2] [] c.c.t.b.d.A.selectByCondition - ==>  Preparing: select id, name, real_name, star, sex, country, type1, type2, strong, property, tag_film, tag_character, skill1, skill2, skill3, skill4, skill5, skill6 from actor where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  14:56:51.970 DEBUG [999-exec-2] [] c.c.t.b.d.A.selectByCondition - ==> Parameters: 0(Integer), 30(Integer)
+2018-07-06  14:56:51.990 DEBUG [999-exec-2] [] c.c.t.b.d.A.selectByCondition - <==      Total: 30
+2018-07-06  14:56:51.991 DEBUG [999-exec-2] [] c.c.t.b.d.A.countByCondition - ==>  Preparing: select count(1) from actor where 1=1 
+2018-07-06  14:56:51.991 DEBUG [999-exec-2] [] c.c.t.b.d.A.countByCondition - ==> Parameters: 
+2018-07-06  14:56:52.008 DEBUG [999-exec-2] [] c.c.t.b.d.A.countByCondition - <==      Total: 1
+2018-07-06  14:59:37.411 DEBUG [999-exec-3] [] c.c.t.b.d.A.selectByCondition - ==>  Preparing: select id, name, real_name, star, sex, country, type1, type2, strong, property, tag_film, tag_character, skill1, skill2, skill3, skill4, skill5, skill6 from actor where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  14:59:37.411 DEBUG [999-exec-3] [] c.c.t.b.d.A.selectByCondition - ==> Parameters: 0(Integer), 30(Integer)
+2018-07-06  14:59:37.430 DEBUG [999-exec-3] [] c.c.t.b.d.A.selectByCondition - <==      Total: 30
+2018-07-06  14:59:37.432 DEBUG [999-exec-3] [] c.c.t.b.d.A.countByCondition - ==>  Preparing: select count(1) from actor where 1=1 
+2018-07-06  14:59:37.432 DEBUG [999-exec-3] [] c.c.t.b.d.A.countByCondition - ==> Parameters: 
+2018-07-06  14:59:37.449 DEBUG [999-exec-3] [] c.c.t.b.d.A.countByCondition - <==      Total: 1
+2018-07-06  15:02:16.139 DEBUG [999-exec-5] [] c.c.t.b.d.A.selectByCondition - ==>  Preparing: select id, name, real_name, star, sex, country, type1, type2, strong, property, tag_film, tag_character, skill1, skill2, skill3, skill4, skill5, skill6 from actor where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  15:02:16.139 DEBUG [999-exec-5] [] c.c.t.b.d.A.selectByCondition - ==> Parameters: 0(Integer), 30(Integer)
+2018-07-06  15:02:16.158 DEBUG [999-exec-5] [] c.c.t.b.d.A.selectByCondition - <==      Total: 30
+2018-07-06  15:02:16.160 DEBUG [999-exec-5] [] c.c.t.b.d.A.countByCondition - ==>  Preparing: select count(1) from actor where 1=1 
+2018-07-06  15:02:16.160 DEBUG [999-exec-5] [] c.c.t.b.d.A.countByCondition - ==> Parameters: 
+2018-07-06  15:02:16.176 DEBUG [999-exec-5] [] c.c.t.b.d.A.countByCondition - <==      Total: 1
+2018-07-06  15:12:15.973 INFO  [tartedMain] [] o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@188270c9: startup date [Fri Jul 06 15:12:15 CST 2018]; root of context hierarchy
+2018-07-06  15:12:16.435 INFO  [nd-preinit] [] o.h.v.i.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2018-07-06  15:12:16.597 INFO  [tartedMain] [] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-07-06  15:12:16.715 INFO  [tartedMain] [] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$85df31d8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-06  15:12:18.515 INFO  [tartedMain] [] c.c.t.b.TaurusBaseApplication - No active profile set, falling back to default profiles: default
+2018-07-06  15:12:18.535 INFO  [tartedMain] [] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1c48c7f6: startup date [Fri Jul 06 15:12:18 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@188270c9
+2018-07-06  15:12:20.790 INFO  [tartedMain] [] o.s.c.c.s.GenericScope - BeanFactory id=37cd122b-8e0d-3333-bab3-e86f4c2b1934
+2018-07-06  15:12:20.823 INFO  [tartedMain] [] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-07-06  15:12:20.962 INFO  [tartedMain] [] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$69c52edb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-06  15:12:21.181 INFO  [tartedMain] [] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.netflix.metrics.MetricsInterceptorConfiguration$MetricsRestTemplateConfiguration' of type [org.springframework.cloud.netflix.metrics.MetricsInterceptorConfiguration$MetricsRestTemplateConfiguration$$EnhancerBySpringCGLIB$$9bf1d51c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-06  15:12:21.200 INFO  [tartedMain] [] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$85df31d8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-06  15:12:22.193 INFO  [tartedMain] [] o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 9999 (http)
+2018-07-06  15:12:22.202 INFO  [tartedMain] [] o.a.c.c.StandardService - Starting service [Tomcat]
+2018-07-06  15:12:22.202 INFO  [tartedMain] [] o.a.c.c.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.15
+2018-07-06  15:12:22.420 INFO  [tartStop-1] [] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+2018-07-06  15:12:22.422 INFO  [tartStop-1] [] o.s.w.c.ContextLoader - Root WebApplicationContext: initialization completed in 3887 ms
+2018-07-06  15:12:23.017 INFO  [tartStop-1] [] o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/taurus-base/*]
+2018-07-06  15:12:23.018 INFO  [tartStop-1] [] o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'com.cf.taurus.base.dbrouter.monitor.DruidStatViewServlet' to [/druid/*]
+2018-07-06  15:12:23.021 INFO  [tartStop-1] [] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'metricsFilter' to: [/*]
+2018-07-06  15:12:23.021 INFO  [tartStop-1] [] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-06  15:12:23.021 INFO  [tartStop-1] [] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-07-06  15:12:23.021 INFO  [tartStop-1] [] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-07-06  15:12:23.021 INFO  [tartStop-1] [] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-06  15:12:23.021 INFO  [tartStop-1] [] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2018-07-06  15:12:23.021 INFO  [tartStop-1] [] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'druidWebStatFilter' to urls: [/*]
+2018-07-06  15:12:23.022 INFO  [tartStop-1] [] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'applicationContextIdFilter' to: [/*]
+2018-07-06  15:12:23.180 DEBUG [tartedMain] [] c.c.t.b.d.c.DruidAutoConfiguration - DATASOURCE CONFIG: DruidProperties.DataSourceConfig(alias=main, driverClassName=com.mysql.jdbc.Driver, url=jdbc:mysql://47.97.163.100:3306/taurus?useUnicode=true&characterEncoding=utf8&useSSL=true, username=root, password=password, type=com.alibaba.druid.pool.DruidDataSource, testWhileIdle=true, testOnReturn=false, testOnBorrow=false, validationQuery=select 'x', filters=stat, minEvictableIdleTimeMillis=300000, initialSize=1, minIdle=1, maxActive=20, maxWait=60000, timeBetweenEvictionRunsMillis=60000, poolPreparedStatements=true, maxOpenPreparedStatements=20)
+2018-07-06  15:12:23.342 INFO  [tartedMain] [] c.c.t.b.d.c.DruidAutoConfiguration - DataBase route config success
+2018-07-06  15:12:26.272 INFO  [tartedMain] [] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1c48c7f6: startup date [Fri Jul 06 15:12:18 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@188270c9
+2018-07-06  15:12:26.613 INFO  [tartedMain] [] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/actor/getActors],methods=[POST]}" onto public com.cf.taurus.common.util.Response com.cf.taurus.base.provider.ActorProvider.getActors(com.cf.taurus.common.po.Actor)
+2018-07-06  15:12:26.614 INFO  [tartedMain] [] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/actor/getAllSkill],methods=[GET]}" onto public com.cf.taurus.common.util.Response com.cf.taurus.base.provider.ActorProvider.getAllSkill()
+2018-07-06  15:12:26.614 INFO  [tartedMain] [] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/actor/getActorById],methods=[GET]}" onto public com.cf.taurus.common.util.Response com.cf.taurus.base.provider.ActorProvider.getActorById(java.lang.Integer)
+2018-07-06  15:12:26.615 INFO  [tartedMain] [] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/actor/getSkillDetailByName],methods=[GET]}" onto public com.cf.taurus.common.util.Response com.cf.taurus.base.provider.ActorProvider.getSkillDetailByName(java.lang.String)
+2018-07-06  15:12:26.615 INFO  [tartedMain] [] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/film/getFilmById],methods=[GET]}" onto public com.cf.taurus.common.util.Response com.cf.taurus.base.provider.FilmProvider.getFilmById(java.lang.Integer)
+2018-07-06  15:12:26.615 INFO  [tartedMain] [] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/film/getFilms],methods=[POST]}" onto public com.cf.taurus.common.util.Response com.cf.taurus.base.provider.FilmProvider.getFilms(com.cf.taurus.common.po.Film)
+2018-07-06  15:12:26.616 INFO  [tartedMain] [] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hint/saveHint],methods=[POST]}" onto public com.cf.taurus.common.util.Response com.cf.taurus.base.provider.HintProvider.saveHint(com.cf.taurus.common.po.Hint)
+2018-07-06  15:12:26.617 INFO  [tartedMain] [] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hint/getHints],methods=[POST]}" onto public com.cf.taurus.common.util.Response com.cf.taurus.base.provider.HintProvider.getHints(com.cf.taurus.common.po.Hint)
+2018-07-06  15:12:26.617 INFO  [tartedMain] [] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hint/getHintById],methods=[GET]}" onto public com.cf.taurus.common.util.Response com.cf.taurus.base.provider.HintProvider.getHintById(java.lang.Integer)
+2018-07-06  15:12:26.617 INFO  [tartedMain] [] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/sell/getAllSell],methods=[GET]}" onto public com.cf.taurus.common.util.Response com.cf.taurus.base.provider.SellProvider.getAllSell()
+2018-07-06  15:12:26.618 INFO  [tartedMain] [] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/saveUserInfo],methods=[POST]}" onto public com.cf.taurus.common.util.Response com.cf.taurus.base.provider.UserProvider.saveUserInfo(com.cf.taurus.common.po.UserInfo)
+2018-07-06  15:12:26.618 INFO  [tartedMain] [] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/getUserInfoById],methods=[GET]}" onto public com.cf.taurus.common.util.Response com.cf.taurus.base.provider.UserProvider.getUserInfoById(java.lang.Long)
+2018-07-06  15:12:26.619 INFO  [tartedMain] [] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/checkPassword],methods=[GET]}" onto public com.cf.taurus.common.util.Response com.cf.taurus.base.provider.UserProvider.checkPassword(java.lang.Long,java.lang.String)
+2018-07-06  15:12:26.619 INFO  [tartedMain] [] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/getSummary],methods=[GET]}" onto public com.cf.taurus.common.util.Response com.cf.taurus.base.provider.UserProvider.getSummary()
+2018-07-06  15:12:26.620 INFO  [tartedMain] [] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-06  15:12:26.621 INFO  [tartedMain] [] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-06  15:12:26.771 INFO  [tartedMain] [] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-06  15:12:26.771 INFO  [tartedMain] [] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-06  15:12:26.889 INFO  [tartedMain] [] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-06  15:12:28.317 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/shutdown || /shutdown.json],methods=[POST],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.ShutdownMvcEndpoint.invoke()
+2018-07-06  15:12:28.318 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/pause || /pause.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2018-07-06  15:12:28.318 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-07-06  15:12:28.319 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2018-07-06  15:12:28.319 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-07-06  15:12:28.319 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+2018-07-06  15:12:28.320 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-07-06  15:12:28.320 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/archaius || /archaius.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-07-06  15:12:28.321 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2018-07-06  15:12:28.321 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-07-06  15:12:28.321 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/refresh || /refresh.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2018-07-06  15:12:28.321 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/features || /features.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-07-06  15:12:28.321 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/resume || /resume.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2018-07-06  15:12:28.322 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2018-07-06  15:12:28.323 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-07-06  15:12:28.324 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/env],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.value(java.util.Map<java.lang.String, java.lang.String>)
+2018-07-06  15:12:28.324 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/env/reset],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.reset()
+2018-07-06  15:12:28.324 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-07-06  15:12:28.326 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+2018-07-06  15:12:28.326 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+2018-07-06  15:12:28.326 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-07-06  15:12:28.331 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/restart || /restart.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.restart.RestartMvcEndpoint.invoke()
+2018-07-06  15:12:28.331 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-07-06  15:12:28.332 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+2018-07-06  15:12:28.332 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-07-06  15:12:28.332 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-07-06  15:12:29.073 INFO  [tartedMain] [] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2018-07-06  15:12:30.239 INFO  [tartedMain] [] o.s.c.c.u.InetUtils - Cannot determine local hostname
+2018-07-06  15:12:30.551 WARN  [tartedMain] [] c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2018-07-06  15:12:30.551 INFO  [tartedMain] [] c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-07-06  15:12:30.577 WARN  [tartedMain] [] c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2018-07-06  15:12:30.577 INFO  [tartedMain] [] c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-07-06  15:12:30.901 INFO  [tartedMain] [] o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-07-06  15:12:30.916 INFO  [tartedMain] [] o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'environmentManager' has been autodetected for JMX exposure
+2018-07-06  15:12:30.919 INFO  [tartedMain] [] o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2018-07-06  15:12:30.919 INFO  [tartedMain] [] o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'refreshEndpoint' has been autodetected for JMX exposure
+2018-07-06  15:12:30.919 INFO  [tartedMain] [] o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'restartEndpoint' has been autodetected for JMX exposure
+2018-07-06  15:12:30.920 INFO  [tartedMain] [] o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'refreshScope' has been autodetected for JMX exposure
+2018-07-06  15:12:30.925 INFO  [tartedMain] [] o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2018-07-06  15:12:30.964 INFO  [tartedMain] [] o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'restartEndpoint': registering with JMX server as MBean [org.springframework.cloud.context.restart:name=restartEndpoint,type=RestartEndpoint]
+2018-07-06  15:12:30.979 INFO  [tartedMain] [] o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2018-07-06  15:12:30.990 INFO  [tartedMain] [] o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=1c48c7f6,type=ConfigurationPropertiesRebinder]
+2018-07-06  15:12:31.003 INFO  [tartedMain] [] o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'refreshEndpoint': registering with JMX server as MBean [org.springframework.cloud.endpoint:name=refreshEndpoint,type=RefreshEndpoint]
+2018-07-06  15:12:31.003 INFO  [tartedMain] [] o.s.b.a.e.j.EndpointMBeanExporter - Registering beans for JMX exposure on startup
+2018-07-06  15:12:31.235 INFO  [tartedMain] [] o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 0
+2018-07-06  15:12:31.237 INFO  [tartedMain] [] o.s.b.a.e.j.EndpointMBeanExporter - Located managed bean 'auditEventsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=auditEventsEndpoint]
+2018-07-06  15:12:31.244 INFO  [tartedMain] [] o.s.b.a.e.j.EndpointMBeanExporter - Located managed bean 'featuresEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=featuresEndpoint]
+2018-07-06  15:12:31.255 INFO  [tartedMain] [] o.s.b.a.e.j.EndpointMBeanExporter - Located managed bean 'requestMappingEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=requestMappingEndpoint]
+2018-07-06  15:12:31.256 INFO  [tartedMain] [] o.s.b.a.e.j.EndpointMBeanExporter - Located managed bean 'environmentEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=environmentEndpoint]
+2018-07-06  15:12:31.259 INFO  [tartedMain] [] o.s.b.a.e.j.EndpointMBeanExporter - Located managed bean 'healthEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=healthEndpoint]
+2018-07-06  15:12:31.261 INFO  [tartedMain] [] o.s.b.a.e.j.EndpointMBeanExporter - Located managed bean 'beansEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=beansEndpoint]
+2018-07-06  15:12:31.262 INFO  [tartedMain] [] o.s.b.a.e.j.EndpointMBeanExporter - Located managed bean 'infoEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=infoEndpoint]
+2018-07-06  15:12:31.265 INFO  [tartedMain] [] o.s.b.a.e.j.EndpointMBeanExporter - Located managed bean 'loggersEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=loggersEndpoint]
+2018-07-06  15:12:31.270 INFO  [tartedMain] [] o.s.b.a.e.j.EndpointMBeanExporter - Located managed bean 'metricsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=metricsEndpoint]
+2018-07-06  15:12:31.272 INFO  [tartedMain] [] o.s.b.a.e.j.EndpointMBeanExporter - Located managed bean 'traceEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=traceEndpoint]
+2018-07-06  15:12:31.275 INFO  [tartedMain] [] o.s.b.a.e.j.EndpointMBeanExporter - Located managed bean 'dumpEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=dumpEndpoint]
+2018-07-06  15:12:31.277 INFO  [tartedMain] [] o.s.b.a.e.j.EndpointMBeanExporter - Located managed bean 'autoConfigurationReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=autoConfigurationReportEndpoint]
+2018-07-06  15:12:31.279 INFO  [tartedMain] [] o.s.b.a.e.j.EndpointMBeanExporter - Located managed bean 'shutdownEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=shutdownEndpoint]
+2018-07-06  15:12:31.284 INFO  [tartedMain] [] o.s.b.a.e.j.EndpointMBeanExporter - Located managed bean 'configurationPropertiesReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=configurationPropertiesReportEndpoint]
+2018-07-06  15:12:31.286 INFO  [tartedMain] [] o.s.b.a.e.j.EndpointMBeanExporter - Located managed bean 'archaiusEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=archaiusEndpoint]
+2018-07-06  15:12:31.301 INFO  [tartedMain] [] o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2018-07-06  15:12:31.322 INFO  [tartedMain] [] o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9999"]
+2018-07-06  15:12:31.352 INFO  [tartedMain] [] o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9999"]
+2018-07-06  15:12:31.388 INFO  [tartedMain] [] o.a.t.u.n.NioSelectorPool - Using a shared selector for servlet write/read
+2018-07-06  15:12:31.409 INFO  [tartedMain] [] o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 9999 (http)
+2018-07-06  15:12:31.416 INFO  [tartedMain] [] c.c.t.b.TaurusBaseApplication - Started TaurusBaseApplication in 18.273 seconds (JVM running for 22.166)
+2018-07-06  15:12:31.416 INFO  [tartedMain] [] c.c.t.b.TaurusBaseApplication - Server start success
+2018-07-06  15:14:57.619 INFO  [999-exec-3] [] o.a.c.c.C.[.[.[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-07-06  15:14:57.619 INFO  [999-exec-3] [] o.s.w.s.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-07-06  15:14:57.659 INFO  [999-exec-3] [] o.s.w.s.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 40 ms
+2018-07-06  15:15:00.250 INFO  [999-exec-3] [] c.a.d.p.DruidDataSource - {dataSource-1} inited
+2018-07-06  15:15:00.278 DEBUG [999-exec-3] [] c.c.t.b.d.A.selectByCondition - ==>  Preparing: select id, name, real_name, star, sex, country, type1, type2, strong, property, tag_film, tag_character, skill1, skill2, skill3, skill4, skill5, skill6 from actor where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  15:15:00.351 DEBUG [999-exec-3] [] c.c.t.b.d.A.selectByCondition - ==> Parameters: 0(Integer), 30(Integer)
+2018-07-06  15:15:00.451 DEBUG [999-exec-3] [] c.c.t.b.d.A.selectByCondition - <==      Total: 30
+2018-07-06  15:15:00.453 DEBUG [999-exec-3] [] c.c.t.b.d.A.countByCondition - ==>  Preparing: select count(1) from actor where 1=1 
+2018-07-06  15:15:00.453 DEBUG [999-exec-3] [] c.c.t.b.d.A.countByCondition - ==> Parameters: 
+2018-07-06  15:15:00.473 DEBUG [999-exec-3] [] c.c.t.b.d.A.countByCondition - <==      Total: 1
+2018-07-06  15:15:04.690 DEBUG [999-exec-1] [] c.c.t.b.d.S.selectAll - ==>  Preparing: select * from skill 
+2018-07-06  15:15:04.690 DEBUG [999-exec-1] [] c.c.t.b.d.S.selectAll - ==> Parameters: 
+2018-07-06  15:15:04.720 DEBUG [999-exec-1] [] c.c.t.b.d.S.selectAll - <==      Total: 71
+2018-07-06  15:15:13.575 DEBUG [999-exec-2] [] c.c.t.b.d.S.selectAll - ==>  Preparing: select * from skill 
+2018-07-06  15:15:13.575 DEBUG [999-exec-2] [] c.c.t.b.d.S.selectAll - ==> Parameters: 
+2018-07-06  15:15:13.599 DEBUG [999-exec-2] [] c.c.t.b.d.S.selectAll - <==      Total: 71
+2018-07-06  15:15:13.818 DEBUG [999-exec-5] [] c.c.t.b.d.S.selectAll - ==>  Preparing: select * from skill 
+2018-07-06  15:15:13.818 DEBUG [999-exec-5] [] c.c.t.b.d.S.selectAll - ==> Parameters: 
+2018-07-06  15:15:13.840 DEBUG [999-exec-5] [] c.c.t.b.d.S.selectAll - <==      Total: 71
+2018-07-06  15:15:41.629 DEBUG [999-exec-4] [] c.c.t.b.d.S.selectAll - ==>  Preparing: select * from skill 
+2018-07-06  15:15:41.629 DEBUG [999-exec-4] [] c.c.t.b.d.S.selectAll - ==> Parameters: 
+2018-07-06  15:15:41.651 DEBUG [999-exec-4] [] c.c.t.b.d.S.selectAll - <==      Total: 71
+2018-07-06  15:16:26.058 DEBUG [999-exec-6] [] c.c.t.b.d.A.selectByCondition - ==>  Preparing: select id, name, real_name, star, sex, country, type1, type2, strong, property, tag_film, tag_character, skill1, skill2, skill3, skill4, skill5, skill6 from actor where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  15:16:26.058 DEBUG [999-exec-6] [] c.c.t.b.d.A.selectByCondition - ==> Parameters: 0(Integer), 30(Integer)
+2018-07-06  15:16:26.083 DEBUG [999-exec-6] [] c.c.t.b.d.A.selectByCondition - <==      Total: 30
+2018-07-06  15:16:26.083 DEBUG [999-exec-6] [] c.c.t.b.d.A.countByCondition - ==>  Preparing: select count(1) from actor where 1=1 
+2018-07-06  15:16:26.084 DEBUG [999-exec-6] [] c.c.t.b.d.A.countByCondition - ==> Parameters: 
+2018-07-06  15:16:26.102 DEBUG [999-exec-6] [] c.c.t.b.d.A.countByCondition - <==      Total: 1
+2018-07-06  15:16:28.520 DEBUG [999-exec-8] [] c.c.t.b.d.S.selectAll - ==>  Preparing: select * from skill 
+2018-07-06  15:16:28.520 DEBUG [999-exec-8] [] c.c.t.b.d.S.selectAll - ==> Parameters: 
+2018-07-06  15:16:28.541 DEBUG [999-exec-8] [] c.c.t.b.d.S.selectAll - <==      Total: 71
+2018-07-06  15:17:09.903 DEBUG [999-exec-7] [] c.c.t.b.d.A.selectByCondition - ==>  Preparing: select id, name, real_name, star, sex, country, type1, type2, strong, property, tag_film, tag_character, skill1, skill2, skill3, skill4, skill5, skill6 from actor where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  15:17:09.904 DEBUG [999-exec-7] [] c.c.t.b.d.A.selectByCondition - ==> Parameters: 0(Integer), 30(Integer)
+2018-07-06  15:17:09.927 DEBUG [999-exec-7] [] c.c.t.b.d.A.selectByCondition - <==      Total: 30
+2018-07-06  15:17:09.928 DEBUG [999-exec-7] [] c.c.t.b.d.A.countByCondition - ==>  Preparing: select count(1) from actor where 1=1 
+2018-07-06  15:17:09.928 DEBUG [999-exec-7] [] c.c.t.b.d.A.countByCondition - ==> Parameters: 
+2018-07-06  15:17:09.948 DEBUG [999-exec-7] [] c.c.t.b.d.A.countByCondition - <==      Total: 1
+2018-07-06  15:17:14.308 DEBUG [999-exec-9] [] c.c.t.b.d.S.selectAll - ==>  Preparing: select * from skill 
+2018-07-06  15:17:14.308 DEBUG [999-exec-9] [] c.c.t.b.d.S.selectAll - ==> Parameters: 
+2018-07-06  15:17:14.330 DEBUG [999-exec-9] [] c.c.t.b.d.S.selectAll - <==      Total: 71
+2018-07-06  15:19:03.257 DEBUG [999-exec-3] [] c.c.t.b.d.A.selectByCondition - ==>  Preparing: select id, name, real_name, star, sex, country, type1, type2, strong, property, tag_film, tag_character, skill1, skill2, skill3, skill4, skill5, skill6 from actor where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  15:19:03.258 DEBUG [999-exec-3] [] c.c.t.b.d.A.selectByCondition - ==> Parameters: 0(Integer), 30(Integer)
+2018-07-06  15:19:03.280 DEBUG [999-exec-3] [] c.c.t.b.d.A.selectByCondition - <==      Total: 30
+2018-07-06  15:19:03.280 DEBUG [999-exec-3] [] c.c.t.b.d.A.countByCondition - ==>  Preparing: select count(1) from actor where 1=1 
+2018-07-06  15:19:03.280 DEBUG [999-exec-3] [] c.c.t.b.d.A.countByCondition - ==> Parameters: 
+2018-07-06  15:19:03.299 DEBUG [999-exec-3] [] c.c.t.b.d.A.countByCondition - <==      Total: 1
+2018-07-06  15:20:31.116 DEBUG [999-exec-2] [] c.c.t.b.d.A.selectByCondition - ==>  Preparing: select id, name, real_name, star, sex, country, type1, type2, strong, property, tag_film, tag_character, skill1, skill2, skill3, skill4, skill5, skill6 from actor where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  15:20:31.116 DEBUG [999-exec-2] [] c.c.t.b.d.A.selectByCondition - ==> Parameters: 0(Integer), 30(Integer)
+2018-07-06  15:20:31.140 DEBUG [999-exec-2] [] c.c.t.b.d.A.selectByCondition - <==      Total: 30
+2018-07-06  15:20:31.142 DEBUG [999-exec-2] [] c.c.t.b.d.A.countByCondition - ==>  Preparing: select count(1) from actor where 1=1 
+2018-07-06  15:20:31.144 DEBUG [999-exec-2] [] c.c.t.b.d.A.countByCondition - ==> Parameters: 
+2018-07-06  15:20:31.168 DEBUG [999-exec-2] [] c.c.t.b.d.A.countByCondition - <==      Total: 1
+2018-07-06  15:21:04.371 DEBUG [999-exec-5] [] c.c.t.b.d.A.selectByCondition - ==>  Preparing: select id, name, real_name, star, sex, country, type1, type2, strong, property, tag_film, tag_character, skill1, skill2, skill3, skill4, skill5, skill6 from actor where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  15:21:04.371 DEBUG [999-exec-5] [] c.c.t.b.d.A.selectByCondition - ==> Parameters: 0(Integer), 30(Integer)
+2018-07-06  15:21:04.394 DEBUG [999-exec-5] [] c.c.t.b.d.A.selectByCondition - <==      Total: 30
+2018-07-06  15:21:04.394 DEBUG [999-exec-5] [] c.c.t.b.d.A.countByCondition - ==>  Preparing: select count(1) from actor where 1=1 
+2018-07-06  15:21:04.395 DEBUG [999-exec-5] [] c.c.t.b.d.A.countByCondition - ==> Parameters: 
+2018-07-06  15:21:04.413 DEBUG [999-exec-5] [] c.c.t.b.d.A.countByCondition - <==      Total: 1
+2018-07-06  15:21:07.758 DEBUG [999-exec-4] [] c.c.t.b.d.S.selectAll - ==>  Preparing: select * from skill 
+2018-07-06  15:21:07.758 DEBUG [999-exec-4] [] c.c.t.b.d.S.selectAll - ==> Parameters: 
+2018-07-06  15:21:07.779 DEBUG [999-exec-4] [] c.c.t.b.d.S.selectAll - <==      Total: 71
+2018-07-06  15:32:11.398 DEBUG [999-exec-8] [] c.c.t.b.d.A.selectByCondition - ==>  Preparing: select id, name, real_name, star, sex, country, type1, type2, strong, property, tag_film, tag_character, skill1, skill2, skill3, skill4, skill5, skill6 from actor where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  15:32:11.398 DEBUG [999-exec-8] [] c.c.t.b.d.A.selectByCondition - ==> Parameters: 0(Integer), 30(Integer)
+2018-07-06  15:32:11.420 DEBUG [999-exec-8] [] c.c.t.b.d.A.selectByCondition - <==      Total: 30
+2018-07-06  15:32:11.420 DEBUG [999-exec-8] [] c.c.t.b.d.A.countByCondition - ==>  Preparing: select count(1) from actor where 1=1 
+2018-07-06  15:32:11.420 DEBUG [999-exec-8] [] c.c.t.b.d.A.countByCondition - ==> Parameters: 
+2018-07-06  15:32:11.440 DEBUG [999-exec-8] [] c.c.t.b.d.A.countByCondition - <==      Total: 1
+2018-07-06  15:32:17.179 DEBUG [999-exec-7] [] c.c.t.b.d.A.selectByCondition - ==>  Preparing: select id, name, real_name, star, sex, country, type1, type2, strong, property, tag_film, tag_character, skill1, skill2, skill3, skill4, skill5, skill6 from actor where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  15:32:17.182 DEBUG [999-exec-7] [] c.c.t.b.d.A.selectByCondition - ==> Parameters: 0(Integer), 30(Integer)
+2018-07-06  15:32:17.204 DEBUG [999-exec-7] [] c.c.t.b.d.A.selectByCondition - <==      Total: 30
+2018-07-06  15:32:17.204 DEBUG [999-exec-7] [] c.c.t.b.d.A.countByCondition - ==>  Preparing: select count(1) from actor where 1=1 
+2018-07-06  15:32:17.204 DEBUG [999-exec-7] [] c.c.t.b.d.A.countByCondition - ==> Parameters: 
+2018-07-06  15:32:17.223 DEBUG [999-exec-7] [] c.c.t.b.d.A.countByCondition - <==      Total: 1
+2018-07-06  15:32:20.953 DEBUG [999-exec-9] [] c.c.t.b.d.S.selectAll - ==>  Preparing: select * from skill 
+2018-07-06  15:32:20.953 DEBUG [999-exec-9] [] c.c.t.b.d.S.selectAll - ==> Parameters: 
+2018-07-06  15:32:20.974 DEBUG [999-exec-9] [] c.c.t.b.d.S.selectAll - <==      Total: 71
+2018-07-06  15:33:00.169 DEBUG [99-exec-10] [] c.c.t.b.d.A.selectByCondition - ==>  Preparing: select id, name, real_name, star, sex, country, type1, type2, strong, property, tag_film, tag_character, skill1, skill2, skill3, skill4, skill5, skill6 from actor where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  15:33:00.170 DEBUG [99-exec-10] [] c.c.t.b.d.A.selectByCondition - ==> Parameters: 0(Integer), 30(Integer)
+2018-07-06  15:33:00.192 DEBUG [99-exec-10] [] c.c.t.b.d.A.selectByCondition - <==      Total: 30
+2018-07-06  15:33:00.193 DEBUG [99-exec-10] [] c.c.t.b.d.A.countByCondition - ==>  Preparing: select count(1) from actor where 1=1 
+2018-07-06  15:33:00.193 DEBUG [99-exec-10] [] c.c.t.b.d.A.countByCondition - ==> Parameters: 
+2018-07-06  15:33:00.212 DEBUG [99-exec-10] [] c.c.t.b.d.A.countByCondition - <==      Total: 1
+2018-07-06  15:33:02.611 DEBUG [999-exec-3] [] c.c.t.b.d.S.selectAll - ==>  Preparing: select * from skill 
+2018-07-06  15:33:02.612 DEBUG [999-exec-3] [] c.c.t.b.d.S.selectAll - ==> Parameters: 
+2018-07-06  15:33:02.632 DEBUG [999-exec-3] [] c.c.t.b.d.S.selectAll - <==      Total: 71
+2018-07-06  15:33:24.258 DEBUG [999-exec-1] [] c.c.t.b.d.A.selectByCondition - ==>  Preparing: select id, name, real_name, star, sex, country, type1, type2, strong, property, tag_film, tag_character, skill1, skill2, skill3, skill4, skill5, skill6 from actor where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  15:33:24.259 DEBUG [999-exec-1] [] c.c.t.b.d.A.selectByCondition - ==> Parameters: 0(Integer), 30(Integer)
+2018-07-06  15:33:24.280 DEBUG [999-exec-1] [] c.c.t.b.d.A.selectByCondition - <==      Total: 30
+2018-07-06  15:33:24.281 DEBUG [999-exec-1] [] c.c.t.b.d.A.countByCondition - ==>  Preparing: select count(1) from actor where 1=1 
+2018-07-06  15:33:24.281 DEBUG [999-exec-1] [] c.c.t.b.d.A.countByCondition - ==> Parameters: 
+2018-07-06  15:33:24.300 DEBUG [999-exec-1] [] c.c.t.b.d.A.countByCondition - <==      Total: 1
+2018-07-06  15:33:30.775 DEBUG [999-exec-2] [] c.c.t.b.d.S.selectAll - ==>  Preparing: select * from skill 
+2018-07-06  15:33:30.775 DEBUG [999-exec-2] [] c.c.t.b.d.S.selectAll - ==> Parameters: 
+2018-07-06  15:33:30.797 DEBUG [999-exec-2] [] c.c.t.b.d.S.selectAll - <==      Total: 71
+2018-07-06  15:33:42.534 DEBUG [999-exec-5] [] c.c.t.b.d.A.selectByCondition - ==>  Preparing: select id, name, real_name, star, sex, country, type1, type2, strong, property, tag_film, tag_character, skill1, skill2, skill3, skill4, skill5, skill6 from actor where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  15:33:42.534 DEBUG [999-exec-5] [] c.c.t.b.d.A.selectByCondition - ==> Parameters: 0(Integer), 30(Integer)
+2018-07-06  15:33:42.556 DEBUG [999-exec-5] [] c.c.t.b.d.A.selectByCondition - <==      Total: 30
+2018-07-06  15:33:42.556 DEBUG [999-exec-5] [] c.c.t.b.d.A.countByCondition - ==>  Preparing: select count(1) from actor where 1=1 
+2018-07-06  15:33:42.557 DEBUG [999-exec-5] [] c.c.t.b.d.A.countByCondition - ==> Parameters: 
+2018-07-06  15:33:42.576 DEBUG [999-exec-5] [] c.c.t.b.d.A.countByCondition - <==      Total: 1
+2018-07-06  15:33:44.996 DEBUG [999-exec-4] [] c.c.t.b.d.S.selectAll - ==>  Preparing: select * from skill 
+2018-07-06  15:33:44.996 DEBUG [999-exec-4] [] c.c.t.b.d.S.selectAll - ==> Parameters: 
+2018-07-06  15:33:45.017 DEBUG [999-exec-4] [] c.c.t.b.d.S.selectAll - <==      Total: 71
+2018-07-06  15:37:32.060 DEBUG [999-exec-8] [] c.c.t.b.d.A.selectByCondition - ==>  Preparing: select id, name, real_name, star, sex, country, type1, type2, strong, property, tag_film, tag_character, skill1, skill2, skill3, skill4, skill5, skill6 from actor where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  15:37:32.060 DEBUG [999-exec-8] [] c.c.t.b.d.A.selectByCondition - ==> Parameters: 0(Integer), 30(Integer)
+2018-07-06  15:37:32.082 DEBUG [999-exec-8] [] c.c.t.b.d.A.selectByCondition - <==      Total: 30
+2018-07-06  15:37:32.083 DEBUG [999-exec-8] [] c.c.t.b.d.A.countByCondition - ==>  Preparing: select count(1) from actor where 1=1 
+2018-07-06  15:37:32.083 DEBUG [999-exec-8] [] c.c.t.b.d.A.countByCondition - ==> Parameters: 
+2018-07-06  15:37:32.102 DEBUG [999-exec-8] [] c.c.t.b.d.A.countByCondition - <==      Total: 1
+2018-07-06  15:37:43.075 DEBUG [999-exec-7] [] c.c.t.b.d.A.selectByCondition - ==>  Preparing: select id, name, real_name, star, sex, country, type1, type2, strong, property, tag_film, tag_character, skill1, skill2, skill3, skill4, skill5, skill6 from actor where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  15:37:43.075 DEBUG [999-exec-7] [] c.c.t.b.d.A.selectByCondition - ==> Parameters: 0(Integer), 30(Integer)
+2018-07-06  15:37:43.097 DEBUG [999-exec-7] [] c.c.t.b.d.A.selectByCondition - <==      Total: 30
+2018-07-06  15:37:43.097 DEBUG [999-exec-7] [] c.c.t.b.d.A.countByCondition - ==>  Preparing: select count(1) from actor where 1=1 
+2018-07-06  15:37:43.097 DEBUG [999-exec-7] [] c.c.t.b.d.A.countByCondition - ==> Parameters: 
+2018-07-06  15:37:43.116 DEBUG [999-exec-7] [] c.c.t.b.d.A.countByCondition - <==      Total: 1
+2018-07-06  15:38:21.655 DEBUG [999-exec-9] [] c.c.t.b.d.A.selectByCondition - ==>  Preparing: select id, name, real_name, star, sex, country, type1, type2, strong, property, tag_film, tag_character, skill1, skill2, skill3, skill4, skill5, skill6 from actor where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  15:38:21.656 DEBUG [999-exec-9] [] c.c.t.b.d.A.selectByCondition - ==> Parameters: 0(Integer), 30(Integer)
+2018-07-06  15:38:21.678 DEBUG [999-exec-9] [] c.c.t.b.d.A.selectByCondition - <==      Total: 30
+2018-07-06  15:38:21.679 DEBUG [999-exec-9] [] c.c.t.b.d.A.countByCondition - ==>  Preparing: select count(1) from actor where 1=1 
+2018-07-06  15:38:21.679 DEBUG [999-exec-9] [] c.c.t.b.d.A.countByCondition - ==> Parameters: 
+2018-07-06  15:38:21.698 DEBUG [999-exec-9] [] c.c.t.b.d.A.countByCondition - <==      Total: 1
+2018-07-06  15:38:45.214 DEBUG [99-exec-10] [] c.c.t.b.d.A.selectByCondition - ==>  Preparing: select id, name, real_name, star, sex, country, type1, type2, strong, property, tag_film, tag_character, skill1, skill2, skill3, skill4, skill5, skill6 from actor where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  15:38:45.214 DEBUG [99-exec-10] [] c.c.t.b.d.A.selectByCondition - ==> Parameters: 0(Integer), 30(Integer)
+2018-07-06  15:38:45.235 DEBUG [99-exec-10] [] c.c.t.b.d.A.selectByCondition - <==      Total: 30
+2018-07-06  15:38:45.236 DEBUG [99-exec-10] [] c.c.t.b.d.A.countByCondition - ==>  Preparing: select count(1) from actor where 1=1 
+2018-07-06  15:38:45.236 DEBUG [99-exec-10] [] c.c.t.b.d.A.countByCondition - ==> Parameters: 
+2018-07-06  15:38:45.255 DEBUG [99-exec-10] [] c.c.t.b.d.A.countByCondition - <==      Total: 1
+2018-07-06  15:39:23.360 DEBUG [999-exec-3] [] c.c.t.b.d.A.selectByCondition - ==>  Preparing: select id, name, real_name, star, sex, country, type1, type2, strong, property, tag_film, tag_character, skill1, skill2, skill3, skill4, skill5, skill6 from actor where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  15:39:23.360 DEBUG [999-exec-3] [] c.c.t.b.d.A.selectByCondition - ==> Parameters: 0(Integer), 30(Integer)
+2018-07-06  15:39:23.383 DEBUG [999-exec-3] [] c.c.t.b.d.A.selectByCondition - <==      Total: 30
+2018-07-06  15:39:23.384 DEBUG [999-exec-3] [] c.c.t.b.d.A.countByCondition - ==>  Preparing: select count(1) from actor where 1=1 
+2018-07-06  15:39:23.384 DEBUG [999-exec-3] [] c.c.t.b.d.A.countByCondition - ==> Parameters: 
+2018-07-06  15:39:23.403 DEBUG [999-exec-3] [] c.c.t.b.d.A.countByCondition - <==      Total: 1
+2018-07-06  15:40:01.690 DEBUG [999-exec-1] [] c.c.t.b.d.A.selectByCondition - ==>  Preparing: select id, name, real_name, star, sex, country, type1, type2, strong, property, tag_film, tag_character, skill1, skill2, skill3, skill4, skill5, skill6 from actor where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  15:40:01.690 DEBUG [999-exec-1] [] c.c.t.b.d.A.selectByCondition - ==> Parameters: 0(Integer), 30(Integer)
+2018-07-06  15:40:01.712 DEBUG [999-exec-1] [] c.c.t.b.d.A.selectByCondition - <==      Total: 30
+2018-07-06  15:40:01.713 DEBUG [999-exec-1] [] c.c.t.b.d.A.countByCondition - ==>  Preparing: select count(1) from actor where 1=1 
+2018-07-06  15:40:01.713 DEBUG [999-exec-1] [] c.c.t.b.d.A.countByCondition - ==> Parameters: 
+2018-07-06  15:40:01.731 DEBUG [999-exec-1] [] c.c.t.b.d.A.countByCondition - <==      Total: 1
+2018-07-06  15:40:34.352 DEBUG [999-exec-2] [] c.c.t.b.d.S.selectAll - ==>  Preparing: select * from skill 
+2018-07-06  15:40:34.352 DEBUG [999-exec-2] [] c.c.t.b.d.S.selectAll - ==> Parameters: 
+2018-07-06  15:40:34.373 DEBUG [999-exec-2] [] c.c.t.b.d.S.selectAll - <==      Total: 71
+2018-07-06  15:40:41.469 DEBUG [999-exec-5] [] c.c.t.b.d.A.selectByCondition - ==>  Preparing: select id, name, real_name, star, sex, country, type1, type2, strong, property, tag_film, tag_character, skill1, skill2, skill3, skill4, skill5, skill6 from actor where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  15:40:41.469 DEBUG [999-exec-5] [] c.c.t.b.d.A.selectByCondition - ==> Parameters: 0(Integer), 30(Integer)
+2018-07-06  15:40:41.491 DEBUG [999-exec-5] [] c.c.t.b.d.A.selectByCondition - <==      Total: 30
+2018-07-06  15:40:41.491 DEBUG [999-exec-5] [] c.c.t.b.d.A.countByCondition - ==>  Preparing: select count(1) from actor where 1=1 
+2018-07-06  15:40:41.491 DEBUG [999-exec-5] [] c.c.t.b.d.A.countByCondition - ==> Parameters: 
+2018-07-06  15:40:41.510 DEBUG [999-exec-5] [] c.c.t.b.d.A.countByCondition - <==      Total: 1
+2018-07-06  15:40:43.993 DEBUG [999-exec-4] [] c.c.t.b.d.S.selectAll - ==>  Preparing: select * from skill 
+2018-07-06  15:40:43.993 DEBUG [999-exec-4] [] c.c.t.b.d.S.selectAll - ==> Parameters: 
+2018-07-06  15:40:44.014 DEBUG [999-exec-4] [] c.c.t.b.d.S.selectAll - <==      Total: 71
+2018-07-06  15:43:18.864 DEBUG [999-exec-8] [] c.c.t.b.d.A.selectByCondition - ==>  Preparing: select id, name, real_name, star, sex, country, type1, type2, strong, property, tag_film, tag_character, skill1, skill2, skill3, skill4, skill5, skill6 from actor where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  15:43:18.864 DEBUG [999-exec-8] [] c.c.t.b.d.A.selectByCondition - ==> Parameters: 0(Integer), 30(Integer)
+2018-07-06  15:43:18.912 DEBUG [999-exec-8] [] c.c.t.b.d.A.selectByCondition - <==      Total: 30
+2018-07-06  15:43:18.912 DEBUG [999-exec-8] [] c.c.t.b.d.A.countByCondition - ==>  Preparing: select count(1) from actor where 1=1 
+2018-07-06  15:43:18.913 DEBUG [999-exec-8] [] c.c.t.b.d.A.countByCondition - ==> Parameters: 
+2018-07-06  15:43:18.976 DEBUG [999-exec-8] [] c.c.t.b.d.A.countByCondition - <==      Total: 1
+2018-07-06  15:43:32.286 DEBUG [999-exec-7] [] c.c.t.b.d.S.selectAll - ==>  Preparing: select * from skill 
+2018-07-06  15:43:32.289 DEBUG [999-exec-7] [] c.c.t.b.d.S.selectAll - ==> Parameters: 
+2018-07-06  15:43:32.370 DEBUG [999-exec-7] [] c.c.t.b.d.S.selectAll - <==      Total: 71
+2018-07-06  15:45:29.583 DEBUG [99-exec-10] [] c.c.t.b.d.A.selectByCondition - ==>  Preparing: select id, name, real_name, star, sex, country, type1, type2, strong, property, tag_film, tag_character, skill1, skill2, skill3, skill4, skill5, skill6 from actor where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  15:45:29.583 DEBUG [99-exec-10] [] c.c.t.b.d.A.selectByCondition - ==> Parameters: 0(Integer), 30(Integer)
+2018-07-06  15:45:29.606 DEBUG [99-exec-10] [] c.c.t.b.d.A.selectByCondition - <==      Total: 30
+2018-07-06  15:45:29.607 DEBUG [99-exec-10] [] c.c.t.b.d.A.countByCondition - ==>  Preparing: select count(1) from actor where 1=1 
+2018-07-06  15:45:29.607 DEBUG [99-exec-10] [] c.c.t.b.d.A.countByCondition - ==> Parameters: 
+2018-07-06  15:45:29.631 DEBUG [99-exec-10] [] c.c.t.b.d.A.countByCondition - <==      Total: 1
+2018-07-06  15:45:36.056 DEBUG [999-exec-3] [] c.c.t.b.d.S.selectAll - ==>  Preparing: select * from skill 
+2018-07-06  15:45:36.059 DEBUG [999-exec-3] [] c.c.t.b.d.S.selectAll - ==> Parameters: 
+2018-07-06  15:45:36.137 DEBUG [999-exec-3] [] c.c.t.b.d.S.selectAll - <==      Total: 71
+2018-07-06  15:47:06.120 INFO  [tartedMain] [] o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@46c8b45a: startup date [Fri Jul 06 15:47:06 CST 2018]; root of context hierarchy
+2018-07-06  15:47:06.209 INFO  [nd-preinit] [] o.h.v.i.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2018-07-06  15:47:06.331 INFO  [tartedMain] [] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-07-06  15:47:06.377 INFO  [tartedMain] [] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$973bdd7c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-06  15:47:07.895 INFO  [tartedMain] [] c.c.t.b.TaurusBaseApplication - No active profile set, falling back to default profiles: default
+2018-07-06  15:47:07.907 INFO  [tartedMain] [] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@28c68dc6: startup date [Fri Jul 06 15:47:07 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@46c8b45a
+2018-07-06  15:47:09.330 INFO  [tartedMain] [] o.s.c.c.s.GenericScope - BeanFactory id=37cd122b-8e0d-3333-bab3-e86f4c2b1934
+2018-07-06  15:47:09.360 INFO  [tartedMain] [] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-07-06  15:47:09.497 INFO  [tartedMain] [] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7b21da7f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-06  15:47:09.674 INFO  [tartedMain] [] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.netflix.metrics.MetricsInterceptorConfiguration$MetricsRestTemplateConfiguration' of type [org.springframework.cloud.netflix.metrics.MetricsInterceptorConfiguration$MetricsRestTemplateConfiguration$$EnhancerBySpringCGLIB$$ad4e80c0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-06  15:47:09.694 INFO  [tartedMain] [] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$973bdd7c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-06  15:47:10.357 INFO  [tartedMain] [] o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 9999 (http)
+2018-07-06  15:47:10.365 INFO  [tartedMain] [] o.a.c.c.StandardService - Starting service [Tomcat]
+2018-07-06  15:47:10.366 INFO  [tartedMain] [] o.a.c.c.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.15
+2018-07-06  15:47:10.454 INFO  [tartStop-1] [] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+2018-07-06  15:47:10.455 INFO  [tartStop-1] [] o.s.w.c.ContextLoader - Root WebApplicationContext: initialization completed in 2548 ms
+2018-07-06  15:47:11.061 INFO  [tartStop-1] [] o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/taurus-base/*]
+2018-07-06  15:47:11.062 INFO  [tartStop-1] [] o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'com.cf.taurus.base.dbrouter.monitor.DruidStatViewServlet' to [/druid/*]
+2018-07-06  15:47:11.065 INFO  [tartStop-1] [] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'metricsFilter' to: [/*]
+2018-07-06  15:47:11.065 INFO  [tartStop-1] [] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-06  15:47:11.065 INFO  [tartStop-1] [] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-07-06  15:47:11.065 INFO  [tartStop-1] [] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-07-06  15:47:11.065 INFO  [tartStop-1] [] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-06  15:47:11.065 INFO  [tartStop-1] [] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2018-07-06  15:47:11.066 INFO  [tartStop-1] [] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'druidWebStatFilter' to urls: [/*]
+2018-07-06  15:47:11.066 INFO  [tartStop-1] [] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'applicationContextIdFilter' to: [/*]
+2018-07-06  15:47:11.185 DEBUG [tartedMain] [] c.c.t.b.d.c.DruidAutoConfiguration - DATASOURCE CONFIG: DruidProperties.DataSourceConfig(alias=main, driverClassName=com.mysql.jdbc.Driver, url=jdbc:mysql://47.97.163.100:3306/taurus?useUnicode=true&characterEncoding=utf8&useSSL=true, username=root, password=password, type=com.alibaba.druid.pool.DruidDataSource, testWhileIdle=true, testOnReturn=false, testOnBorrow=false, validationQuery=select 'x', filters=stat, minEvictableIdleTimeMillis=300000, initialSize=1, minIdle=1, maxActive=20, maxWait=60000, timeBetweenEvictionRunsMillis=60000, poolPreparedStatements=true, maxOpenPreparedStatements=20)
+2018-07-06  15:47:11.235 INFO  [tartedMain] [] c.c.t.b.d.c.DruidAutoConfiguration - DataBase route config success
+2018-07-06  15:47:13.583 INFO  [tartedMain] [] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@28c68dc6: startup date [Fri Jul 06 15:47:07 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@46c8b45a
+2018-07-06  15:47:13.784 INFO  [tartedMain] [] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/actor/getAllSkill],methods=[GET]}" onto public com.cf.taurus.common.util.Response com.cf.taurus.base.provider.ActorProvider.getAllSkill()
+2018-07-06  15:47:13.787 INFO  [tartedMain] [] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/actor/getActorById],methods=[GET]}" onto public com.cf.taurus.common.util.Response com.cf.taurus.base.provider.ActorProvider.getActorById(java.lang.Integer)
+2018-07-06  15:47:13.788 INFO  [tartedMain] [] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/actor/getActors],methods=[POST]}" onto public com.cf.taurus.common.util.Response com.cf.taurus.base.provider.ActorProvider.getActors(com.cf.taurus.common.po.Actor)
+2018-07-06  15:47:13.788 INFO  [tartedMain] [] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/actor/getSkillDetailByName],methods=[GET]}" onto public com.cf.taurus.common.util.Response com.cf.taurus.base.provider.ActorProvider.getSkillDetailByName(java.lang.String)
+2018-07-06  15:47:13.788 INFO  [tartedMain] [] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/film/getFilmById],methods=[GET]}" onto public com.cf.taurus.common.util.Response com.cf.taurus.base.provider.FilmProvider.getFilmById(java.lang.Integer)
+2018-07-06  15:47:13.789 INFO  [tartedMain] [] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/film/getFilms],methods=[POST]}" onto public com.cf.taurus.common.util.Response com.cf.taurus.base.provider.FilmProvider.getFilms(com.cf.taurus.common.po.Film)
+2018-07-06  15:47:13.790 INFO  [tartedMain] [] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hint/getHintById],methods=[GET]}" onto public com.cf.taurus.common.util.Response com.cf.taurus.base.provider.HintProvider.getHintById(java.lang.Integer)
+2018-07-06  15:47:13.790 INFO  [tartedMain] [] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hint/saveHint],methods=[POST]}" onto public com.cf.taurus.common.util.Response com.cf.taurus.base.provider.HintProvider.saveHint(com.cf.taurus.common.po.Hint)
+2018-07-06  15:47:13.790 INFO  [tartedMain] [] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hint/getHints],methods=[POST]}" onto public com.cf.taurus.common.util.Response com.cf.taurus.base.provider.HintProvider.getHints(com.cf.taurus.common.po.Hint)
+2018-07-06  15:47:13.790 INFO  [tartedMain] [] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/sell/getAllSell],methods=[GET]}" onto public com.cf.taurus.common.util.Response com.cf.taurus.base.provider.SellProvider.getAllSell()
+2018-07-06  15:47:13.791 INFO  [tartedMain] [] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/checkPassword],methods=[GET]}" onto public com.cf.taurus.common.util.Response com.cf.taurus.base.provider.UserProvider.checkPassword(java.lang.Long,java.lang.String)
+2018-07-06  15:47:13.792 INFO  [tartedMain] [] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/saveUserInfo],methods=[POST]}" onto public com.cf.taurus.common.util.Response com.cf.taurus.base.provider.UserProvider.saveUserInfo(com.cf.taurus.common.po.UserInfo)
+2018-07-06  15:47:13.792 INFO  [tartedMain] [] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/getUserInfoById],methods=[GET]}" onto public com.cf.taurus.common.util.Response com.cf.taurus.base.provider.UserProvider.getUserInfoById(java.lang.Long)
+2018-07-06  15:47:13.792 INFO  [tartedMain] [] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/getSummary],methods=[GET]}" onto public com.cf.taurus.common.util.Response com.cf.taurus.base.provider.UserProvider.getSummary()
+2018-07-06  15:47:13.793 INFO  [tartedMain] [] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-06  15:47:13.794 INFO  [tartedMain] [] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-06  15:47:13.923 INFO  [tartedMain] [] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-06  15:47:13.923 INFO  [tartedMain] [] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-06  15:47:14.024 INFO  [tartedMain] [] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-06  15:47:15.269 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2018-07-06  15:47:15.270 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-07-06  15:47:15.270 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/features || /features.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-07-06  15:47:15.271 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2018-07-06  15:47:15.273 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+2018-07-06  15:47:15.273 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+2018-07-06  15:47:15.273 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-07-06  15:47:15.273 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-07-06  15:47:15.274 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2018-07-06  15:47:15.274 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-07-06  15:47:15.274 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/refresh || /refresh.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2018-07-06  15:47:15.274 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-07-06  15:47:15.276 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+2018-07-06  15:47:15.277 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-07-06  15:47:15.277 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/shutdown || /shutdown.json],methods=[POST],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.ShutdownMvcEndpoint.invoke()
+2018-07-06  15:47:15.277 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/archaius || /archaius.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-07-06  15:47:15.278 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/restart || /restart.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.restart.RestartMvcEndpoint.invoke()
+2018-07-06  15:47:15.278 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/pause || /pause.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2018-07-06  15:47:15.278 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/resume || /resume.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2018-07-06  15:47:15.283 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/env],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.value(java.util.Map<java.lang.String, java.lang.String>)
+2018-07-06  15:47:15.283 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/env/reset],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.reset()
+2018-07-06  15:47:15.283 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-07-06  15:47:15.284 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-07-06  15:47:15.284 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-07-06  15:47:15.284 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-07-06  15:47:15.285 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+2018-07-06  15:47:15.974 INFO  [tartedMain] [] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2018-07-06  15:47:17.136 INFO  [tartedMain] [] o.s.c.c.u.InetUtils - Cannot determine local hostname
+2018-07-06  15:47:17.442 WARN  [tartedMain] [] c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2018-07-06  15:47:17.442 INFO  [tartedMain] [] c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-07-06  15:47:17.454 WARN  [tartedMain] [] c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2018-07-06  15:47:17.455 INFO  [tartedMain] [] c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-07-06  15:47:17.761 INFO  [tartedMain] [] o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-07-06  15:47:17.776 INFO  [tartedMain] [] o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'environmentManager' has been autodetected for JMX exposure
+2018-07-06  15:47:17.779 INFO  [tartedMain] [] o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2018-07-06  15:47:17.779 INFO  [tartedMain] [] o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'refreshEndpoint' has been autodetected for JMX exposure
+2018-07-06  15:47:17.780 INFO  [tartedMain] [] o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'restartEndpoint' has been autodetected for JMX exposure
+2018-07-06  15:47:17.782 INFO  [tartedMain] [] o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'refreshScope' has been autodetected for JMX exposure
+2018-07-06  15:47:17.786 INFO  [tartedMain] [] o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2018-07-06  15:47:17.807 INFO  [tartedMain] [] o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'restartEndpoint': registering with JMX server as MBean [org.springframework.cloud.context.restart:name=restartEndpoint,type=RestartEndpoint]
+2018-07-06  15:47:17.823 INFO  [tartedMain] [] o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2018-07-06  15:47:17.871 INFO  [tartedMain] [] o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=28c68dc6,type=ConfigurationPropertiesRebinder]
+2018-07-06  15:47:17.896 INFO  [tartedMain] [] o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'refreshEndpoint': registering with JMX server as MBean [org.springframework.cloud.endpoint:name=refreshEndpoint,type=RefreshEndpoint]
+2018-07-06  15:47:17.897 INFO  [tartedMain] [] o.s.b.a.e.j.EndpointMBeanExporter - Registering beans for JMX exposure on startup
+2018-07-06  15:47:18.121 INFO  [tartedMain] [] o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 0
+2018-07-06  15:47:18.123 INFO  [tartedMain] [] o.s.b.a.e.j.EndpointMBeanExporter - Located managed bean 'auditEventsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=auditEventsEndpoint]
+2018-07-06  15:47:18.129 INFO  [tartedMain] [] o.s.b.a.e.j.EndpointMBeanExporter - Located managed bean 'featuresEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=featuresEndpoint]
+2018-07-06  15:47:18.139 INFO  [tartedMain] [] o.s.b.a.e.j.EndpointMBeanExporter - Located managed bean 'requestMappingEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=requestMappingEndpoint]
+2018-07-06  15:47:18.141 INFO  [tartedMain] [] o.s.b.a.e.j.EndpointMBeanExporter - Located managed bean 'environmentEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=environmentEndpoint]
+2018-07-06  15:47:18.142 INFO  [tartedMain] [] o.s.b.a.e.j.EndpointMBeanExporter - Located managed bean 'healthEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=healthEndpoint]
+2018-07-06  15:47:18.144 INFO  [tartedMain] [] o.s.b.a.e.j.EndpointMBeanExporter - Located managed bean 'beansEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=beansEndpoint]
+2018-07-06  15:47:18.145 INFO  [tartedMain] [] o.s.b.a.e.j.EndpointMBeanExporter - Located managed bean 'infoEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=infoEndpoint]
+2018-07-06  15:47:18.148 INFO  [tartedMain] [] o.s.b.a.e.j.EndpointMBeanExporter - Located managed bean 'loggersEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=loggersEndpoint]
+2018-07-06  15:47:18.154 INFO  [tartedMain] [] o.s.b.a.e.j.EndpointMBeanExporter - Located managed bean 'metricsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=metricsEndpoint]
+2018-07-06  15:47:18.155 INFO  [tartedMain] [] o.s.b.a.e.j.EndpointMBeanExporter - Located managed bean 'traceEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=traceEndpoint]
+2018-07-06  15:47:18.156 INFO  [tartedMain] [] o.s.b.a.e.j.EndpointMBeanExporter - Located managed bean 'dumpEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=dumpEndpoint]
+2018-07-06  15:47:18.158 INFO  [tartedMain] [] o.s.b.a.e.j.EndpointMBeanExporter - Located managed bean 'autoConfigurationReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=autoConfigurationReportEndpoint]
+2018-07-06  15:47:18.160 INFO  [tartedMain] [] o.s.b.a.e.j.EndpointMBeanExporter - Located managed bean 'shutdownEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=shutdownEndpoint]
+2018-07-06  15:47:18.165 INFO  [tartedMain] [] o.s.b.a.e.j.EndpointMBeanExporter - Located managed bean 'configurationPropertiesReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=configurationPropertiesReportEndpoint]
+2018-07-06  15:47:18.166 INFO  [tartedMain] [] o.s.b.a.e.j.EndpointMBeanExporter - Located managed bean 'archaiusEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=archaiusEndpoint]
+2018-07-06  15:47:18.179 INFO  [tartedMain] [] o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2018-07-06  15:47:18.197 INFO  [tartedMain] [] o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9999"]
+2018-07-06  15:47:18.212 INFO  [tartedMain] [] o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9999"]
+2018-07-06  15:47:18.241 INFO  [tartedMain] [] o.a.t.u.n.NioSelectorPool - Using a shared selector for servlet write/read
+2018-07-06  15:47:18.265 INFO  [tartedMain] [] o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 9999 (http)
+2018-07-06  15:47:18.273 INFO  [tartedMain] [] c.c.t.b.TaurusBaseApplication - Started TaurusBaseApplication in 14.163 seconds (JVM running for 15.446)
+2018-07-06  15:47:18.273 INFO  [tartedMain] [] c.c.t.b.TaurusBaseApplication - Server start success
+2018-07-06  15:47:49.149 INFO  [999-exec-2] [] o.a.c.c.C.[.[.[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-07-06  15:47:49.149 INFO  [999-exec-2] [] o.s.w.s.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-07-06  15:47:49.206 INFO  [999-exec-2] [] o.s.w.s.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 57 ms
+2018-07-06  15:47:50.231 INFO  [999-exec-2] [] c.a.d.p.DruidDataSource - {dataSource-1} inited
+2018-07-06  15:47:50.238 DEBUG [999-exec-2] [] c.c.t.b.d.A.selectByCondition - ==>  Preparing: select id, name, real_name, star, sex, country, type1, type2, strong, property, tag_film, tag_character, skill1, skill2, skill3, skill4, skill5, skill6 from actor where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  15:47:50.274 DEBUG [999-exec-2] [] c.c.t.b.d.A.selectByCondition - ==> Parameters: 0(Integer), 30(Integer)
+2018-07-06  15:47:50.342 DEBUG [999-exec-2] [] c.c.t.b.d.A.selectByCondition - <==      Total: 30
+2018-07-06  15:47:50.344 DEBUG [999-exec-2] [] c.c.t.b.d.A.countByCondition - ==>  Preparing: select count(1) from actor where 1=1 
+2018-07-06  15:47:50.345 DEBUG [999-exec-2] [] c.c.t.b.d.A.countByCondition - ==> Parameters: 
+2018-07-06  15:47:50.367 DEBUG [999-exec-2] [] c.c.t.b.d.A.countByCondition - <==      Total: 1
+2018-07-06  15:47:52.450 DEBUG [999-exec-1] [] c.c.t.b.d.A.selectByCondition - ==>  Preparing: select id, name, real_name, star, sex, country, type1, type2, strong, property, tag_film, tag_character, skill1, skill2, skill3, skill4, skill5, skill6 from actor where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  15:47:52.450 DEBUG [999-exec-1] [] c.c.t.b.d.A.selectByCondition - ==> Parameters: 0(Integer), 30(Integer)
+2018-07-06  15:47:52.476 DEBUG [999-exec-1] [] c.c.t.b.d.A.selectByCondition - <==      Total: 30
+2018-07-06  15:47:52.477 DEBUG [999-exec-1] [] c.c.t.b.d.A.countByCondition - ==>  Preparing: select count(1) from actor where 1=1 
+2018-07-06  15:47:52.477 DEBUG [999-exec-1] [] c.c.t.b.d.A.countByCondition - ==> Parameters: 
+2018-07-06  15:47:52.496 DEBUG [999-exec-1] [] c.c.t.b.d.A.countByCondition - <==      Total: 1
+2018-07-06  15:48:03.904 DEBUG [999-exec-3] [] c.c.t.b.d.S.selectAll - ==>  Preparing: select * from skill 
+2018-07-06  15:48:03.905 DEBUG [999-exec-3] [] c.c.t.b.d.S.selectAll - ==> Parameters: 
+2018-07-06  15:48:03.936 DEBUG [999-exec-3] [] c.c.t.b.d.S.selectAll - <==      Total: 71
+2018-07-06  17:53:29.548 DEBUG [999-exec-5] [] c.c.t.b.d.A.selectByCondition - ==>  Preparing: select id, name, real_name, star, sex, country, type1, type2, strong, property, tag_film, tag_character, skill1, skill2, skill3, skill4, skill5, skill6 from actor where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  17:53:29.552 DEBUG [999-exec-5] [] c.c.t.b.d.A.selectByCondition - ==> Parameters: 0(Integer), 30(Integer)
+2018-07-06  17:53:29.578 DEBUG [999-exec-5] [] c.c.t.b.d.A.selectByCondition - <==      Total: 30
+2018-07-06  17:53:29.579 DEBUG [999-exec-5] [] c.c.t.b.d.A.countByCondition - ==>  Preparing: select count(1) from actor where 1=1 
+2018-07-06  17:53:29.579 DEBUG [999-exec-5] [] c.c.t.b.d.A.countByCondition - ==> Parameters: 
+2018-07-06  17:53:29.598 DEBUG [999-exec-5] [] c.c.t.b.d.A.countByCondition - <==      Total: 1
+2018-07-06  17:54:26.454 DEBUG [999-exec-6] [] c.c.t.b.d.A.selectByCondition - ==>  Preparing: select id, name, real_name, star, sex, country, type1, type2, strong, property, tag_film, tag_character, skill1, skill2, skill3, skill4, skill5, skill6 from actor where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  17:54:26.454 DEBUG [999-exec-6] [] c.c.t.b.d.A.selectByCondition - ==> Parameters: 0(Integer), 30(Integer)
+2018-07-06  17:54:26.476 DEBUG [999-exec-6] [] c.c.t.b.d.A.selectByCondition - <==      Total: 30
+2018-07-06  17:54:26.477 DEBUG [999-exec-6] [] c.c.t.b.d.A.countByCondition - ==>  Preparing: select count(1) from actor where 1=1 
+2018-07-06  17:54:26.477 DEBUG [999-exec-6] [] c.c.t.b.d.A.countByCondition - ==> Parameters: 
+2018-07-06  17:54:26.496 DEBUG [999-exec-6] [] c.c.t.b.d.A.countByCondition - <==      Total: 1
+2018-07-06  17:54:39.806 DEBUG [999-exec-7] [] c.c.t.b.d.A.selectByCondition - ==>  Preparing: select id, name, real_name, star, sex, country, type1, type2, strong, property, tag_film, tag_character, skill1, skill2, skill3, skill4, skill5, skill6 from actor where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  17:54:39.807 DEBUG [999-exec-7] [] c.c.t.b.d.A.selectByCondition - ==> Parameters: 0(Integer), 30(Integer)
+2018-07-06  17:54:39.831 DEBUG [999-exec-7] [] c.c.t.b.d.A.selectByCondition - <==      Total: 30
+2018-07-06  17:54:39.831 DEBUG [999-exec-7] [] c.c.t.b.d.A.countByCondition - ==>  Preparing: select count(1) from actor where 1=1 
+2018-07-06  17:54:39.831 DEBUG [999-exec-7] [] c.c.t.b.d.A.countByCondition - ==> Parameters: 
+2018-07-06  17:54:39.852 DEBUG [999-exec-7] [] c.c.t.b.d.A.countByCondition - <==      Total: 1
+2018-07-06  17:54:47.823 DEBUG [999-exec-8] [] c.c.t.b.d.A.selectByCondition - ==>  Preparing: select id, name, real_name, star, sex, country, type1, type2, strong, property, tag_film, tag_character, skill1, skill2, skill3, skill4, skill5, skill6 from actor where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  17:54:47.824 DEBUG [999-exec-8] [] c.c.t.b.d.A.selectByCondition - ==> Parameters: 0(Integer), 30(Integer)
+2018-07-06  17:54:47.848 DEBUG [999-exec-8] [] c.c.t.b.d.A.selectByCondition - <==      Total: 30
+2018-07-06  17:54:47.849 DEBUG [999-exec-8] [] c.c.t.b.d.A.countByCondition - ==>  Preparing: select count(1) from actor where 1=1 
+2018-07-06  17:54:47.850 DEBUG [999-exec-8] [] c.c.t.b.d.A.countByCondition - ==> Parameters: 
+2018-07-06  17:54:47.868 DEBUG [999-exec-8] [] c.c.t.b.d.A.countByCondition - <==      Total: 1
+2018-07-06  17:54:54.887 DEBUG [999-exec-9] [] c.c.t.b.d.S.selectAll - ==>  Preparing: select * from skill 
+2018-07-06  17:54:54.888 DEBUG [999-exec-9] [] c.c.t.b.d.S.selectAll - ==> Parameters: 
+2018-07-06  17:54:54.920 DEBUG [999-exec-9] [] c.c.t.b.d.S.selectAll - <==      Total: 71
+2018-07-06  17:55:17.843 DEBUG [99-exec-10] [] c.c.t.b.d.A.selectByCondition - ==>  Preparing: select id, name, real_name, star, sex, country, type1, type2, strong, property, tag_film, tag_character, skill1, skill2, skill3, skill4, skill5, skill6 from actor where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  17:55:17.844 DEBUG [99-exec-10] [] c.c.t.b.d.A.selectByCondition - ==> Parameters: 0(Integer), 30(Integer)
+2018-07-06  17:55:17.866 DEBUG [99-exec-10] [] c.c.t.b.d.A.selectByCondition - <==      Total: 30
+2018-07-06  17:55:17.867 DEBUG [99-exec-10] [] c.c.t.b.d.A.countByCondition - ==>  Preparing: select count(1) from actor where 1=1 
+2018-07-06  17:55:17.868 DEBUG [99-exec-10] [] c.c.t.b.d.A.countByCondition - ==> Parameters: 
+2018-07-06  17:55:17.906 DEBUG [99-exec-10] [] c.c.t.b.d.A.countByCondition - <==      Total: 1
+2018-07-06  17:55:21.415 DEBUG [999-exec-2] [] c.c.t.b.d.S.selectAll - ==>  Preparing: select * from skill 
+2018-07-06  17:55:21.416 DEBUG [999-exec-2] [] c.c.t.b.d.S.selectAll - ==> Parameters: 
+2018-07-06  17:55:21.439 DEBUG [999-exec-2] [] c.c.t.b.d.S.selectAll - <==      Total: 71
+2018-07-06  17:55:51.963 DEBUG [999-exec-1] [] c.c.t.b.d.A.selectByCondition - ==>  Preparing: select id, name, real_name, star, sex, country, type1, type2, strong, property, tag_film, tag_character, skill1, skill2, skill3, skill4, skill5, skill6 from actor where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-06  17:55:51.964 DEBUG [999-exec-1] [] c.c.t.b.d.A.selectByCondition - ==> Parameters: 0(Integer), 30(Integer)
+2018-07-06  17:55:51.985 DEBUG [999-exec-1] [] c.c.t.b.d.A.selectByCondition - <==      Total: 30
+2018-07-06  17:55:51.986 DEBUG [999-exec-1] [] c.c.t.b.d.A.countByCondition - ==>  Preparing: select count(1) from actor where 1=1 
+2018-07-06  17:55:51.986 DEBUG [999-exec-1] [] c.c.t.b.d.A.countByCondition - ==> Parameters: 
+2018-07-06  17:55:52.005 DEBUG [999-exec-1] [] c.c.t.b.d.A.countByCondition - <==      Total: 1

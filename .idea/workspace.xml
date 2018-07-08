@@ -1,0 +1,1894 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="fc819d96-7922-46ee-ac04-0aa99d3c4159" name="Default" comment="" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/aries-common/target/" />
+    <ignored path="$PROJECT_DIR$/aries-base/target/" />
+    <ignored path="$PROJECT_DIR$/aries-web/target/" />
+    <ignored path="$PROJECT_DIR$/taurus-common/target/" />
+    <ignored path="$PROJECT_DIR$/taurus-base/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <expand />
+    <select />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="UserProvider.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/taurus-base/src/main/java/com/cf/taurus/base/provider/UserProvider.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1540">
+              <caret line="77" column="36" lean-forward="false" selection-start-line="77" selection-start-column="36" selection-end-line="77" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SellProvider.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/taurus-base/src/main/java/com/cf/taurus/base/provider/SellProvider.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="286">
+              <caret line="19" column="22" lean-forward="false" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HintProvider.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/taurus-base/src/main/java/com/cf/taurus/base/provider/HintProvider.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1276">
+              <caret line="65" column="27" lean-forward="false" selection-start-line="65" selection-start-column="19" selection-end-line="65" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ActorProvider.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/taurus-base/src/main/java/com/cf/taurus/base/provider/ActorProvider.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1276">
+              <caret line="65" column="0" lean-forward="false" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ActorMapper.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/taurus-base/src/main/java/com/cf/taurus/base/dao/ActorMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="652">
+              <caret line="274" column="53" lean-forward="false" selection-start-line="274" selection-start-column="53" selection-end-line="274" selection-end-column="53" />
+              <folding>
+                <marker date="1530949492281" expanded="true" signature="1795:1896" ph="select from actor" />
+                <marker date="1530949492281" expanded="true" signature="1983:2038" ph="delete from " />
+                <marker date="1530949492281" expanded="true" signature="2125:2862" ph="insert into actor... " />
+                <marker date="1530949492281" expanded="true" signature="5801:7420" ph="update actor... " />
+                <marker date="1530949492281" expanded="true" signature="7519:8298" ph="update actor... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/taurus-base/src/main/resources/dev/application.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1408">
+              <caret line="64" column="58" lean-forward="false" selection-start-line="64" selection-start-column="58" selection-end-line="64" selection-end-column="58" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ActorBusiness.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/taurus-base/src/main/java/com/cf/taurus/base/business/ActorBusiness.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="352">
+              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ActorBusinessImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/taurus-base/src/main/java/com/cf/taurus/base/business/impl/ActorBusinessImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1342">
+              <caret line="74" column="0" lean-forward="false" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SkillMapper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/taurus-base/src/main/java/com/cf/taurus/base/dao/SkillMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="462">
+              <caret line="26" column="19" lean-forward="false" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SkillMapper.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/taurus-base/src/main/java/com/cf/taurus/base/dao/SkillMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="6" column="26" lean-forward="false" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="26" />
+              <folding>
+                <marker date="1530861119502" expanded="true" signature="720:821" ph="select from skill" />
+                <marker date="1530861119502" expanded="true" signature="908:963" ph="delete from " />
+                <marker date="1530861119502" expanded="true" signature="1050:1228" ph="insert into skill... " />
+                <marker date="1530861119502" expanded="true" signature="2144:2486" ph="update skill... " />
+                <marker date="1530861119502" expanded="true" signature="2585:2763" ph="update skill... " />
+                <marker date="1530861119502" expanded="true" signature="2837:2909" ph="select from skill" />
+                <marker date="1530861119502" expanded="true" signature="2837:3050" ph="select from skill" />
+                <marker date="1530861119502" expanded="true" signature="3120:3139" ph="select * fro... skill" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="AnnotationType" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>like con</find>
+      <find>package.environment</find>
+      <find>lombok</find>
+      <find>&lt;=</find>
+      <find>selectByExample</find>
+      <find>open</find>
+      <find>jsonUtil</find>
+      <find>JSON</find>
+      <find>JSONException</find>
+      <find>JSON.</find>
+      <find>insertSelective</find>
+      <find>未查询到有效信息</find>
+      <find>save query task error</find>
+      <find>selectByCondition</find>
+      <find>yuwenshuo@passiontec.cn</find>
+      <find>passiontec.cn</find>
+      <find>aries</find>
+      <find>true</find>
+      <find>UserInfo</find>
+      <find>credit</find>
+      <find>Actor</find>
+      <find>woolInfo</find>
+      <find>wool</find>
+      <find>Film</find>
+      <find>Consume</find>
+      <find>consumeInfo</find>
+      <find>film</find>
+      <find>passiontec</find>
+      <find>BaseResultMap</find>
+      <find>passionte</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>DatabaseRoute</replace>
+      <replace>#{openId,jdbcType=VARCHAR}</replace>
+      <replace>creditCardDTO}</replace>
+      <replace>creditCardDTO</replace>
+      <replace>userInfoDTO</replace>
+      <replace>ConsumeInfo</replace>
+      <replace>consumeInfo</replace>
+      <replace>CreditCard</replace>
+      <replace>creditCard</replace>
+      <replace>UserInfo</replace>
+      <replace>userInfo</replace>
+      <replace>Sheep</replace>
+      <replace>Wool</replace>
+      <replace>sheepCycle</replace>
+      <replace>sheep_cycle</replace>
+      <replace>sheep_rate</replace>
+      <replace>sheepRate</replace>
+      <replace>wool</replace>
+      <replace>sheep</replace>
+      <replace>JsonUtils</replace>
+      <replace />
+      <replace>taurus</replace>
+      <replace>false</replace>
+      <replace>User</replace>
+      <replace>actor</replace>
+      <replace>Film</replace>
+      <replace>film</replace>
+      <replace>Sell</replace>
+      <replace>Hint</replace>
+      <replace>hint</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/taurus-common/src/main/java/com/cf/taurus/common/po/Skill.java" />
+        <option value="$PROJECT_DIR$/taurus-common/src/main/java/com/cf/taurus/common/po/User.java" />
+        <option value="$PROJECT_DIR$/taurus-base/src/main/java/com/cf/taurus/base/service/UserService.java" />
+        <option value="$PROJECT_DIR$/taurus-common/src/main/java/com/cf/taurus/common/po/UserInfo.java" />
+        <option value="$PROJECT_DIR$/taurus-base/src/main/java/com/cf/taurus/base/service/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/taurus-base/src/main/java/com/cf/taurus/base/dao/UserInfoMapper.xml" />
+        <option value="$PROJECT_DIR$/taurus-base/src/main/java/com/cf/taurus/base/provider/AdminProvider.java" />
+        <option value="$PROJECT_DIR$/taurus-base/src/main/java/com/cf/taurus/base/business/AdminBusiness.java" />
+        <option value="$PROJECT_DIR$/taurus-base/src/main/java/com/cf/taurus/base/business/impl/AdminBusinessImpl.java" />
+        <option value="$PROJECT_DIR$/taurus-base/src/main/java/com/cf/taurus/base/service/AdminService.java" />
+        <option value="$PROJECT_DIR$/taurus-base/src/main/java/com/cf/taurus/base/service/impl/AdminServiceImpl.java" />
+        <option value="$PROJECT_DIR$/taurus-base/src/main/java/com/cf/taurus/base/TaurusBaseApplication.java" />
+        <option value="$PROJECT_DIR$/taurus-common/src/main/java/com/cf/taurus/common/po/Actor.java" />
+        <option value="$PROJECT_DIR$/taurus-common/src/main/java/com/cf/taurus/common/po/Film.java" />
+        <option value="$PROJECT_DIR$/taurus-common/src/main/java/com/cf/taurus/common/message/ResponseMessage.java" />
+        <option value="$PROJECT_DIR$/taurus-base/src/main/java/com/cf/taurus/base/dao/ActorMapper.java" />
+        <option value="$PROJECT_DIR$/taurus-base/src/main/java/com/cf/taurus/base/business/FilmBusiness.java" />
+        <option value="$PROJECT_DIR$/taurus-base/src/main/java/com/cf/taurus/base/dao/FilmMapper.java" />
+        <option value="$PROJECT_DIR$/taurus-base/src/main/java/com/cf/taurus/base/provider/FilmProvider.java" />
+        <option value="$PROJECT_DIR$/taurus-base/src/main/java/com/cf/taurus/base/business/ConsumeBusiness.java" />
+        <option value="$PROJECT_DIR$/taurus-base/src/main/java/com/cf/taurus/base/business/SellBusiness.java" />
+        <option value="$PROJECT_DIR$/taurus-base/src/main/java/com/cf/taurus/base/business/impl/SellBusinessImpl.java" />
+        <option value="$PROJECT_DIR$/taurus-base/src/main/java/com/cf/taurus/base/dao/SellMapper.java" />
+        <option value="$PROJECT_DIR$/taurus-base/src/main/java/com/cf/taurus/base/dao/UserInfoMapper.java" />
+        <option value="$PROJECT_DIR$/taurus-base/src/main/java/com/cf/taurus/base/dao/SellMapper.xml" />
+        <option value="$PROJECT_DIR$/taurus-base/src/main/resources/mybatis-generator-config.xml" />
+        <option value="$PROJECT_DIR$/taurus-common/src/main/java/com/cf/taurus/common/po/Hint.java" />
+        <option value="$PROJECT_DIR$/taurus-base/src/main/java/com/cf/taurus/base/provider/HintProvider.java" />
+        <option value="$PROJECT_DIR$/taurus-base/src/main/java/com/cf/taurus/base/business/impl/CronBusinessImpl.java" />
+        <option value="$PROJECT_DIR$/taurus-base/src/main/java/com/cf/taurus/base/business/HintBusiness.java" />
+        <option value="$PROJECT_DIR$/taurus-base/src/main/java/com/cf/taurus/base/dao/HintMapper.java" />
+        <option value="$PROJECT_DIR$/taurus-base/src/main/java/com/cf/taurus/base/dao/HintMapper.xml" />
+        <option value="$PROJECT_DIR$/taurus-base/src/main/java/com/cf/taurus/base/cron/CronTask.java" />
+        <option value="$PROJECT_DIR$/taurus-base/src/main/java/com/cf/taurus/base/provider/UserProvider.java" />
+        <option value="$PROJECT_DIR$/taurus-base/src/main/java/com/cf/taurus/base/business/UserBusiness.java" />
+        <option value="$PROJECT_DIR$/taurus-base/pom.xml" />
+        <option value="$PROJECT_DIR$/taurus-base/src/main/resources/dev/application.yml" />
+        <option value="$PROJECT_DIR$/taurus-common/src/main/java/com/cf/taurus/common/po/PageInfo.java" />
+        <option value="$PROJECT_DIR$/taurus-base/src/main/java/com/cf/taurus/base/provider/SellProvider.java" />
+        <option value="$PROJECT_DIR$/taurus-base/src/main/java/com/cf/taurus/base/business/impl/UserBusinessImpl.java" />
+        <option value="$PROJECT_DIR$/taurus-base/src/main/java/com/cf/taurus/base/dao/FilmMapper.xml" />
+        <option value="$PROJECT_DIR$/taurus-common/src/main/java/com/cf/taurus/common/util/CommonUtils.java" />
+        <option value="$PROJECT_DIR$/taurus-base/src/main/java/com/cf/taurus/base/business/impl/HintBusinessImpl.java" />
+        <option value="$PROJECT_DIR$/taurus-base/src/main/java/com/cf/taurus/base/dbrouter/interceptor/SplitInterceptor.java" />
+        <option value="$PROJECT_DIR$/taurus-base/src/main/java/com/cf/taurus/base/business/impl/FilmBusinessImpl.java" />
+        <option value="$PROJECT_DIR$/taurus-base/src/main/java/com/cf/taurus/base/provider/ActorProvider.java" />
+        <option value="$PROJECT_DIR$/taurus-base/src/main/java/com/cf/taurus/base/business/ActorBusiness.java" />
+        <option value="$PROJECT_DIR$/taurus-base/src/main/java/com/cf/taurus/base/business/impl/ActorBusinessImpl.java" />
+        <option value="$PROJECT_DIR$/taurus-base/src/main/java/com/cf/taurus/base/dao/SkillMapper.java" />
+        <option value="$PROJECT_DIR$/taurus-base/src/main/java/com/cf/taurus/base/dao/SkillMapper.xml" />
+        <option value="$PROJECT_DIR$/taurus-base/src/main/java/com/cf/taurus/base/dao/ActorMapper.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="E:\apache-maven-3.5.0\repo" />
+        <option name="mavenHome" value="E:/apache-maven-3.5.0" />
+        <option name="userSettingsFile" value="E:\apache-maven-3.5.0\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="260" />
+    <option name="y" value="20" />
+    <option name="width" value="1596" />
+    <option name="height" value="1000" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Abstraction issuesJava</id>
+          </State>
+          <State>
+            <id>Google Web Toolkit issues</id>
+          </State>
+          <State>
+            <id>Java</id>
+          </State>
+          <State>
+            <id>Security issuesJava</id>
+          </State>
+          <State>
+            <id>Serialization issuesJava</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>SerializableHasSerialVersionUIDField</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="taurus" type="b2602c69:ProjectViewProjectNode" />
+              <item name="taurus" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="taurus" type="b2602c69:ProjectViewProjectNode" />
+              <item name="taurus" type="462c0819:PsiDirectoryNode" />
+              <item name="bin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="taurus" type="b2602c69:ProjectViewProjectNode" />
+              <item name="taurus" type="462c0819:PsiDirectoryNode" />
+              <item name="taurus-base" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="taurus" type="b2602c69:ProjectViewProjectNode" />
+              <item name="taurus" type="462c0819:PsiDirectoryNode" />
+              <item name="taurus-base" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="taurus" type="b2602c69:ProjectViewProjectNode" />
+              <item name="taurus" type="462c0819:PsiDirectoryNode" />
+              <item name="taurus-base" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="taurus" type="b2602c69:ProjectViewProjectNode" />
+              <item name="taurus" type="462c0819:PsiDirectoryNode" />
+              <item name="taurus-base" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="taurus" type="b2602c69:ProjectViewProjectNode" />
+              <item name="taurus" type="462c0819:PsiDirectoryNode" />
+              <item name="taurus-base" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="taurus" type="b2602c69:ProjectViewProjectNode" />
+              <item name="taurus" type="462c0819:PsiDirectoryNode" />
+              <item name="taurus-base" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
+              <item name="business" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="taurus" type="b2602c69:ProjectViewProjectNode" />
+              <item name="taurus" type="462c0819:PsiDirectoryNode" />
+              <item name="taurus-base" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
+              <item name="business" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="taurus" type="b2602c69:ProjectViewProjectNode" />
+              <item name="taurus" type="462c0819:PsiDirectoryNode" />
+              <item name="taurus-base" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="taurus" type="b2602c69:ProjectViewProjectNode" />
+              <item name="taurus" type="462c0819:PsiDirectoryNode" />
+              <item name="taurus-base" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
+              <item name="dbrouter" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="taurus" type="b2602c69:ProjectViewProjectNode" />
+              <item name="taurus" type="462c0819:PsiDirectoryNode" />
+              <item name="taurus-base" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
+              <item name="dbrouter" type="462c0819:PsiDirectoryNode" />
+              <item name="interceptor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="taurus" type="b2602c69:ProjectViewProjectNode" />
+              <item name="taurus" type="462c0819:PsiDirectoryNode" />
+              <item name="taurus-base" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
+              <item name="provider" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="taurus" type="b2602c69:ProjectViewProjectNode" />
+              <item name="taurus" type="462c0819:PsiDirectoryNode" />
+              <item name="taurus-base" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="taurus" type="b2602c69:ProjectViewProjectNode" />
+              <item name="taurus" type="462c0819:PsiDirectoryNode" />
+              <item name="taurus-base" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="dev" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="taurus" type="b2602c69:ProjectViewProjectNode" />
+              <item name="taurus" type="462c0819:PsiDirectoryNode" />
+              <item name="taurus-common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="taurus" type="b2602c69:ProjectViewProjectNode" />
+              <item name="taurus" type="462c0819:PsiDirectoryNode" />
+              <item name="taurus-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="taurus" type="b2602c69:ProjectViewProjectNode" />
+              <item name="taurus" type="462c0819:PsiDirectoryNode" />
+              <item name="taurus-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="taurus" type="b2602c69:ProjectViewProjectNode" />
+              <item name="taurus" type="462c0819:PsiDirectoryNode" />
+              <item name="taurus-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="taurus" type="b2602c69:ProjectViewProjectNode" />
+              <item name="taurus" type="462c0819:PsiDirectoryNode" />
+              <item name="taurus-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="taurus" type="b2602c69:ProjectViewProjectNode" />
+              <item name="taurus" type="462c0819:PsiDirectoryNode" />
+              <item name="taurus-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="nodejs_interpreter_path" value="D:/Program Files/nodejs/node" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth2" value="75" />
+    <property name="RequestMappingsPanelOrder2" value="2" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://E:/WorkSpaceForIdea/aries/aries-base/src/main/java/com/cf/aries/base/dao/CreditCardMapper.xml" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\WorkSpaceForIdea\aries\aries-base\src\main\resources\dev" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.cf.taurus.base.business.impl" />
+      <recent name="com.cf.taurus.base.business" />
+      <recent name="com.cf.taurus.base.provider" />
+      <recent name="com.cf.taurus.common.po" />
+      <recent name="com.cf.aries.web.controller" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\WorkSpaceForIdea\aries\aries-web\src\main\java\com\cf\aries\web\consumer" />
+      <recent name="E:\WorkSpaceForIdea\aries\aries-web\src\main\resources" />
+      <recent name="E:\WorkSpaceForIdea\aries" />
+      <recent name="E:\WorkSpaceForIdea\aries\aries-base\src\main\java\com\cf\aries\base\dbrouter" />
+      <recent name="E:\WorkSpaceForIdea\aries\aries-base\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.TaurusBaseApplication">
+    <configuration name="AriesBaseApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.cf.aries.base.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.cf.aries.base.AriesBaseApplication" />
+      <module name="aries-base" />
+      <envs />
+    </configuration>
+    <configuration name="AriesWebApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.cf.aries.web.AriesWebApplication" />
+      <module name="aries-web" />
+      <envs />
+    </configuration>
+    <configuration name="DateUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.cf.aries.common.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.cf.aries.common.util.DateUtils" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="aries-common" />
+      <envs />
+    </configuration>
+    <configuration name="TaurusBaseApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.cf.taurus.base.TaurusBaseApplication" />
+      <module name="taurus-base" />
+      <envs />
+    </configuration>
+    <configuration name="WoolProvider" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.cf.aries.base.provider.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.cf.aries.base.provider.WoolProvider" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="aries-base" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="aries" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="aries" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="TARGET" value="" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+    </configuration>
+    <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="aries" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+    </configuration>
+    <configuration default="true" type="PyLettuceRunConfigurationType" factoryName="Lettuce">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="aries" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="aries" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <module name="aries" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="aries" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="aries" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="_new_regexPattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="aries" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="aries" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+    </configuration>
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="Spring Boot.AriesWebApplication" />
+      <item index="1" class="java.lang.String" itemvalue="Spring Boot.TaurusBaseApplication" />
+      <item index="2" class="java.lang.String" itemvalue="Spring Boot.AriesBaseApplication" />
+      <item index="3" class="java.lang.String" itemvalue="Application.DateUtils" />
+      <item index="4" class="java.lang.String" itemvalue="Application.WoolProvider" />
+    </list>
+    <recent_temporary>
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="Spring Boot.AriesBaseApplication" />
+        <item index="1" class="java.lang.String" itemvalue="Application.WoolProvider" />
+        <item index="2" class="java.lang.String" itemvalue="Application.DateUtils" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fc819d96-7922-46ee-ac04-0aa99d3c4159" name="Default" comment="" />
+      <created>1525938606552</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1525938606552</updated>
+      <workItem from="1525938608203" duration="6512000" />
+      <workItem from="1525947250102" duration="3348000" />
+      <workItem from="1526003140090" duration="9720000" />
+      <workItem from="1526261497481" duration="1547000" />
+      <workItem from="1526263067177" duration="13915000" />
+      <workItem from="1526347060008" duration="24346000" />
+      <workItem from="1526439986782" duration="27266000" />
+      <workItem from="1526606708434" duration="15544000" />
+      <workItem from="1526868816501" duration="5737000" />
+      <workItem from="1526952669365" duration="3301000" />
+      <workItem from="1527039038044" duration="2315000" />
+      <workItem from="1527127776238" duration="595000" />
+      <workItem from="1527211461334" duration="1187000" />
+      <workItem from="1527239583399" duration="3653000" />
+      <workItem from="1527470942481" duration="7605000" />
+      <workItem from="1527556834485" duration="12873000" />
+      <workItem from="1527643365965" duration="7342000" />
+      <workItem from="1527731220701" duration="1888000" />
+      <workItem from="1527816061439" duration="586000" />
+      <workItem from="1528179216656" duration="4760000" />
+      <workItem from="1528248074580" duration="7974000" />
+      <workItem from="1528680512639" duration="5753000" />
+      <workItem from="1528766693101" duration="7618000" />
+      <workItem from="1528854830682" duration="1656000" />
+      <workItem from="1528940219936" duration="3972000" />
+      <workItem from="1529027189731" duration="1085000" />
+      <workItem from="1529371655985" duration="2442000" />
+      <workItem from="1529457810486" duration="2853000" />
+      <workItem from="1529545095851" duration="1202000" />
+      <workItem from="1529572481729" duration="749000" />
+      <workItem from="1529574002511" duration="1645000" />
+      <workItem from="1529889989304" duration="1323000" />
+      <workItem from="1529975452547" duration="4459000" />
+      <workItem from="1530669183439" duration="63000" />
+      <workItem from="1530669311509" duration="371000" />
+      <workItem from="1530669796217" duration="16219000" />
+      <workItem from="1530753511584" duration="5734000" />
+      <workItem from="1530839869987" duration="5656000" />
+      <workItem from="1530943691065" duration="2358000" />
+      <workItem from="1531052215457" duration="650000" />
+    </task>
+    <task id="LOCAL-00001" summary="first commit">
+      <created>1525947016341</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1525947016342</updated>
+    </task>
+    <task id="LOCAL-00002" summary="first commit">
+      <created>1525947282064</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1525947282064</updated>
+    </task>
+    <task id="LOCAL-00003" summary="configure change">
+      <created>1525950568740</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1525950568740</updated>
+    </task>
+    <task id="LOCAL-00004" summary="dataroute and pojo">
+      <created>1526032961220</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1526032961220</updated>
+    </task>
+    <task id="LOCAL-00005" summary="dataroute and pojo">
+      <created>1526282372120</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1526282372120</updated>
+    </task>
+    <task id="LOCAL-00006" summary="user module finish">
+      <created>1526363646604</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1526363646604</updated>
+    </task>
+    <task id="LOCAL-00007" summary="credit module finish">
+      <created>1526370192703</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1526370192703</updated>
+    </task>
+    <task id="LOCAL-00008" summary="consume module finish">
+      <created>1526379112620</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1526379112620</updated>
+    </task>
+    <task id="LOCAL-00009" summary="wool module finish">
+      <created>1526442511661</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1526442511661</updated>
+    </task>
+    <task id="LOCAL-00010" summary="stat/wool module finish">
+      <created>1526465147412</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1526465147412</updated>
+    </task>
+    <task id="LOCAL-00011" summary="stat module finish">
+      <created>1526526947093</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1526526947093</updated>
+    </task>
+    <task id="LOCAL-00012" summary="packaging">
+      <created>1526527522696</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1526527522696</updated>
+    </task>
+    <task id="LOCAL-00013" summary="sh文件">
+      <created>1526536176965</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1526536176965</updated>
+    </task>
+    <task id="LOCAL-00014" summary="sh文件">
+      <created>1526539777188</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1526539777188</updated>
+    </task>
+    <task id="LOCAL-00015" summary="sh文件">
+      <created>1526548076401</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1526548076401</updated>
+    </task>
+    <task id="LOCAL-00016" summary="web模块">
+      <created>1526548531808</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1526548531808</updated>
+    </task>
+    <task id="LOCAL-00017" summary="web模块">
+      <created>1526551268122</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1526551268122</updated>
+    </task>
+    <task id="LOCAL-00018" summary="web模块">
+      <created>1526624458943</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1526624458943</updated>
+    </task>
+    <task id="LOCAL-00019" summary="建议功能">
+      <created>1526636787165</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1526636787165</updated>
+    </task>
+    <task id="LOCAL-00020" summary="建议功能">
+      <created>1526637043614</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1526637043614</updated>
+    </task>
+    <task id="LOCAL-00021" summary="bug">
+      <created>1526638069896</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1526638069896</updated>
+    </task>
+    <task id="LOCAL-00022" summary="bug">
+      <created>1526638244644</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1526638244644</updated>
+    </task>
+    <task id="LOCAL-00023" summary="空字段不返回">
+      <created>1526638645764</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1526638645764</updated>
+    </task>
+    <task id="LOCAL-00024" summary="序列化">
+      <created>1526952935800</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1526952935800</updated>
+    </task>
+    <task id="LOCAL-00025" summary="用户数据保存 openid查询">
+      <created>1527477634791</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1527477634791</updated>
+    </task>
+    <task id="LOCAL-00026" summary="用户数据保存 openid查询">
+      <created>1527477793984</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1527477793984</updated>
+    </task>
+    <task id="LOCAL-00027" summary="用户数据保存 openid查询">
+      <created>1527478277488</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1527478277488</updated>
+    </task>
+    <task id="LOCAL-00028" summary="返回用户id">
+      <created>1527478734477</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1527478734477</updated>
+    </task>
+    <task id="LOCAL-00029" summary="bug修改">
+      <created>1527575706853</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1527575706853</updated>
+    </task>
+    <task id="LOCAL-00030" summary="bug修改">
+      <created>1527576187593</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1527576187593</updated>
+    </task>
+    <task id="LOCAL-00031" summary="bug修改">
+      <created>1527576342918</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1527576342918</updated>
+    </task>
+    <task id="LOCAL-00032" summary="获取银行列表">
+      <created>1527584239053</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1527584239053</updated>
+    </task>
+    <task id="LOCAL-00033" summary="bug修复">
+      <created>1527647497566</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1527647497570</updated>
+    </task>
+    <task id="LOCAL-00034" summary="bug修复">
+      <created>1527647923140</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1527647923140</updated>
+    </task>
+    <task id="LOCAL-00035" summary="bug修复">
+      <created>1527670517410</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1527670517410</updated>
+    </task>
+    <task id="LOCAL-00036" summary="credit增加分页">
+      <created>1528193683648</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1528193683648</updated>
+    </task>
+    <task id="LOCAL-00037" summary="不为空判断">
+      <created>1528265124773</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1528265124773</updated>
+    </task>
+    <task id="LOCAL-00038" summary="id处理">
+      <created>1528278469018</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1528278469018</updated>
+    </task>
+    <task id="LOCAL-00039" summary="id处理及天数处理">
+      <created>1528711614770</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1528711614770</updated>
+    </task>
+    <task id="LOCAL-00040" summary="searchValue">
+      <created>1528798087498</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1528798087499</updated>
+    </task>
+    <task id="LOCAL-00041" summary="searchValue">
+      <created>1528798340361</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1528798340361</updated>
+    </task>
+    <task id="LOCAL-00042" summary="searchValue">
+      <created>1529489908956</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1529489908956</updated>
+    </task>
+    <task id="LOCAL-00043" summary="bug fix">
+      <created>1529982222542</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1529982222542</updated>
+    </task>
+    <task id="LOCAL-00044" summary="去除账号">
+      <created>1529994193061</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1529994193061</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="227822000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-9" y="-9" width="2066" height="1120" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297062" sideWeight="0.5042644" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18473895" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39578947" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297062" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297062" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.3297062" sideWeight="0.49573562" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297062" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21586345" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30903155" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+    <MESSAGE value="user module finish" />
+    <MESSAGE value="credit module finish" />
+    <MESSAGE value="consume module finish" />
+    <MESSAGE value="wool module finish" />
+    <MESSAGE value="stat/wool module finish" />
+    <MESSAGE value="stat module finish" />
+    <MESSAGE value="packaging" />
+    <MESSAGE value="sh文件" />
+    <MESSAGE value="web模块" />
+    <MESSAGE value="建议功能" />
+    <MESSAGE value="bug" />
+    <MESSAGE value="空字段不返回" />
+    <MESSAGE value="序列化" />
+    <MESSAGE value="用户数据保存 openid查询" />
+    <MESSAGE value="返回用户id" />
+    <MESSAGE value="bug修改" />
+    <MESSAGE value="获取银行列表" />
+    <MESSAGE value="bug修复" />
+    <MESSAGE value="credit增加分页" />
+    <MESSAGE value="不为空判断" />
+    <MESSAGE value="id处理" />
+    <MESSAGE value="id处理及天数处理" />
+    <MESSAGE value="searchValue" />
+    <MESSAGE value="bug fix" />
+    <MESSAGE value="去除账号" />
+    <option name="LAST_COMMIT_MESSAGE" value="去除账号" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/taurus-common/src/main/java/com/cf/taurus/common/util/DateUtils.java</url>
+          <line>52</line>
+          <properties />
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/taurus-common/src/main/java/com/cf/taurus/common/util/DateUtils.java</url>
+          <line>80</line>
+          <properties />
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/taurus-base/src/main/java/com/cf/taurus/base/business/impl/UserBusinessImpl.java</url>
+          <line>135</line>
+          <properties />
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/taurus-base/src/main/java/com/cf/taurus/base/cron/CronTask.java</url>
+          <line>30</line>
+          <properties class="com.cf.taurus.base.cron.CronTask" method="deleteExpireData">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+      </breakpoints>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <option name="time" value="28" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/taurus-common/src/main/java/com/cf/taurus/common/message/ResponseMessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" column="25" lean-forward="false" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taurus-common/src/main/java/com/cf/taurus/common/po/Actor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="44" column="26" lean-forward="true" selection-start-line="44" selection-start-column="26" selection-end-line="44" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taurus-base/src/main/java/com/cf/taurus/base/business/FilmBusiness.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taurus-base/src/main/java/com/cf/taurus/base/dao/UserInfoMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="36" column="45" lean-forward="false" selection-start-line="36" selection-start-column="45" selection-end-line="36" selection-end-column="45" />
+          <folding>
+            <marker date="1530671499326" expanded="true" signature="1627:1731" ph="select from user_info" />
+            <marker date="1530671499326" expanded="true" signature="1840:1953" ph="select from user_info" />
+            <marker date="1530671499326" expanded="true" signature="2038:2096" ph="delete from " />
+            <marker date="1530671499326" expanded="true" signature="2186:2844" ph="insert into user_info... " />
+            <marker date="1530671499326" expanded="true" signature="5478:6900" ph="update user_... " />
+            <marker date="1530671499326" expanded="true" signature="7002:7688" ph="update user_... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taurus-base/src/main/java/com/cf/taurus/base/dao/UserInfoMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="8" lean-forward="false" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taurus-base/src/main/java/com/cf/taurus/base/dao/SellMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="709">
+          <caret line="109" column="13" lean-forward="false" selection-start-line="109" selection-start-column="13" selection-end-line="109" selection-end-column="13" />
+          <folding>
+            <marker date="1530676246221" expanded="true" signature="869:969" ph="select from sell" />
+            <marker date="1530676246221" expanded="true" signature="1056:1110" ph="delete from " />
+            <marker date="1530676246221" expanded="true" signature="1196:1457" ph="insert into sell... " />
+            <marker date="1530676246221" expanded="true" signature="2658:3180" ph="update sell " />
+            <marker date="1530676246221" expanded="true" signature="3278:3539" ph="update sell " />
+            <marker date="1530676246221" expanded="true" signature="3611:3672" ph="select from sell" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taurus-base/src/main/java/com/cf/taurus/base/business/SellBusiness.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taurus-base/src/main/java/com/cf/taurus/base/dao/SellMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="23" column="15" lean-forward="false" selection-start-line="23" selection-start-column="15" selection-end-line="23" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taurus-common/src/main/java/com/cf/taurus/common/util/DateUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="16" column="31" lean-forward="false" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taurus-common/src/main/java/com/cf/taurus/common/po/Hint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" column="27" lean-forward="false" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taurus-base/src/main/java/com/cf/taurus/base/business/impl/CronBusinessImpl.java" />
+    <entry file="file://$PROJECT_DIR$/taurus-base/src/main/java/com/cf/taurus/base/business/CronBusiness.java" />
+    <entry file="file://$PROJECT_DIR$/taurus-base/src/main/resources/mybatis-generator-config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="590">
+          <caret line="46" column="50" lean-forward="false" selection-start-line="46" selection-start-column="50" selection-end-line="46" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taurus-base/src/main/java/com/cf/taurus/base/business/HintBusiness.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" column="25" lean-forward="false" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taurus-base/src/main/java/com/cf/taurus/base/dao/HintMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="145" column="0" lean-forward="true" selection-start-line="145" selection-start-column="0" selection-end-line="145" selection-end-column="0" />
+          <folding>
+            <marker date="1530687630987" expanded="true" signature="956:1056" ph="select from hint" />
+            <marker date="1530687630987" expanded="true" signature="1143:1197" ph="delete from " />
+            <marker date="1530687630987" expanded="true" signature="1283:1587" ph="insert into hint... " />
+            <marker date="1530687630987" expanded="true" signature="2943:3565" ph="update hint " />
+            <marker date="1530687630987" expanded="true" signature="3663:3974" ph="update hint " />
+            <marker date="1530687630987" expanded="true" signature="4785:4866" ph="delete from " />
+            <marker date="1530687630987" expanded="true" signature="4785:4882" ph="delete from " />
+            <marker date="1530687630987" expanded="true" signature="4785:4887" ph="delete from " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taurus-base/src/main/java/com/cf/taurus/base/dao/HintMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="28" column="46" lean-forward="false" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taurus-base/src/main/java/com/cf/taurus/base/cron/CronTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="32" column="33" lean-forward="true" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taurus-common/src/main/java/com/cf/taurus/common/po/UserInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taurus-base/src/main/java/com/cf/taurus/base/business/UserBusiness.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_151/src.zip!/java/util/HashMap.java" />
+    <entry file="file://$PROJECT_DIR$/taurus-base/src/main/resources/dev/logback.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taurus-base/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="109" column="21" lean-forward="false" selection-start-line="109" selection-start-column="21" selection-end-line="109" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/apache-maven-3.5.0/repo/org/mybatis/spring/boot/mybatis-spring-boot-autoconfigure/1.3.0/mybatis-spring-boot-autoconfigure-1.3.0.jar!/org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class" />
+    <entry file="file://$PROJECT_DIR$/taurus-base/src/main/java/com/cf/taurus/base/dao/ActorMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="23" column="16" lean-forward="false" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taurus-common/src/main/java/com/cf/taurus/common/po/PageInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="13" column="7" lean-forward="false" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taurus-common/src/main/java/com/cf/taurus/common/enums/CommonEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="12" lean-forward="false" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taurus-base/src/main/java/com/cf/taurus/base/business/impl/UserBusinessImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="96" column="70" lean-forward="true" selection-start-line="96" selection-start-column="70" selection-end-line="96" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taurus-base/src/main/java/com/cf/taurus/base/dao/FilmMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="25" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taurus-base/src/main/java/com/cf/taurus/base/dao/FilmMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5252">
+          <caret line="46" column="6" lean-forward="false" selection-start-line="46" selection-start-column="6" selection-end-line="46" selection-end-column="6" />
+          <folding>
+            <marker date="1530770026582" expanded="true" signature="2276:2376" ph="select from film" />
+            <marker date="1530770026582" expanded="true" signature="2463:2517" ph="delete from " />
+            <marker date="1530770026582" expanded="true" signature="2603:3596" ph="insert into film... " />
+            <marker date="1530770026582" expanded="true" signature="7403:9577" ph="update film " />
+            <marker date="1530770026582" expanded="true" signature="9675:10724" ph="update film " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taurus-base/src/main/java/com/cf/taurus/base/provider/FilmProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="40" column="44" lean-forward="false" selection-start-line="40" selection-start-column="44" selection-end-line="40" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taurus-common/src/main/java/com/cf/taurus/common/po/Film.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taurus-common/src/main/java/com/cf/taurus/common/util/CommonUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="26" lean-forward="false" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taurus-base/src/main/java/com/cf/taurus/base/dbrouter/interceptor/TransactionalNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taurus-base/src/main/java/com/cf/taurus/base/dbrouter/interceptor/SplitNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taurus-base/src/main/java/com/cf/taurus/base/dbrouter/interceptor/SplitInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="39" column="44" lean-forward="false" selection-start-line="39" selection-start-column="44" selection-end-line="39" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taurus-base/src/main/java/com/cf/taurus/base/dbrouter/interceptor/TransactionalInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taurus-base/src/main/java/com/cf/taurus/base/business/impl/SellBusinessImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="29" column="42" lean-forward="false" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taurus-base/src/main/java/com/cf/taurus/base/business/impl/HintBusinessImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="722">
+          <caret line="52" column="8" lean-forward="false" selection-start-line="52" selection-start-column="8" selection-end-line="52" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taurus-base/src/main/java/com/cf/taurus/base/business/impl/FilmBusinessImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taurus-base/src/main/java/com/cf/taurus/base/provider/UserProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1540">
+          <caret line="77" column="36" lean-forward="false" selection-start-line="77" selection-start-column="36" selection-end-line="77" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/apache-maven-3.5.0/repo/org/mybatis/mybatis/3.4.4/mybatis-3.4.4.jar!/org/apache/ibatis/builder/xml/mybatis-3-mapper.dtd" />
+    <entry file="file://$PROJECT_DIR$/taurus-base/src/main/java/com/cf/taurus/base/dao/SkillMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="26" lean-forward="false" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="26" />
+          <folding>
+            <marker date="1530861119502" expanded="true" signature="720:821" ph="select from skill" />
+            <marker date="1530861119502" expanded="true" signature="908:963" ph="delete from " />
+            <marker date="1530861119502" expanded="true" signature="1050:1228" ph="insert into skill... " />
+            <marker date="1530861119502" expanded="true" signature="2144:2486" ph="update skill... " />
+            <marker date="1530861119502" expanded="true" signature="2585:2763" ph="update skill... " />
+            <marker date="1530861119502" expanded="true" signature="2837:2909" ph="select from skill" />
+            <marker date="1530861119502" expanded="true" signature="2837:3050" ph="select from skill" />
+            <marker date="1530861119502" expanded="true" signature="3120:3139" ph="select * fro... skill" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taurus-base/src/main/java/com/cf/taurus/base/dao/SkillMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="26" column="19" lean-forward="false" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taurus-base/src/main/java/com/cf/taurus/base/provider/HintProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1276">
+          <caret line="65" column="27" lean-forward="false" selection-start-line="65" selection-start-column="19" selection-end-line="65" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taurus-base/src/main/java/com/cf/taurus/base/provider/SellProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="19" column="22" lean-forward="false" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taurus-base/src/main/java/com/cf/taurus/base/business/ActorBusiness.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/apache-maven-3.5.0/repo/org/springframework/spring-web/4.3.9.RELEASE/spring-web-4.3.9.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class" />
+    <entry file="file://$PROJECT_DIR$/taurus-base/src/main/java/com/cf/taurus/base/business/impl/ActorBusinessImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1342">
+          <caret line="74" column="0" lean-forward="false" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taurus-base/src/main/resources/dev/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1408">
+          <caret line="64" column="58" lean-forward="false" selection-start-line="64" selection-start-column="58" selection-end-line="64" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taurus-base/src/main/java/com/cf/taurus/base/provider/ActorProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1276">
+          <caret line="65" column="0" lean-forward="false" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taurus-base/src/main/java/com/cf/taurus/base/dao/ActorMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="652">
+          <caret line="274" column="53" lean-forward="false" selection-start-line="274" selection-start-column="53" selection-end-line="274" selection-end-column="53" />
+          <folding>
+            <marker date="1530949492281" expanded="true" signature="1795:1896" ph="select from actor" />
+            <marker date="1530949492281" expanded="true" signature="1983:2038" ph="delete from " />
+            <marker date="1530949492281" expanded="true" signature="2125:2862" ph="insert into actor... " />
+            <marker date="1530949492281" expanded="true" signature="5801:7420" ph="update actor... " />
+            <marker date="1530949492281" expanded="true" signature="7519:8298" ph="update actor... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Python 3.6.5 (C:\Users\Administrator\AppData\Local\Programs\Python\Python36\python.exe) interpreter library</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>taurus-common</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

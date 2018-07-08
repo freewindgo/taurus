@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.cf.taurus.base.dao.ActorMapper" >
+  <resultMap id="BaseResultMap" type="com.cf.taurus.common.po.Actor" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="name" property="name" jdbcType="VARCHAR" />
+    <result column="real_name" property="realName" jdbcType="VARCHAR" />
+    <result column="star" property="star" jdbcType="INTEGER" />
+    <result column="sex" property="sex" jdbcType="CHAR" />
+    <result column="country" property="country" jdbcType="CHAR" />
+    <result column="type1" property="type1" jdbcType="CHAR" />
+    <result column="type2" property="type2" jdbcType="CHAR" />
+    <result column="strong" property="strong" jdbcType="VARCHAR" />
+    <result column="property" property="property" jdbcType="VARCHAR" />
+    <result column="tag_film" property="tagFilm" jdbcType="VARCHAR" />
+    <result column="tag_character" property="tagCharacter" jdbcType="VARCHAR" />
+    <result column="skill1" property="skill1" jdbcType="VARCHAR" />
+    <result column="skill2" property="skill2" jdbcType="VARCHAR" />
+    <result column="skill3" property="skill3" jdbcType="VARCHAR" />
+    <result column="skill4" property="skill4" jdbcType="VARCHAR" />
+    <result column="skill5" property="skill5" jdbcType="VARCHAR" />
+    <result column="skill6" property="skill6" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    id, name, real_name, star, sex, country, type1, type2, strong, property, tag_film, 
+    tag_character, skill1, skill2, skill3, skill4, skill5, skill6
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from actor
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from actor
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.cf.taurus.common.po.Actor" >
+    insert into actor (id, name, real_name, 
+      star, sex, country, type1, 
+      type2, strong, property, 
+      tag_film, tag_character, skill1, 
+      skill2, skill3, skill4, 
+      skill5, skill6)
+    values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{realName,jdbcType=VARCHAR}, 
+      #{star,jdbcType=INTEGER}, #{sex,jdbcType=CHAR}, #{country,jdbcType=CHAR}, #{type1,jdbcType=CHAR}, 
+      #{type2,jdbcType=CHAR}, #{strong,jdbcType=VARCHAR}, #{property,jdbcType=VARCHAR}, 
+      #{tagFilm,jdbcType=VARCHAR}, #{tagCharacter,jdbcType=VARCHAR}, #{skill1,jdbcType=VARCHAR}, 
+      #{skill2,jdbcType=VARCHAR}, #{skill3,jdbcType=VARCHAR}, #{skill4,jdbcType=VARCHAR}, 
+      #{skill5,jdbcType=VARCHAR}, #{skill6,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.cf.taurus.common.po.Actor" >
+    insert into actor
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="name != null" >
+        name,
+      </if>
+      <if test="realName != null" >
+        real_name,
+      </if>
+      <if test="star != null" >
+        star,
+      </if>
+      <if test="sex != null" >
+        sex,
+      </if>
+      <if test="country != null" >
+        country,
+      </if>
+      <if test="type1 != null" >
+        type1,
+      </if>
+      <if test="type2 != null" >
+        type2,
+      </if>
+      <if test="strong != null" >
+        strong,
+      </if>
+      <if test="property != null" >
+        property,
+      </if>
+      <if test="tagFilm != null" >
+        tag_film,
+      </if>
+      <if test="tagCharacter != null" >
+        tag_character,
+      </if>
+      <if test="skill1 != null" >
+        skill1,
+      </if>
+      <if test="skill2 != null" >
+        skill2,
+      </if>
+      <if test="skill3 != null" >
+        skill3,
+      </if>
+      <if test="skill4 != null" >
+        skill4,
+      </if>
+      <if test="skill5 != null" >
+        skill5,
+      </if>
+      <if test="skill6 != null" >
+        skill6,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="name != null" >
+        #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="realName != null" >
+        #{realName,jdbcType=VARCHAR},
+      </if>
+      <if test="star != null" >
+        #{star,jdbcType=INTEGER},
+      </if>
+      <if test="sex != null" >
+        #{sex,jdbcType=CHAR},
+      </if>
+      <if test="country != null" >
+        #{country,jdbcType=CHAR},
+      </if>
+      <if test="type1 != null" >
+        #{type1,jdbcType=CHAR},
+      </if>
+      <if test="type2 != null" >
+        #{type2,jdbcType=CHAR},
+      </if>
+      <if test="strong != null" >
+        #{strong,jdbcType=VARCHAR},
+      </if>
+      <if test="property != null" >
+        #{property,jdbcType=VARCHAR},
+      </if>
+      <if test="tagFilm != null" >
+        #{tagFilm,jdbcType=VARCHAR},
+      </if>
+      <if test="tagCharacter != null" >
+        #{tagCharacter,jdbcType=VARCHAR},
+      </if>
+      <if test="skill1 != null" >
+        #{skill1,jdbcType=VARCHAR},
+      </if>
+      <if test="skill2 != null" >
+        #{skill2,jdbcType=VARCHAR},
+      </if>
+      <if test="skill3 != null" >
+        #{skill3,jdbcType=VARCHAR},
+      </if>
+      <if test="skill4 != null" >
+        #{skill4,jdbcType=VARCHAR},
+      </if>
+      <if test="skill5 != null" >
+        #{skill5,jdbcType=VARCHAR},
+      </if>
+      <if test="skill6 != null" >
+        #{skill6,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.cf.taurus.common.po.Actor" >
+    update actor
+    <set >
+      <if test="name != null" >
+        name = #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="realName != null" >
+        real_name = #{realName,jdbcType=VARCHAR},
+      </if>
+      <if test="star != null" >
+        star = #{star,jdbcType=INTEGER},
+      </if>
+      <if test="sex != null" >
+        sex = #{sex,jdbcType=CHAR},
+      </if>
+      <if test="country != null" >
+        country = #{country,jdbcType=CHAR},
+      </if>
+      <if test="type1 != null" >
+        type1 = #{type1,jdbcType=CHAR},
+      </if>
+      <if test="type2 != null" >
+        type2 = #{type2,jdbcType=CHAR},
+      </if>
+      <if test="strong != null" >
+        strong = #{strong,jdbcType=VARCHAR},
+      </if>
+      <if test="property != null" >
+        property = #{property,jdbcType=VARCHAR},
+      </if>
+      <if test="tagFilm != null" >
+        tag_film = #{tagFilm,jdbcType=VARCHAR},
+      </if>
+      <if test="tagCharacter != null" >
+        tag_character = #{tagCharacter,jdbcType=VARCHAR},
+      </if>
+      <if test="skill1 != null" >
+        skill1 = #{skill1,jdbcType=VARCHAR},
+      </if>
+      <if test="skill2 != null" >
+        skill2 = #{skill2,jdbcType=VARCHAR},
+      </if>
+      <if test="skill3 != null" >
+        skill3 = #{skill3,jdbcType=VARCHAR},
+      </if>
+      <if test="skill4 != null" >
+        skill4 = #{skill4,jdbcType=VARCHAR},
+      </if>
+      <if test="skill5 != null" >
+        skill5 = #{skill5,jdbcType=VARCHAR},
+      </if>
+      <if test="skill6 != null" >
+        skill6 = #{skill6,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.cf.taurus.common.po.Actor" >
+    update actor
+    set name = #{name,jdbcType=VARCHAR},
+      real_name = #{realName,jdbcType=VARCHAR},
+      star = #{star,jdbcType=INTEGER},
+      sex = #{sex,jdbcType=CHAR},
+      country = #{country,jdbcType=CHAR},
+      type1 = #{type1,jdbcType=CHAR},
+      type2 = #{type2,jdbcType=CHAR},
+      strong = #{strong,jdbcType=VARCHAR},
+      property = #{property,jdbcType=VARCHAR},
+      tag_film = #{tagFilm,jdbcType=VARCHAR},
+      tag_character = #{tagCharacter,jdbcType=VARCHAR},
+      skill1 = #{skill1,jdbcType=VARCHAR},
+      skill2 = #{skill2,jdbcType=VARCHAR},
+      skill3 = #{skill3,jdbcType=VARCHAR},
+      skill4 = #{skill4,jdbcType=VARCHAR},
+      skill5 = #{skill5,jdbcType=VARCHAR},
+      skill6 = #{skill6,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+
+
+  <select id="selectByCondition" resultMap="BaseResultMap" parameterType="com.cf.taurus.common.po.Actor" >
+    select
+    <include refid="Base_Column_List" />
+    from actor
+    where 1=1
+    <if test="searchValue != null and searchValue != '' " >
+      AND `name` like concat('%', #{searchValue} ,'%')
+      OR star like concat('%', #{searchValue} ,'%')
+      OR country like concat('%', #{searchValue} ,'%')
+      OR strong like concat('%', #{searchValue} ,'%')
+    </if>
+    ORDER BY star DESC
+
+    <if test="start != null and size != null" >
+      LIMIT #{start},#{size}
+    </if>
+
+  </select>
+
+  <select id="countByCondition" resultType="java.lang.Integer" parameterType="com.cf.taurus.common.po.Actor" >
+    select
+    count(1)
+    from actor
+    where 1=1
+    <if test="searchValue != null and searchValue != '' " >
+      AND `name` like concat('%', #{searchValue} ,'%')
+      OR star like concat('%', #{searchValue} ,'%')
+      OR country like concat('%', #{searchValue} ,'%')
+      OR strong like concat('%', #{searchValue} ,'%')
+    </if>
+  </select>
+
+
+</mapper>

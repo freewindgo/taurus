@@ -1,0 +1,19 @@
+2018-07-04  15:21:06.290 WARN  [tartedMain] [] c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2018-07-04  15:21:06.311 WARN  [tartedMain] [] c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2018-07-04  15:21:38.892 WARN  [tartedMain] [] c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2018-07-04  15:21:38.898 WARN  [tartedMain] [] c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2018-07-04  15:22:18.286 WARN  [tartedMain] [] c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2018-07-04  15:22:18.293 WARN  [tartedMain] [] c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2018-07-04  15:22:34.660 WARN  [tartedMain] [] c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2018-07-04  15:22:34.666 WARN  [tartedMain] [] c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2018-07-04  15:22:53.203 WARN  [tartedMain] [] c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2018-07-04  15:22:53.210 WARN  [tartedMain] [] c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2018-07-04  15:23:24.089 WARN  [tartedMain] [] c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2018-07-04  15:23:24.102 WARN  [tartedMain] [] c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2018-07-04  15:38:10.098 WARN  [tartedMain] [] c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2018-07-04  15:38:10.105 WARN  [tartedMain] [] c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2018-07-04  15:45:25.095 WARN  [tartedMain] [] c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2018-07-04  15:45:25.102 WARN  [tartedMain] [] c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2018-07-04  16:03:13.748 WARN  [999-exec-9] [] o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved exception caused by Handler execution: org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'skillNames' is not present
+2018-07-04  16:05:33.509 WARN  [tartedMain] [] c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2018-07-04  16:05:33.515 WARN  [tartedMain] [] c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.

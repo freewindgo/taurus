@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="aries-base" />
+        <module name="aries-common" />
+        <module name="taurus-base" />
+        <module name="taurus-common" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="aries" target="1.8" />
+      <module name="aries-base" target="1.6" />
+      <module name="aries-common" target="1.6" />
+      <module name="aries-web" target="1.8" />
+      <module name="taurus" target="1.8" />
+      <module name="taurus-base" target="1.8" />
+      <module name="taurus-common" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

@@ -1,0 +1,425 @@
+2018-07-07  14:27:14.931 INFO  [tartedMain] [] o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@553ece8b: startup date [Sat Jul 07 14:27:14 CST 2018]; root of context hierarchy
+2018-07-07  14:27:15.028 INFO  [nd-preinit] [] o.h.v.i.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2018-07-07  14:27:15.182 INFO  [tartedMain] [] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-07-07  14:27:15.235 INFO  [tartedMain] [] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$e163868f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-07  14:27:16.886 INFO  [tartedMain] [] c.c.t.b.TaurusBaseApplication - No active profile set, falling back to default profiles: default
+2018-07-07  14:27:16.900 INFO  [tartedMain] [] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5a72b43e: startup date [Sat Jul 07 14:27:16 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@553ece8b
+2018-07-07  14:27:18.412 INFO  [tartedMain] [] o.s.c.c.s.GenericScope - BeanFactory id=37cd122b-8e0d-3333-bab3-e86f4c2b1934
+2018-07-07  14:27:18.444 INFO  [tartedMain] [] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-07-07  14:27:18.577 INFO  [tartedMain] [] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c5498392] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-07  14:27:18.743 INFO  [tartedMain] [] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.netflix.metrics.MetricsInterceptorConfiguration$MetricsRestTemplateConfiguration' of type [org.springframework.cloud.netflix.metrics.MetricsInterceptorConfiguration$MetricsRestTemplateConfiguration$$EnhancerBySpringCGLIB$$f77629d3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-07  14:27:18.764 INFO  [tartedMain] [] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$e163868f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-07  14:27:19.451 INFO  [tartedMain] [] o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 9999 (http)
+2018-07-07  14:27:19.462 INFO  [tartedMain] [] o.a.c.c.StandardService - Starting service [Tomcat]
+2018-07-07  14:27:19.463 INFO  [tartedMain] [] o.a.c.c.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.15
+2018-07-07  14:27:19.550 INFO  [tartStop-1] [] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+2018-07-07  14:27:19.551 INFO  [tartStop-1] [] o.s.w.c.ContextLoader - Root WebApplicationContext: initialization completed in 2651 ms
+2018-07-07  14:27:20.144 INFO  [tartStop-1] [] o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/taurus-base/*]
+2018-07-07  14:27:20.145 INFO  [tartStop-1] [] o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'com.cf.taurus.base.dbrouter.monitor.DruidStatViewServlet' to [/druid/*]
+2018-07-07  14:27:20.148 INFO  [tartStop-1] [] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'metricsFilter' to: [/*]
+2018-07-07  14:27:20.148 INFO  [tartStop-1] [] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-07  14:27:20.148 INFO  [tartStop-1] [] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-07-07  14:27:20.149 INFO  [tartStop-1] [] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-07-07  14:27:20.149 INFO  [tartStop-1] [] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-07  14:27:20.149 INFO  [tartStop-1] [] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2018-07-07  14:27:20.149 INFO  [tartStop-1] [] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'druidWebStatFilter' to urls: [/*]
+2018-07-07  14:27:20.149 INFO  [tartStop-1] [] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'applicationContextIdFilter' to: [/*]
+2018-07-07  14:27:20.278 DEBUG [tartedMain] [] c.c.t.b.d.c.DruidAutoConfiguration - DATASOURCE CONFIG: DruidProperties.DataSourceConfig(alias=main, driverClassName=com.mysql.jdbc.Driver, url=jdbc:mysql://47.97.163.100:3306/taurus?useUnicode=true&characterEncoding=utf8&useSSL=true, username=root, password=password, type=com.alibaba.druid.pool.DruidDataSource, testWhileIdle=true, testOnReturn=false, testOnBorrow=false, validationQuery=select 'x', filters=stat, minEvictableIdleTimeMillis=300000, initialSize=1, minIdle=1, maxActive=20, maxWait=60000, timeBetweenEvictionRunsMillis=60000, poolPreparedStatements=true, maxOpenPreparedStatements=20)
+2018-07-07  14:27:20.330 INFO  [tartedMain] [] c.c.t.b.d.c.DruidAutoConfiguration - DataBase route config success
+2018-07-07  14:27:22.857 INFO  [tartedMain] [] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5a72b43e: startup date [Sat Jul 07 14:27:16 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@553ece8b
+2018-07-07  14:27:23.116 INFO  [tartedMain] [] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/actor/getActorById],methods=[GET]}" onto public com.cf.taurus.common.util.Response com.cf.taurus.base.provider.ActorProvider.getActorById(java.lang.Integer)
+2018-07-07  14:27:23.118 INFO  [tartedMain] [] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/actor/getActors],methods=[POST]}" onto public com.cf.taurus.common.util.Response com.cf.taurus.base.provider.ActorProvider.getActors(com.cf.taurus.common.po.Actor)
+2018-07-07  14:27:23.118 INFO  [tartedMain] [] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/actor/getAllSkill],methods=[GET]}" onto public com.cf.taurus.common.util.Response com.cf.taurus.base.provider.ActorProvider.getAllSkill()
+2018-07-07  14:27:23.118 INFO  [tartedMain] [] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/actor/getSkillDetailByName],methods=[GET]}" onto public com.cf.taurus.common.util.Response com.cf.taurus.base.provider.ActorProvider.getSkillDetailByName(java.lang.String)
+2018-07-07  14:27:23.119 INFO  [tartedMain] [] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/film/getFilms],methods=[POST]}" onto public com.cf.taurus.common.util.Response com.cf.taurus.base.provider.FilmProvider.getFilms(com.cf.taurus.common.po.Film)
+2018-07-07  14:27:23.119 INFO  [tartedMain] [] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/film/getFilmById],methods=[GET]}" onto public com.cf.taurus.common.util.Response com.cf.taurus.base.provider.FilmProvider.getFilmById(java.lang.Integer)
+2018-07-07  14:27:23.121 INFO  [tartedMain] [] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hint/getHints],methods=[POST]}" onto public com.cf.taurus.common.util.Response com.cf.taurus.base.provider.HintProvider.getHints(com.cf.taurus.common.po.Hint)
+2018-07-07  14:27:23.121 INFO  [tartedMain] [] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hint/saveHint],methods=[POST]}" onto public com.cf.taurus.common.util.Response com.cf.taurus.base.provider.HintProvider.saveHint(com.cf.taurus.common.po.Hint)
+2018-07-07  14:27:23.121 INFO  [tartedMain] [] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hint/getHintById],methods=[GET]}" onto public com.cf.taurus.common.util.Response com.cf.taurus.base.provider.HintProvider.getHintById(java.lang.Integer)
+2018-07-07  14:27:23.122 INFO  [tartedMain] [] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/sell/getAllSell],methods=[GET]}" onto public com.cf.taurus.common.util.Response com.cf.taurus.base.provider.SellProvider.getAllSell()
+2018-07-07  14:27:23.123 INFO  [tartedMain] [] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/saveUserInfo],methods=[POST]}" onto public com.cf.taurus.common.util.Response com.cf.taurus.base.provider.UserProvider.saveUserInfo(com.cf.taurus.common.po.UserInfo)
+2018-07-07  14:27:23.123 INFO  [tartedMain] [] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/getUserInfoById],methods=[GET]}" onto public com.cf.taurus.common.util.Response com.cf.taurus.base.provider.UserProvider.getUserInfoById(java.lang.Long)
+2018-07-07  14:27:23.123 INFO  [tartedMain] [] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/checkPassword],methods=[GET]}" onto public com.cf.taurus.common.util.Response com.cf.taurus.base.provider.UserProvider.checkPassword(java.lang.Long,java.lang.String)
+2018-07-07  14:27:23.124 INFO  [tartedMain] [] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/getSummary],methods=[GET]}" onto public com.cf.taurus.common.util.Response com.cf.taurus.base.provider.UserProvider.getSummary()
+2018-07-07  14:27:23.125 INFO  [tartedMain] [] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-07  14:27:23.125 INFO  [tartedMain] [] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-07  14:27:23.260 INFO  [tartedMain] [] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-07  14:27:23.261 INFO  [tartedMain] [] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-07  14:27:23.364 INFO  [tartedMain] [] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-07  14:27:24.703 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/shutdown || /shutdown.json],methods=[POST],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.ShutdownMvcEndpoint.invoke()
+2018-07-07  14:27:24.704 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2018-07-07  14:27:24.704 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-07-07  14:27:24.705 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-07-07  14:27:24.705 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-07-07  14:27:24.706 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2018-07-07  14:27:24.706 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-07-07  14:27:24.706 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/restart || /restart.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.restart.RestartMvcEndpoint.invoke()
+2018-07-07  14:27:24.708 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2018-07-07  14:27:24.708 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-07-07  14:27:24.708 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-07-07  14:27:24.710 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/archaius || /archaius.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-07-07  14:27:24.710 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-07-07  14:27:24.711 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/env],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.value(java.util.Map<java.lang.String, java.lang.String>)
+2018-07-07  14:27:24.711 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/env/reset],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.reset()
+2018-07-07  14:27:24.712 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+2018-07-07  14:27:24.712 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-07-07  14:27:24.713 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+2018-07-07  14:27:24.714 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/refresh || /refresh.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2018-07-07  14:27:24.714 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/resume || /resume.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2018-07-07  14:27:24.715 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-07-07  14:27:24.716 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+2018-07-07  14:27:24.717 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+2018-07-07  14:27:24.717 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-07-07  14:27:24.721 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/pause || /pause.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2018-07-07  14:27:24.721 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/features || /features.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-07-07  14:27:25.435 INFO  [tartedMain] [] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2018-07-07  14:27:26.673 INFO  [tartedMain] [] o.s.c.c.u.InetUtils - Cannot determine local hostname
+2018-07-07  14:27:26.950 WARN  [tartedMain] [] c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2018-07-07  14:27:26.952 INFO  [tartedMain] [] c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-07-07  14:27:26.959 WARN  [tartedMain] [] c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2018-07-07  14:27:26.959 INFO  [tartedMain] [] c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-07-07  14:27:27.297 INFO  [tartedMain] [] o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-07-07  14:27:27.309 INFO  [tartedMain] [] o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'environmentManager' has been autodetected for JMX exposure
+2018-07-07  14:27:27.312 INFO  [tartedMain] [] o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2018-07-07  14:27:27.312 INFO  [tartedMain] [] o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'refreshEndpoint' has been autodetected for JMX exposure
+2018-07-07  14:27:27.312 INFO  [tartedMain] [] o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'restartEndpoint' has been autodetected for JMX exposure
+2018-07-07  14:27:27.313 INFO  [tartedMain] [] o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'refreshScope' has been autodetected for JMX exposure
+2018-07-07  14:27:27.316 INFO  [tartedMain] [] o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2018-07-07  14:27:27.336 INFO  [tartedMain] [] o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'restartEndpoint': registering with JMX server as MBean [org.springframework.cloud.context.restart:name=restartEndpoint,type=RestartEndpoint]
+2018-07-07  14:27:27.348 INFO  [tartedMain] [] o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2018-07-07  14:27:27.360 INFO  [tartedMain] [] o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=5a72b43e,type=ConfigurationPropertiesRebinder]
+2018-07-07  14:27:27.371 INFO  [tartedMain] [] o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'refreshEndpoint': registering with JMX server as MBean [org.springframework.cloud.endpoint:name=refreshEndpoint,type=RefreshEndpoint]
+2018-07-07  14:27:27.372 INFO  [tartedMain] [] o.s.b.a.e.j.EndpointMBeanExporter - Registering beans for JMX exposure on startup
+2018-07-07  14:27:27.629 INFO  [tartedMain] [] o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 0
+2018-07-07  14:27:27.630 INFO  [tartedMain] [] o.s.b.a.e.j.EndpointMBeanExporter - Located managed bean 'auditEventsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=auditEventsEndpoint]
+2018-07-07  14:27:27.637 INFO  [tartedMain] [] o.s.b.a.e.j.EndpointMBeanExporter - Located managed bean 'featuresEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=featuresEndpoint]
+2018-07-07  14:27:27.648 INFO  [tartedMain] [] o.s.b.a.e.j.EndpointMBeanExporter - Located managed bean 'requestMappingEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=requestMappingEndpoint]
+2018-07-07  14:27:27.649 INFO  [tartedMain] [] o.s.b.a.e.j.EndpointMBeanExporter - Located managed bean 'environmentEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=environmentEndpoint]
+2018-07-07  14:27:27.651 INFO  [tartedMain] [] o.s.b.a.e.j.EndpointMBeanExporter - Located managed bean 'healthEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=healthEndpoint]
+2018-07-07  14:27:27.653 INFO  [tartedMain] [] o.s.b.a.e.j.EndpointMBeanExporter - Located managed bean 'beansEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=beansEndpoint]
+2018-07-07  14:27:27.654 INFO  [tartedMain] [] o.s.b.a.e.j.EndpointMBeanExporter - Located managed bean 'infoEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=infoEndpoint]
+2018-07-07  14:27:27.657 INFO  [tartedMain] [] o.s.b.a.e.j.EndpointMBeanExporter - Located managed bean 'loggersEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=loggersEndpoint]
+2018-07-07  14:27:27.662 INFO  [tartedMain] [] o.s.b.a.e.j.EndpointMBeanExporter - Located managed bean 'metricsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=metricsEndpoint]
+2018-07-07  14:27:27.664 INFO  [tartedMain] [] o.s.b.a.e.j.EndpointMBeanExporter - Located managed bean 'traceEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=traceEndpoint]
+2018-07-07  14:27:27.665 INFO  [tartedMain] [] o.s.b.a.e.j.EndpointMBeanExporter - Located managed bean 'dumpEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=dumpEndpoint]
+2018-07-07  14:27:27.667 INFO  [tartedMain] [] o.s.b.a.e.j.EndpointMBeanExporter - Located managed bean 'autoConfigurationReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=autoConfigurationReportEndpoint]
+2018-07-07  14:27:27.669 INFO  [tartedMain] [] o.s.b.a.e.j.EndpointMBeanExporter - Located managed bean 'shutdownEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=shutdownEndpoint]
+2018-07-07  14:27:27.673 INFO  [tartedMain] [] o.s.b.a.e.j.EndpointMBeanExporter - Located managed bean 'configurationPropertiesReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=configurationPropertiesReportEndpoint]
+2018-07-07  14:27:27.674 INFO  [tartedMain] [] o.s.b.a.e.j.EndpointMBeanExporter - Located managed bean 'archaiusEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=archaiusEndpoint]
+2018-07-07  14:27:27.689 INFO  [tartedMain] [] o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2018-07-07  14:27:27.705 INFO  [tartedMain] [] o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9999"]
+2018-07-07  14:27:27.724 INFO  [tartedMain] [] o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9999"]
+2018-07-07  14:27:27.754 INFO  [tartedMain] [] o.a.t.u.n.NioSelectorPool - Using a shared selector for servlet write/read
+2018-07-07  14:27:27.778 INFO  [tartedMain] [] o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 9999 (http)
+2018-07-07  14:27:27.785 INFO  [tartedMain] [] c.c.t.b.TaurusBaseApplication - Started TaurusBaseApplication in 14.498 seconds (JVM running for 16.46)
+2018-07-07  14:27:27.785 INFO  [tartedMain] [] c.c.t.b.TaurusBaseApplication - Server start success
+2018-07-07  15:13:38.570 INFO  [999-exec-1] [] o.a.c.c.C.[.[.[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-07-07  15:13:38.572 INFO  [999-exec-1] [] o.s.w.s.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-07-07  15:13:38.658 INFO  [999-exec-1] [] o.s.w.s.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 85 ms
+2018-07-07  15:13:44.091 INFO  [999-exec-2] [] c.a.d.p.DruidDataSource - {dataSource-1} inited
+2018-07-07  15:13:44.111 DEBUG [999-exec-2] [] c.c.t.b.d.A.selectByCondition - ==>  Preparing: select id, name, real_name, star, sex, country, type1, type2, strong, property, tag_film, tag_character, skill1, skill2, skill3, skill4, skill5, skill6 from actor where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-07  15:13:44.157 DEBUG [999-exec-2] [] c.c.t.b.d.A.selectByCondition - ==> Parameters: 0(Integer), 30(Integer)
+2018-07-07  15:13:44.310 DEBUG [999-exec-2] [] c.c.t.b.d.A.selectByCondition - <==      Total: 30
+2018-07-07  15:13:44.314 DEBUG [999-exec-2] [] c.c.t.b.d.A.countByCondition - ==>  Preparing: select count(1) from actor where 1=1 
+2018-07-07  15:13:44.315 DEBUG [999-exec-2] [] c.c.t.b.d.A.countByCondition - ==> Parameters: 
+2018-07-07  15:13:44.351 DEBUG [999-exec-2] [] c.c.t.b.d.A.countByCondition - <==      Total: 1
+2018-07-07  15:13:48.574 DEBUG [999-exec-3] [] c.c.t.b.d.A.selectByCondition - ==>  Preparing: select id, name, real_name, star, sex, country, type1, type2, strong, property, tag_film, tag_character, skill1, skill2, skill3, skill4, skill5, skill6 from actor where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-07  15:13:48.574 DEBUG [999-exec-3] [] c.c.t.b.d.A.selectByCondition - ==> Parameters: 0(Integer), 30(Integer)
+2018-07-07  15:13:48.665 DEBUG [999-exec-3] [] c.c.t.b.d.A.selectByCondition - <==      Total: 30
+2018-07-07  15:13:48.665 DEBUG [999-exec-3] [] c.c.t.b.d.A.countByCondition - ==>  Preparing: select count(1) from actor where 1=1 
+2018-07-07  15:13:48.665 DEBUG [999-exec-3] [] c.c.t.b.d.A.countByCondition - ==> Parameters: 
+2018-07-07  15:13:48.703 DEBUG [999-exec-3] [] c.c.t.b.d.A.countByCondition - <==      Total: 1
+2018-07-07  15:14:42.528 DEBUG [999-exec-5] [] c.c.t.b.d.A.selectByCondition - ==>  Preparing: select id, name, real_name, star, sex, country, type1, type2, strong, property, tag_film, tag_character, skill1, skill2, skill3, skill4, skill5, skill6 from actor where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-07  15:14:42.529 DEBUG [999-exec-5] [] c.c.t.b.d.A.selectByCondition - ==> Parameters: 0(Integer), 30(Integer)
+2018-07-07  15:14:42.576 DEBUG [999-exec-5] [] c.c.t.b.d.A.selectByCondition - <==      Total: 30
+2018-07-07  15:14:42.576 DEBUG [999-exec-5] [] c.c.t.b.d.A.countByCondition - ==>  Preparing: select count(1) from actor where 1=1 
+2018-07-07  15:14:42.576 DEBUG [999-exec-5] [] c.c.t.b.d.A.countByCondition - ==> Parameters: 
+2018-07-07  15:14:42.627 DEBUG [999-exec-5] [] c.c.t.b.d.A.countByCondition - <==      Total: 1
+2018-07-07  15:14:46.786 DEBUG [999-exec-6] [] c.c.t.b.d.A.selectByCondition - ==>  Preparing: select id, name, real_name, star, sex, country, type1, type2, strong, property, tag_film, tag_character, skill1, skill2, skill3, skill4, skill5, skill6 from actor where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-07  15:14:46.786 DEBUG [999-exec-6] [] c.c.t.b.d.A.selectByCondition - ==> Parameters: 0(Integer), 30(Integer)
+2018-07-07  15:14:46.832 DEBUG [999-exec-6] [] c.c.t.b.d.A.selectByCondition - <==      Total: 30
+2018-07-07  15:14:46.833 DEBUG [999-exec-6] [] c.c.t.b.d.A.countByCondition - ==>  Preparing: select count(1) from actor where 1=1 
+2018-07-07  15:14:46.833 DEBUG [999-exec-6] [] c.c.t.b.d.A.countByCondition - ==> Parameters: 
+2018-07-07  15:14:46.873 DEBUG [999-exec-6] [] c.c.t.b.d.A.countByCondition - <==      Total: 1
+2018-07-07  15:20:56.544 DEBUG [999-exec-9] [] c.c.t.b.d.A.selectByCondition - ==>  Preparing: select id, name, real_name, star, sex, country, type1, type2, strong, property, tag_film, tag_character, skill1, skill2, skill3, skill4, skill5, skill6 from actor where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-07  15:20:56.545 DEBUG [999-exec-9] [] c.c.t.b.d.A.selectByCondition - ==> Parameters: 0(Integer), 30(Integer)
+2018-07-07  15:20:56.582 DEBUG [999-exec-9] [] c.c.t.b.d.A.selectByCondition - <==      Total: 30
+2018-07-07  15:20:56.583 DEBUG [999-exec-9] [] c.c.t.b.d.A.countByCondition - ==>  Preparing: select count(1) from actor where 1=1 
+2018-07-07  15:20:56.583 DEBUG [999-exec-9] [] c.c.t.b.d.A.countByCondition - ==> Parameters: 
+2018-07-07  15:20:56.611 DEBUG [999-exec-9] [] c.c.t.b.d.A.countByCondition - <==      Total: 1
+2018-07-07  15:23:47.030 DEBUG [99-exec-10] [] c.c.t.b.d.A.selectByCondition - ==>  Preparing: select id, name, real_name, star, sex, country, type1, type2, strong, property, tag_film, tag_character, skill1, skill2, skill3, skill4, skill5, skill6 from actor where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-07  15:23:47.031 DEBUG [99-exec-10] [] c.c.t.b.d.A.selectByCondition - ==> Parameters: 0(Integer), 30(Integer)
+2018-07-07  15:23:47.104 DEBUG [99-exec-10] [] c.c.t.b.d.A.selectByCondition - <==      Total: 30
+2018-07-07  15:23:47.105 DEBUG [99-exec-10] [] c.c.t.b.d.A.countByCondition - ==>  Preparing: select count(1) from actor where 1=1 
+2018-07-07  15:23:47.105 DEBUG [99-exec-10] [] c.c.t.b.d.A.countByCondition - ==> Parameters: 
+2018-07-07  15:23:47.163 DEBUG [99-exec-10] [] c.c.t.b.d.A.countByCondition - <==      Total: 1
+2018-07-07  15:25:09.809 DEBUG [999-exec-2] [] c.c.t.b.d.S.selectAll - ==>  Preparing: select * from skill 
+2018-07-07  15:25:09.809 DEBUG [999-exec-2] [] c.c.t.b.d.S.selectAll - ==> Parameters: 
+2018-07-07  15:25:09.842 DEBUG [999-exec-2] [] c.c.t.b.d.S.selectAll - <==      Total: 71
+2018-07-07  15:25:09.842 DEBUG [999-exec-3] [] c.c.t.b.d.A.selectByCondition - ==>  Preparing: select id, name, real_name, star, sex, country, type1, type2, strong, property, tag_film, tag_character, skill1, skill2, skill3, skill4, skill5, skill6 from actor where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-07  15:25:09.843 DEBUG [999-exec-3] [] c.c.t.b.d.A.selectByCondition - ==> Parameters: 0(Integer), 30(Integer)
+2018-07-07  15:25:09.877 DEBUG [999-exec-3] [] c.c.t.b.d.A.selectByCondition - <==      Total: 30
+2018-07-07  15:25:09.878 DEBUG [999-exec-3] [] c.c.t.b.d.A.countByCondition - ==>  Preparing: select count(1) from actor where 1=1 
+2018-07-07  15:25:09.878 DEBUG [999-exec-3] [] c.c.t.b.d.A.countByCondition - ==> Parameters: 
+2018-07-07  15:25:09.905 DEBUG [999-exec-3] [] c.c.t.b.d.A.countByCondition - <==      Total: 1
+2018-07-07  15:25:17.518 DEBUG [999-exec-4] [] c.c.t.b.d.S.selectAll - ==>  Preparing: select * from skill 
+2018-07-07  15:25:17.519 DEBUG [999-exec-4] [] c.c.t.b.d.S.selectAll - ==> Parameters: 
+2018-07-07  15:25:17.555 DEBUG [999-exec-4] [] c.c.t.b.d.S.selectAll - <==      Total: 71
+2018-07-07  15:28:27.689 DEBUG [999-exec-6] [] c.c.t.b.d.A.selectByCondition - ==>  Preparing: select id, name, real_name, star, sex, country, type1, type2, strong, property, tag_film, tag_character, skill1, skill2, skill3, skill4, skill5, skill6 from actor where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-07  15:28:27.690 DEBUG [999-exec-6] [] c.c.t.b.d.A.selectByCondition - ==> Parameters: 0(Integer), 30(Integer)
+2018-07-07  15:28:27.722 DEBUG [999-exec-6] [] c.c.t.b.d.A.selectByCondition - <==      Total: 30
+2018-07-07  15:28:27.723 DEBUG [999-exec-6] [] c.c.t.b.d.A.countByCondition - ==>  Preparing: select count(1) from actor where 1=1 
+2018-07-07  15:28:27.723 DEBUG [999-exec-6] [] c.c.t.b.d.A.countByCondition - ==> Parameters: 
+2018-07-07  15:28:27.751 DEBUG [999-exec-6] [] c.c.t.b.d.A.countByCondition - <==      Total: 1
+2018-07-07  15:30:17.350 DEBUG [999-exec-9] [] c.c.t.b.d.A.selectByCondition - ==>  Preparing: select id, name, real_name, star, sex, country, type1, type2, strong, property, tag_film, tag_character, skill1, skill2, skill3, skill4, skill5, skill6 from actor where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-07  15:30:17.350 DEBUG [999-exec-9] [] c.c.t.b.d.A.selectByCondition - ==> Parameters: 0(Integer), 30(Integer)
+2018-07-07  15:30:17.381 DEBUG [999-exec-9] [] c.c.t.b.d.A.selectByCondition - <==      Total: 30
+2018-07-07  15:30:17.381 DEBUG [999-exec-9] [] c.c.t.b.d.A.countByCondition - ==>  Preparing: select count(1) from actor where 1=1 
+2018-07-07  15:30:17.381 DEBUG [999-exec-9] [] c.c.t.b.d.A.countByCondition - ==> Parameters: 
+2018-07-07  15:30:17.409 DEBUG [999-exec-9] [] c.c.t.b.d.A.countByCondition - <==      Total: 1
+2018-07-07  15:30:22.507 DEBUG [999-exec-8] [] c.c.t.b.d.A.selectByCondition - ==>  Preparing: select id, name, real_name, star, sex, country, type1, type2, strong, property, tag_film, tag_character, skill1, skill2, skill3, skill4, skill5, skill6 from actor where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-07  15:30:22.507 DEBUG [999-exec-8] [] c.c.t.b.d.A.selectByCondition - ==> Parameters: 0(Integer), 30(Integer)
+2018-07-07  15:30:22.542 DEBUG [999-exec-8] [] c.c.t.b.d.A.selectByCondition - <==      Total: 30
+2018-07-07  15:30:22.542 DEBUG [999-exec-8] [] c.c.t.b.d.A.countByCondition - ==>  Preparing: select count(1) from actor where 1=1 
+2018-07-07  15:30:22.543 DEBUG [999-exec-8] [] c.c.t.b.d.A.countByCondition - ==> Parameters: 
+2018-07-07  15:30:22.570 DEBUG [999-exec-8] [] c.c.t.b.d.A.countByCondition - <==      Total: 1
+2018-07-07  15:30:36.590 DEBUG [99-exec-10] [] c.c.t.b.d.A.selectByCondition - ==>  Preparing: select id, name, real_name, star, sex, country, type1, type2, strong, property, tag_film, tag_character, skill1, skill2, skill3, skill4, skill5, skill6 from actor where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-07  15:30:36.590 DEBUG [99-exec-10] [] c.c.t.b.d.A.selectByCondition - ==> Parameters: 0(Integer), 30(Integer)
+2018-07-07  15:30:36.625 DEBUG [99-exec-10] [] c.c.t.b.d.A.selectByCondition - <==      Total: 30
+2018-07-07  15:30:36.626 DEBUG [99-exec-10] [] c.c.t.b.d.A.countByCondition - ==>  Preparing: select count(1) from actor where 1=1 
+2018-07-07  15:30:36.626 DEBUG [99-exec-10] [] c.c.t.b.d.A.countByCondition - ==> Parameters: 
+2018-07-07  15:30:36.655 DEBUG [99-exec-10] [] c.c.t.b.d.A.countByCondition - <==      Total: 1
+2018-07-07  15:31:53.578 DEBUG [999-exec-2] [] c.c.t.b.d.A.selectByCondition - ==>  Preparing: select id, name, real_name, star, sex, country, type1, type2, strong, property, tag_film, tag_character, skill1, skill2, skill3, skill4, skill5, skill6 from actor where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-07  15:31:53.579 DEBUG [999-exec-2] [] c.c.t.b.d.A.selectByCondition - ==> Parameters: 0(Integer), 30(Integer)
+2018-07-07  15:31:53.610 DEBUG [999-exec-2] [] c.c.t.b.d.A.selectByCondition - <==      Total: 30
+2018-07-07  15:31:53.610 DEBUG [999-exec-2] [] c.c.t.b.d.A.countByCondition - ==>  Preparing: select count(1) from actor where 1=1 
+2018-07-07  15:31:53.610 DEBUG [999-exec-2] [] c.c.t.b.d.A.countByCondition - ==> Parameters: 
+2018-07-07  15:31:53.638 DEBUG [999-exec-2] [] c.c.t.b.d.A.countByCondition - <==      Total: 1
+2018-07-07  15:31:57.625 DEBUG [999-exec-3] [] c.c.t.b.d.A.selectByCondition - ==>  Preparing: select id, name, real_name, star, sex, country, type1, type2, strong, property, tag_film, tag_character, skill1, skill2, skill3, skill4, skill5, skill6 from actor where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-07  15:31:57.625 DEBUG [999-exec-3] [] c.c.t.b.d.A.selectByCondition - ==> Parameters: 0(Integer), 30(Integer)
+2018-07-07  15:31:57.655 DEBUG [999-exec-3] [] c.c.t.b.d.A.selectByCondition - <==      Total: 30
+2018-07-07  15:31:57.656 DEBUG [999-exec-3] [] c.c.t.b.d.A.countByCondition - ==>  Preparing: select count(1) from actor where 1=1 
+2018-07-07  15:31:57.656 DEBUG [999-exec-3] [] c.c.t.b.d.A.countByCondition - ==> Parameters: 
+2018-07-07  15:31:57.687 DEBUG [999-exec-3] [] c.c.t.b.d.A.countByCondition - <==      Total: 1
+2018-07-07  15:32:02.114 DEBUG [999-exec-4] [] c.c.t.b.d.A.selectByCondition - ==>  Preparing: select id, name, real_name, star, sex, country, type1, type2, strong, property, tag_film, tag_character, skill1, skill2, skill3, skill4, skill5, skill6 from actor where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-07  15:32:02.114 DEBUG [999-exec-4] [] c.c.t.b.d.A.selectByCondition - ==> Parameters: 0(Integer), 30(Integer)
+2018-07-07  15:32:02.144 DEBUG [999-exec-4] [] c.c.t.b.d.A.selectByCondition - <==      Total: 30
+2018-07-07  15:32:02.145 DEBUG [999-exec-4] [] c.c.t.b.d.A.countByCondition - ==>  Preparing: select count(1) from actor where 1=1 
+2018-07-07  15:32:02.145 DEBUG [999-exec-4] [] c.c.t.b.d.A.countByCondition - ==> Parameters: 
+2018-07-07  15:32:02.172 DEBUG [999-exec-4] [] c.c.t.b.d.A.countByCondition - <==      Total: 1
+2018-07-07  15:32:18.139 DEBUG [999-exec-5] [] c.c.t.b.d.A.selectByCondition - ==>  Preparing: select id, name, real_name, star, sex, country, type1, type2, strong, property, tag_film, tag_character, skill1, skill2, skill3, skill4, skill5, skill6 from actor where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-07  15:32:18.139 DEBUG [999-exec-5] [] c.c.t.b.d.A.selectByCondition - ==> Parameters: 0(Integer), 30(Integer)
+2018-07-07  15:32:18.176 DEBUG [999-exec-5] [] c.c.t.b.d.A.selectByCondition - <==      Total: 30
+2018-07-07  15:32:18.177 DEBUG [999-exec-5] [] c.c.t.b.d.A.countByCondition - ==>  Preparing: select count(1) from actor where 1=1 
+2018-07-07  15:32:18.177 DEBUG [999-exec-5] [] c.c.t.b.d.A.countByCondition - ==> Parameters: 
+2018-07-07  15:32:18.205 DEBUG [999-exec-5] [] c.c.t.b.d.A.countByCondition - <==      Total: 1
+2018-07-07  15:32:21.595 DEBUG [999-exec-6] [] c.c.t.b.d.A.selectByCondition - ==>  Preparing: select id, name, real_name, star, sex, country, type1, type2, strong, property, tag_film, tag_character, skill1, skill2, skill3, skill4, skill5, skill6 from actor where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-07  15:32:21.595 DEBUG [999-exec-6] [] c.c.t.b.d.A.selectByCondition - ==> Parameters: 0(Integer), 30(Integer)
+2018-07-07  15:32:21.636 DEBUG [999-exec-6] [] c.c.t.b.d.A.selectByCondition - <==      Total: 30
+2018-07-07  15:32:21.636 DEBUG [999-exec-6] [] c.c.t.b.d.A.countByCondition - ==>  Preparing: select count(1) from actor where 1=1 
+2018-07-07  15:32:21.637 DEBUG [999-exec-6] [] c.c.t.b.d.A.countByCondition - ==> Parameters: 
+2018-07-07  15:32:21.667 DEBUG [999-exec-6] [] c.c.t.b.d.A.countByCondition - <==      Total: 1
+2018-07-07  15:32:24.480 DEBUG [999-exec-7] [] c.c.t.b.d.A.selectByCondition - ==>  Preparing: select id, name, real_name, star, sex, country, type1, type2, strong, property, tag_film, tag_character, skill1, skill2, skill3, skill4, skill5, skill6 from actor where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-07  15:32:24.481 DEBUG [999-exec-7] [] c.c.t.b.d.A.selectByCondition - ==> Parameters: 0(Integer), 30(Integer)
+2018-07-07  15:32:24.510 DEBUG [999-exec-7] [] c.c.t.b.d.A.selectByCondition - <==      Total: 30
+2018-07-07  15:32:24.511 DEBUG [999-exec-7] [] c.c.t.b.d.A.countByCondition - ==>  Preparing: select count(1) from actor where 1=1 
+2018-07-07  15:32:24.511 DEBUG [999-exec-7] [] c.c.t.b.d.A.countByCondition - ==> Parameters: 
+2018-07-07  15:32:24.539 DEBUG [999-exec-7] [] c.c.t.b.d.A.countByCondition - <==      Total: 1
+2018-07-07  15:32:41.192 DEBUG [999-exec-9] [] c.c.t.b.d.A.selectByCondition - ==>  Preparing: select id, name, real_name, star, sex, country, type1, type2, strong, property, tag_film, tag_character, skill1, skill2, skill3, skill4, skill5, skill6 from actor where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-07  15:32:41.193 DEBUG [999-exec-9] [] c.c.t.b.d.A.selectByCondition - ==> Parameters: 0(Integer), 30(Integer)
+2018-07-07  15:32:41.224 DEBUG [999-exec-9] [] c.c.t.b.d.A.selectByCondition - <==      Total: 30
+2018-07-07  15:32:41.224 DEBUG [999-exec-9] [] c.c.t.b.d.A.countByCondition - ==>  Preparing: select count(1) from actor where 1=1 
+2018-07-07  15:32:41.224 DEBUG [999-exec-9] [] c.c.t.b.d.A.countByCondition - ==> Parameters: 
+2018-07-07  15:32:41.252 DEBUG [999-exec-9] [] c.c.t.b.d.A.countByCondition - <==      Total: 1
+2018-07-07  15:33:13.703 DEBUG [999-exec-8] [] c.c.t.b.d.A.selectByCondition - ==>  Preparing: select id, name, real_name, star, sex, country, type1, type2, strong, property, tag_film, tag_character, skill1, skill2, skill3, skill4, skill5, skill6 from actor where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-07  15:33:13.703 DEBUG [999-exec-8] [] c.c.t.b.d.A.selectByCondition - ==> Parameters: 0(Integer), 30(Integer)
+2018-07-07  15:33:13.734 DEBUG [999-exec-8] [] c.c.t.b.d.A.selectByCondition - <==      Total: 30
+2018-07-07  15:33:13.734 DEBUG [999-exec-8] [] c.c.t.b.d.A.countByCondition - ==>  Preparing: select count(1) from actor where 1=1 
+2018-07-07  15:33:13.734 DEBUG [999-exec-8] [] c.c.t.b.d.A.countByCondition - ==> Parameters: 
+2018-07-07  15:33:13.761 DEBUG [999-exec-8] [] c.c.t.b.d.A.countByCondition - <==      Total: 1
+2018-07-07  15:33:17.377 DEBUG [99-exec-10] [] c.c.t.b.d.A.selectByCondition - ==>  Preparing: select id, name, real_name, star, sex, country, type1, type2, strong, property, tag_film, tag_character, skill1, skill2, skill3, skill4, skill5, skill6 from actor where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-07  15:33:17.377 DEBUG [99-exec-10] [] c.c.t.b.d.A.selectByCondition - ==> Parameters: 0(Integer), 30(Integer)
+2018-07-07  15:33:17.409 DEBUG [99-exec-10] [] c.c.t.b.d.A.selectByCondition - <==      Total: 30
+2018-07-07  15:33:17.410 DEBUG [99-exec-10] [] c.c.t.b.d.A.countByCondition - ==>  Preparing: select count(1) from actor where 1=1 
+2018-07-07  15:33:17.410 DEBUG [99-exec-10] [] c.c.t.b.d.A.countByCondition - ==> Parameters: 
+2018-07-07  15:33:17.437 DEBUG [99-exec-10] [] c.c.t.b.d.A.countByCondition - <==      Total: 1
+2018-07-07  15:35:20.427 DEBUG [999-exec-2] [] c.c.t.b.d.A.selectByCondition - ==>  Preparing: select id, name, real_name, star, sex, country, type1, type2, strong, property, tag_film, tag_character, skill1, skill2, skill3, skill4, skill5, skill6 from actor where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-07  15:35:20.427 DEBUG [999-exec-2] [] c.c.t.b.d.A.selectByCondition - ==> Parameters: 0(Integer), 30(Integer)
+2018-07-07  15:35:20.458 DEBUG [999-exec-2] [] c.c.t.b.d.A.selectByCondition - <==      Total: 30
+2018-07-07  15:35:20.458 DEBUG [999-exec-2] [] c.c.t.b.d.A.countByCondition - ==>  Preparing: select count(1) from actor where 1=1 
+2018-07-07  15:35:20.458 DEBUG [999-exec-2] [] c.c.t.b.d.A.countByCondition - ==> Parameters: 
+2018-07-07  15:35:20.487 DEBUG [999-exec-2] [] c.c.t.b.d.A.countByCondition - <==      Total: 1
+2018-07-07  15:36:37.713 DEBUG [999-exec-4] [] c.c.t.b.d.A.selectByCondition - ==>  Preparing: select id, name, real_name, star, sex, country, type1, type2, strong, property, tag_film, tag_character, skill1, skill2, skill3, skill4, skill5, skill6 from actor where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-07  15:36:37.713 DEBUG [999-exec-4] [] c.c.t.b.d.A.selectByCondition - ==> Parameters: 0(Integer), 30(Integer)
+2018-07-07  15:36:37.744 DEBUG [999-exec-4] [] c.c.t.b.d.A.selectByCondition - <==      Total: 30
+2018-07-07  15:36:37.745 DEBUG [999-exec-4] [] c.c.t.b.d.A.countByCondition - ==>  Preparing: select count(1) from actor where 1=1 
+2018-07-07  15:36:37.745 DEBUG [999-exec-4] [] c.c.t.b.d.A.countByCondition - ==> Parameters: 
+2018-07-07  15:36:37.773 DEBUG [999-exec-4] [] c.c.t.b.d.A.countByCondition - <==      Total: 1
+2018-07-07  15:38:05.793 DEBUG [999-exec-6] [] c.c.t.b.d.A.selectByCondition - ==>  Preparing: select id, name, real_name, star, sex, country, type1, type2, strong, property, tag_film, tag_character, skill1, skill2, skill3, skill4, skill5, skill6 from actor where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-07  15:38:05.793 DEBUG [999-exec-6] [] c.c.t.b.d.A.selectByCondition - ==> Parameters: 0(Integer), 30(Integer)
+2018-07-07  15:38:05.823 DEBUG [999-exec-6] [] c.c.t.b.d.A.selectByCondition - <==      Total: 30
+2018-07-07  15:38:05.823 DEBUG [999-exec-6] [] c.c.t.b.d.A.countByCondition - ==>  Preparing: select count(1) from actor where 1=1 
+2018-07-07  15:38:05.823 DEBUG [999-exec-6] [] c.c.t.b.d.A.countByCondition - ==> Parameters: 
+2018-07-07  15:38:05.850 DEBUG [999-exec-6] [] c.c.t.b.d.A.countByCondition - <==      Total: 1
+2018-07-07  15:41:34.035 DEBUG [999-exec-9] [] c.c.t.b.d.A.selectByCondition - ==>  Preparing: select id, name, real_name, star, sex, country, type1, type2, strong, property, tag_film, tag_character, skill1, skill2, skill3, skill4, skill5, skill6 from actor where 1=1 AND `name` like concat('%', ? ,'%') OR star like concat('%', ? ,'%') OR country like concat('%', ? ,'%') ORDER BY star DESC LIMIT ?,? 
+2018-07-07  15:41:34.037 DEBUG [999-exec-9] [] c.c.t.b.d.A.selectByCondition - ==> Parameters: 5(String), 5(String), 5(String), 0(Integer), 30(Integer)
+2018-07-07  15:41:34.072 DEBUG [999-exec-9] [] c.c.t.b.d.A.selectByCondition - <==      Total: 30
+2018-07-07  15:41:34.074 DEBUG [999-exec-9] [] c.c.t.b.d.A.countByCondition - ==>  Preparing: select count(1) from actor where 1=1 AND `name` like concat('%', ? ,'%') OR star like concat('%', ? ,'%') OR country like concat('%', ? ,'%') 
+2018-07-07  15:41:34.075 DEBUG [999-exec-9] [] c.c.t.b.d.A.countByCondition - ==> Parameters: 5(String), 5(String), 5(String)
+2018-07-07  15:41:34.104 DEBUG [999-exec-9] [] c.c.t.b.d.A.countByCondition - <==      Total: 1
+2018-07-07  15:41:35.830 DEBUG [999-exec-8] [] c.c.t.b.d.A.selectByCondition - ==>  Preparing: select id, name, real_name, star, sex, country, type1, type2, strong, property, tag_film, tag_character, skill1, skill2, skill3, skill4, skill5, skill6 from actor where 1=1 AND `name` like concat('%', ? ,'%') OR star like concat('%', ? ,'%') OR country like concat('%', ? ,'%') ORDER BY star DESC LIMIT ?,? 
+2018-07-07  15:41:35.831 DEBUG [999-exec-8] [] c.c.t.b.d.A.selectByCondition - ==> Parameters: 5(String), 5(String), 5(String), 30(Integer), 30(Integer)
+2018-07-07  15:41:35.862 DEBUG [999-exec-8] [] c.c.t.b.d.A.selectByCondition - <==      Total: 1
+2018-07-07  15:41:35.863 DEBUG [999-exec-8] [] c.c.t.b.d.A.countByCondition - ==>  Preparing: select count(1) from actor where 1=1 AND `name` like concat('%', ? ,'%') OR star like concat('%', ? ,'%') OR country like concat('%', ? ,'%') 
+2018-07-07  15:41:35.864 DEBUG [999-exec-8] [] c.c.t.b.d.A.countByCondition - ==> Parameters: 5(String), 5(String), 5(String)
+2018-07-07  15:41:35.893 DEBUG [999-exec-8] [] c.c.t.b.d.A.countByCondition - <==      Total: 1
+2018-07-07  15:41:40.171 DEBUG [99-exec-10] [] c.c.t.b.d.A.selectByCondition - ==>  Preparing: select id, name, real_name, star, sex, country, type1, type2, strong, property, tag_film, tag_character, skill1, skill2, skill3, skill4, skill5, skill6 from actor where 1=1 AND `name` like concat('%', ? ,'%') OR star like concat('%', ? ,'%') OR country like concat('%', ? ,'%') ORDER BY star DESC LIMIT ?,? 
+2018-07-07  15:41:40.171 DEBUG [99-exec-10] [] c.c.t.b.d.A.selectByCondition - ==> Parameters: 4(String), 4(String), 4(String), 0(Integer), 30(Integer)
+2018-07-07  15:41:40.205 DEBUG [99-exec-10] [] c.c.t.b.d.A.selectByCondition - <==      Total: 30
+2018-07-07  15:41:40.205 DEBUG [99-exec-10] [] c.c.t.b.d.A.countByCondition - ==>  Preparing: select count(1) from actor where 1=1 AND `name` like concat('%', ? ,'%') OR star like concat('%', ? ,'%') OR country like concat('%', ? ,'%') 
+2018-07-07  15:41:40.206 DEBUG [99-exec-10] [] c.c.t.b.d.A.countByCondition - ==> Parameters: 4(String), 4(String), 4(String)
+2018-07-07  15:41:40.234 DEBUG [99-exec-10] [] c.c.t.b.d.A.countByCondition - <==      Total: 1
+2018-07-07  15:41:41.890 DEBUG [999-exec-1] [] c.c.t.b.d.A.selectByCondition - ==>  Preparing: select id, name, real_name, star, sex, country, type1, type2, strong, property, tag_film, tag_character, skill1, skill2, skill3, skill4, skill5, skill6 from actor where 1=1 AND `name` like concat('%', ? ,'%') OR star like concat('%', ? ,'%') OR country like concat('%', ? ,'%') ORDER BY star DESC LIMIT ?,? 
+2018-07-07  15:41:41.891 DEBUG [999-exec-1] [] c.c.t.b.d.A.selectByCondition - ==> Parameters: 4(String), 4(String), 4(String), 30(Integer), 30(Integer)
+2018-07-07  15:41:41.920 DEBUG [999-exec-1] [] c.c.t.b.d.A.selectByCondition - <==      Total: 0
+2018-07-07  15:44:58.031 INFO  [tartedMain] [] o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@5808b2e1: startup date [Sat Jul 07 15:44:58 CST 2018]; root of context hierarchy
+2018-07-07  15:44:58.191 INFO  [nd-preinit] [] o.h.v.i.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2018-07-07  15:44:58.385 INFO  [tartedMain] [] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-07-07  15:44:58.425 INFO  [tartedMain] [] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$6c566c38] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-07  15:45:00.106 INFO  [tartedMain] [] c.c.t.b.TaurusBaseApplication - No active profile set, falling back to default profiles: default
+2018-07-07  15:45:00.124 INFO  [tartedMain] [] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@18048cc1: startup date [Sat Jul 07 15:45:00 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@5808b2e1
+2018-07-07  15:45:02.401 INFO  [tartedMain] [] o.s.c.c.s.GenericScope - BeanFactory id=37cd122b-8e0d-3333-bab3-e86f4c2b1934
+2018-07-07  15:45:02.435 INFO  [tartedMain] [] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-07-07  15:45:02.568 INFO  [tartedMain] [] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$503c693b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-07  15:45:02.739 INFO  [tartedMain] [] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.netflix.metrics.MetricsInterceptorConfiguration$MetricsRestTemplateConfiguration' of type [org.springframework.cloud.netflix.metrics.MetricsInterceptorConfiguration$MetricsRestTemplateConfiguration$$EnhancerBySpringCGLIB$$82690f7c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-07  15:45:02.757 INFO  [tartedMain] [] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$6c566c38] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-07  15:45:03.728 INFO  [tartedMain] [] o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 9999 (http)
+2018-07-07  15:45:03.737 INFO  [tartedMain] [] o.a.c.c.StandardService - Starting service [Tomcat]
+2018-07-07  15:45:03.738 INFO  [tartedMain] [] o.a.c.c.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.15
+2018-07-07  15:45:03.882 INFO  [tartStop-1] [] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+2018-07-07  15:45:03.883 INFO  [tartStop-1] [] o.s.w.c.ContextLoader - Root WebApplicationContext: initialization completed in 3759 ms
+2018-07-07  15:45:04.497 INFO  [tartStop-1] [] o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/taurus-base/*]
+2018-07-07  15:45:04.499 INFO  [tartStop-1] [] o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'com.cf.taurus.base.dbrouter.monitor.DruidStatViewServlet' to [/druid/*]
+2018-07-07  15:45:04.502 INFO  [tartStop-1] [] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'metricsFilter' to: [/*]
+2018-07-07  15:45:04.503 INFO  [tartStop-1] [] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-07  15:45:04.503 INFO  [tartStop-1] [] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-07-07  15:45:04.503 INFO  [tartStop-1] [] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-07-07  15:45:04.503 INFO  [tartStop-1] [] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-07  15:45:04.503 INFO  [tartStop-1] [] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2018-07-07  15:45:04.503 INFO  [tartStop-1] [] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'druidWebStatFilter' to urls: [/*]
+2018-07-07  15:45:04.503 INFO  [tartStop-1] [] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'applicationContextIdFilter' to: [/*]
+2018-07-07  15:45:04.837 DEBUG [tartedMain] [] c.c.t.b.d.c.DruidAutoConfiguration - DATASOURCE CONFIG: DruidProperties.DataSourceConfig(alias=main, driverClassName=com.mysql.jdbc.Driver, url=jdbc:mysql://47.97.163.100:3306/taurus?useUnicode=true&characterEncoding=utf8&useSSL=true, username=root, password=password, type=com.alibaba.druid.pool.DruidDataSource, testWhileIdle=true, testOnReturn=false, testOnBorrow=false, validationQuery=select 'x', filters=stat, minEvictableIdleTimeMillis=300000, initialSize=1, minIdle=1, maxActive=20, maxWait=60000, timeBetweenEvictionRunsMillis=60000, poolPreparedStatements=true, maxOpenPreparedStatements=20)
+2018-07-07  15:45:04.937 INFO  [tartedMain] [] c.c.t.b.d.c.DruidAutoConfiguration - DataBase route config success
+2018-07-07  15:45:06.772 INFO  [tartedMain] [] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@18048cc1: startup date [Sat Jul 07 15:45:00 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@5808b2e1
+2018-07-07  15:45:06.979 INFO  [tartedMain] [] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/actor/getAllSkill],methods=[GET]}" onto public com.cf.taurus.common.util.Response com.cf.taurus.base.provider.ActorProvider.getAllSkill()
+2018-07-07  15:45:06.981 INFO  [tartedMain] [] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/actor/getActorById],methods=[GET]}" onto public com.cf.taurus.common.util.Response com.cf.taurus.base.provider.ActorProvider.getActorById(java.lang.Integer)
+2018-07-07  15:45:06.982 INFO  [tartedMain] [] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/actor/getActors],methods=[POST]}" onto public com.cf.taurus.common.util.Response com.cf.taurus.base.provider.ActorProvider.getActors(com.cf.taurus.common.po.Actor)
+2018-07-07  15:45:06.982 INFO  [tartedMain] [] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/actor/getSkillDetailByName],methods=[GET]}" onto public com.cf.taurus.common.util.Response com.cf.taurus.base.provider.ActorProvider.getSkillDetailByName(java.lang.String)
+2018-07-07  15:45:06.983 INFO  [tartedMain] [] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/film/getFilmById],methods=[GET]}" onto public com.cf.taurus.common.util.Response com.cf.taurus.base.provider.FilmProvider.getFilmById(java.lang.Integer)
+2018-07-07  15:45:06.983 INFO  [tartedMain] [] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/film/getFilms],methods=[POST]}" onto public com.cf.taurus.common.util.Response com.cf.taurus.base.provider.FilmProvider.getFilms(com.cf.taurus.common.po.Film)
+2018-07-07  15:45:06.984 INFO  [tartedMain] [] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hint/saveHint],methods=[POST]}" onto public com.cf.taurus.common.util.Response com.cf.taurus.base.provider.HintProvider.saveHint(com.cf.taurus.common.po.Hint)
+2018-07-07  15:45:06.984 INFO  [tartedMain] [] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hint/getHints],methods=[POST]}" onto public com.cf.taurus.common.util.Response com.cf.taurus.base.provider.HintProvider.getHints(com.cf.taurus.common.po.Hint)
+2018-07-07  15:45:06.984 INFO  [tartedMain] [] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hint/getHintById],methods=[GET]}" onto public com.cf.taurus.common.util.Response com.cf.taurus.base.provider.HintProvider.getHintById(java.lang.Integer)
+2018-07-07  15:45:06.984 INFO  [tartedMain] [] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/sell/getAllSell],methods=[GET]}" onto public com.cf.taurus.common.util.Response com.cf.taurus.base.provider.SellProvider.getAllSell()
+2018-07-07  15:45:06.985 INFO  [tartedMain] [] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/saveUserInfo],methods=[POST]}" onto public com.cf.taurus.common.util.Response com.cf.taurus.base.provider.UserProvider.saveUserInfo(com.cf.taurus.common.po.UserInfo)
+2018-07-07  15:45:06.986 INFO  [tartedMain] [] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/getUserInfoById],methods=[GET]}" onto public com.cf.taurus.common.util.Response com.cf.taurus.base.provider.UserProvider.getUserInfoById(java.lang.Long)
+2018-07-07  15:45:06.986 INFO  [tartedMain] [] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/checkPassword],methods=[GET]}" onto public com.cf.taurus.common.util.Response com.cf.taurus.base.provider.UserProvider.checkPassword(java.lang.Long,java.lang.String)
+2018-07-07  15:45:06.986 INFO  [tartedMain] [] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/getSummary],methods=[GET]}" onto public com.cf.taurus.common.util.Response com.cf.taurus.base.provider.UserProvider.getSummary()
+2018-07-07  15:45:06.987 INFO  [tartedMain] [] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-07  15:45:06.988 INFO  [tartedMain] [] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-07  15:45:07.123 INFO  [tartedMain] [] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-07  15:45:07.123 INFO  [tartedMain] [] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-07  15:45:07.202 INFO  [tartedMain] [] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-07  15:45:08.472 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-07-07  15:45:08.473 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/archaius || /archaius.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-07-07  15:45:08.474 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/features || /features.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-07-07  15:45:08.475 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/shutdown || /shutdown.json],methods=[POST],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.ShutdownMvcEndpoint.invoke()
+2018-07-07  15:45:08.476 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-07-07  15:45:08.478 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+2018-07-07  15:45:08.479 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+2018-07-07  15:45:08.479 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-07-07  15:45:08.480 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-07-07  15:45:08.481 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2018-07-07  15:45:08.481 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-07-07  15:45:08.482 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-07-07  15:45:08.482 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/env],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.value(java.util.Map<java.lang.String, java.lang.String>)
+2018-07-07  15:45:08.483 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/env/reset],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.reset()
+2018-07-07  15:45:08.483 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/resume || /resume.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2018-07-07  15:45:08.484 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2018-07-07  15:45:08.484 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-07-07  15:45:08.486 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2018-07-07  15:45:08.488 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+2018-07-07  15:45:08.488 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/pause || /pause.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2018-07-07  15:45:08.489 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+2018-07-07  15:45:08.490 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/restart || /restart.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.restart.RestartMvcEndpoint.invoke()
+2018-07-07  15:45:08.490 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-07-07  15:45:08.491 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-07-07  15:45:08.492 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/refresh || /refresh.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2018-07-07  15:45:08.492 INFO  [tartedMain] [] o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-07-07  15:45:09.188 INFO  [tartedMain] [] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2018-07-07  15:45:10.424 INFO  [tartedMain] [] o.s.c.c.u.InetUtils - Cannot determine local hostname
+2018-07-07  15:45:10.692 WARN  [tartedMain] [] c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2018-07-07  15:45:10.693 INFO  [tartedMain] [] c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-07-07  15:45:10.706 WARN  [tartedMain] [] c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2018-07-07  15:45:10.706 INFO  [tartedMain] [] c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-07-07  15:45:11.011 INFO  [tartedMain] [] o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-07-07  15:45:11.020 INFO  [tartedMain] [] o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'environmentManager' has been autodetected for JMX exposure
+2018-07-07  15:45:11.022 INFO  [tartedMain] [] o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2018-07-07  15:45:11.022 INFO  [tartedMain] [] o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'refreshEndpoint' has been autodetected for JMX exposure
+2018-07-07  15:45:11.023 INFO  [tartedMain] [] o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'restartEndpoint' has been autodetected for JMX exposure
+2018-07-07  15:45:11.023 INFO  [tartedMain] [] o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'refreshScope' has been autodetected for JMX exposure
+2018-07-07  15:45:11.025 INFO  [tartedMain] [] o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2018-07-07  15:45:11.042 INFO  [tartedMain] [] o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'restartEndpoint': registering with JMX server as MBean [org.springframework.cloud.context.restart:name=restartEndpoint,type=RestartEndpoint]
+2018-07-07  15:45:11.052 INFO  [tartedMain] [] o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2018-07-07  15:45:11.063 INFO  [tartedMain] [] o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=18048cc1,type=ConfigurationPropertiesRebinder]
+2018-07-07  15:45:11.068 INFO  [tartedMain] [] o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'refreshEndpoint': registering with JMX server as MBean [org.springframework.cloud.endpoint:name=refreshEndpoint,type=RefreshEndpoint]
+2018-07-07  15:45:11.068 INFO  [tartedMain] [] o.s.b.a.e.j.EndpointMBeanExporter - Registering beans for JMX exposure on startup
+2018-07-07  15:45:11.280 INFO  [tartedMain] [] o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 0
+2018-07-07  15:45:11.281 INFO  [tartedMain] [] o.s.b.a.e.j.EndpointMBeanExporter - Located managed bean 'auditEventsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=auditEventsEndpoint]
+2018-07-07  15:45:11.288 INFO  [tartedMain] [] o.s.b.a.e.j.EndpointMBeanExporter - Located managed bean 'featuresEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=featuresEndpoint]
+2018-07-07  15:45:11.296 INFO  [tartedMain] [] o.s.b.a.e.j.EndpointMBeanExporter - Located managed bean 'requestMappingEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=requestMappingEndpoint]
+2018-07-07  15:45:11.298 INFO  [tartedMain] [] o.s.b.a.e.j.EndpointMBeanExporter - Located managed bean 'environmentEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=environmentEndpoint]
+2018-07-07  15:45:11.300 INFO  [tartedMain] [] o.s.b.a.e.j.EndpointMBeanExporter - Located managed bean 'healthEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=healthEndpoint]
+2018-07-07  15:45:11.301 INFO  [tartedMain] [] o.s.b.a.e.j.EndpointMBeanExporter - Located managed bean 'beansEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=beansEndpoint]
+2018-07-07  15:45:11.303 INFO  [tartedMain] [] o.s.b.a.e.j.EndpointMBeanExporter - Located managed bean 'infoEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=infoEndpoint]
+2018-07-07  15:45:11.306 INFO  [tartedMain] [] o.s.b.a.e.j.EndpointMBeanExporter - Located managed bean 'loggersEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=loggersEndpoint]
+2018-07-07  15:45:11.311 INFO  [tartedMain] [] o.s.b.a.e.j.EndpointMBeanExporter - Located managed bean 'metricsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=metricsEndpoint]
+2018-07-07  15:45:11.312 INFO  [tartedMain] [] o.s.b.a.e.j.EndpointMBeanExporter - Located managed bean 'traceEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=traceEndpoint]
+2018-07-07  15:45:11.314 INFO  [tartedMain] [] o.s.b.a.e.j.EndpointMBeanExporter - Located managed bean 'dumpEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=dumpEndpoint]
+2018-07-07  15:45:11.316 INFO  [tartedMain] [] o.s.b.a.e.j.EndpointMBeanExporter - Located managed bean 'autoConfigurationReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=autoConfigurationReportEndpoint]
+2018-07-07  15:45:11.318 INFO  [tartedMain] [] o.s.b.a.e.j.EndpointMBeanExporter - Located managed bean 'shutdownEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=shutdownEndpoint]
+2018-07-07  15:45:11.322 INFO  [tartedMain] [] o.s.b.a.e.j.EndpointMBeanExporter - Located managed bean 'configurationPropertiesReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=configurationPropertiesReportEndpoint]
+2018-07-07  15:45:11.324 INFO  [tartedMain] [] o.s.b.a.e.j.EndpointMBeanExporter - Located managed bean 'archaiusEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=archaiusEndpoint]
+2018-07-07  15:45:11.339 INFO  [tartedMain] [] o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2018-07-07  15:45:11.347 INFO  [tartedMain] [] o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9999"]
+2018-07-07  15:45:11.460 INFO  [tartedMain] [] o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9999"]
+2018-07-07  15:45:11.492 INFO  [tartedMain] [] o.a.t.u.n.NioSelectorPool - Using a shared selector for servlet write/read
+2018-07-07  15:45:11.526 INFO  [tartedMain] [] o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 9999 (http)
+2018-07-07  15:45:11.532 INFO  [tartedMain] [] c.c.t.b.TaurusBaseApplication - Started TaurusBaseApplication in 15.258 seconds (JVM running for 17.699)
+2018-07-07  15:45:11.532 INFO  [tartedMain] [] c.c.t.b.TaurusBaseApplication - Server start success
+2018-07-07  15:45:18.465 INFO  [999-exec-1] [] o.a.c.c.C.[.[.[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-07-07  15:45:18.465 INFO  [999-exec-1] [] o.s.w.s.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-07-07  15:45:18.507 INFO  [999-exec-1] [] o.s.w.s.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 42 ms
+2018-07-07  15:45:19.589 INFO  [999-exec-1] [] c.a.d.p.DruidDataSource - {dataSource-1} inited
+2018-07-07  15:45:19.601 DEBUG [999-exec-1] [] c.c.t.b.d.A.selectByCondition - ==>  Preparing: select id, name, real_name, star, sex, country, type1, type2, strong, property, tag_film, tag_character, skill1, skill2, skill3, skill4, skill5, skill6 from actor where 1=1 ORDER BY star DESC LIMIT ?,? 
+2018-07-07  15:45:19.639 DEBUG [999-exec-1] [] c.c.t.b.d.A.selectByCondition - ==> Parameters: 0(Integer), 30(Integer)
+2018-07-07  15:45:19.741 DEBUG [999-exec-1] [] c.c.t.b.d.A.selectByCondition - <==      Total: 30
+2018-07-07  15:45:19.743 DEBUG [999-exec-1] [] c.c.t.b.d.A.countByCondition - ==>  Preparing: select count(1) from actor where 1=1 
+2018-07-07  15:45:19.743 DEBUG [999-exec-1] [] c.c.t.b.d.A.countByCondition - ==> Parameters: 
+2018-07-07  15:45:19.772 DEBUG [999-exec-1] [] c.c.t.b.d.A.countByCondition - <==      Total: 1
+2018-07-07  15:45:22.117 INFO  [999-exec-2] [] c.c.t.b.b.i.UserBusinessImpl - UserBusinessImpl.getOpenIdFromWx, code is 033c1l1L0pfvC525Sj2L09B51L0c1l1K, result is {"session_key":"qL\/zxLGQBGFdFsS7HSk48w==","openid":"ocmOt4igdgPXllGl3pCOzEDJR0aw"}
+2018-07-07  15:45:22.146 DEBUG [999-exec-2] [] c.c.t.b.d.U.selectByOpenId - ==>  Preparing: select id, open_id, sex, name, city, province, country, password, point, device, system, image, is_ucg, is_delete, ctime, utime from user_info where open_id = ? 
+2018-07-07  15:45:22.147 DEBUG [999-exec-2] [] c.c.t.b.d.U.selectByOpenId - ==> Parameters: ocmOt4igdgPXllGl3pCOzEDJR0aw(String)
+2018-07-07  15:45:22.178 DEBUG [999-exec-2] [] c.c.t.b.d.U.selectByOpenId - <==      Total: 1
+2018-07-07  15:45:22.375 DEBUG [999-exec-3] [] c.c.t.b.d.A.countByCondition - ==>  Preparing: select count(1) from actor where 1=1 
+2018-07-07  15:45:22.376 DEBUG [999-exec-3] [] c.c.t.b.d.A.countByCondition - ==> Parameters: 
+2018-07-07  15:45:22.404 DEBUG [999-exec-3] [] c.c.t.b.d.A.countByCondition - <==      Total: 1
+2018-07-07  15:45:22.405 DEBUG [999-exec-4] [] c.c.t.b.d.S.getAllSell - ==>  Preparing: select id, street, level1, level2, level3, level4 from sell 
+2018-07-07  15:45:22.405 DEBUG [999-exec-4] [] c.c.t.b.d.S.getAllSell - ==> Parameters: 
+2018-07-07  15:45:22.445 DEBUG [999-exec-4] [] c.c.t.b.d.S.getAllSell - <==      Total: 20
+2018-07-07  15:45:22.446 DEBUG [999-exec-3] [] c.c.t.b.d.F.countByCondition - ==>  Preparing: select count(1) from film where 1=1 
+2018-07-07  15:45:22.446 DEBUG [999-exec-3] [] c.c.t.b.d.F.countByCondition - ==> Parameters: 
+2018-07-07  15:45:22.482 DEBUG [999-exec-3] [] c.c.t.b.d.F.countByCondition - <==      Total: 1
+2018-07-07  15:45:22.483 DEBUG [999-exec-3] [] c.c.t.b.d.H.countByCondition - ==>  Preparing: select count(1) from hint where deleted = 1 
+2018-07-07  15:45:22.483 DEBUG [999-exec-3] [] c.c.t.b.d.H.countByCondition - ==> Parameters: 
+2018-07-07  15:45:22.514 DEBUG [999-exec-3] [] c.c.t.b.d.H.countByCondition - <==      Total: 1

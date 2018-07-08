@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/taurus.iml" filepath="$PROJECT_DIR$/taurus.iml" />
+      <module fileurl="file://$PROJECT_DIR$/taurus-base/taurus-base.iml" filepath="$PROJECT_DIR$/taurus-base/taurus-base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/taurus-common/taurus-common.iml" filepath="$PROJECT_DIR$/taurus-common/taurus-common.iml" />
+    </modules>
+  </component>
+</project>
