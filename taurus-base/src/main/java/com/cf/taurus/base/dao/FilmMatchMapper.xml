@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.cf.taurus.base.dao.FilmMatchMapper" >
+  <resultMap id="BaseResultMap" type="com.cf.taurus.common.po.FilmMatch" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="film_id" property="filmId" jdbcType="INTEGER" />
+    <result column="film_name" property="filmName" jdbcType="VARCHAR" />
+    <result column="actor_index" property="actorIndex" jdbcType="INTEGER" />
+    <result column="actor_name" property="actorName" jdbcType="VARCHAR" />
+    <result column="actor_sex" property="actorSex" jdbcType="INTEGER" />
+    <result column="actor_type1" property="actorType1" jdbcType="CHAR" />
+    <result column="actor_type2" property="actorType2" jdbcType="CHAR" />
+    <result column="actor_country" property="actorCountry" jdbcType="CHAR" />
+    <result column="tag_film" property="tagFilm" jdbcType="VARCHAR" />
+    <result column="tag_character" property="tagCharacter" jdbcType="VARCHAR" />
+    <result column="actors" property="actors" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    id, film_id, film_name, actor_index, actor_name, actor_sex, actor_type1, actor_type2, 
+    actor_country, tag_film, tag_character, actors
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from film_match
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from film_match
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.cf.taurus.common.po.FilmMatch" >
+    insert into film_match (id, film_id, film_name, 
+      actor_index, actor_name, actor_sex, 
+      actor_type1, actor_type2, actor_country, 
+      tag_film, tag_character, actors
+      )
+    values (#{id,jdbcType=INTEGER}, #{filmId,jdbcType=INTEGER}, #{filmName,jdbcType=VARCHAR}, 
+      #{actorIndex,jdbcType=INTEGER}, #{actorName,jdbcType=VARCHAR}, #{actorSex,jdbcType=INTEGER}, 
+      #{actorType1,jdbcType=CHAR}, #{actorType2,jdbcType=CHAR}, #{actorCountry,jdbcType=CHAR}, 
+      #{tagFilm,jdbcType=VARCHAR}, #{tagCharacter,jdbcType=VARCHAR}, #{actors,jdbcType=VARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.cf.taurus.common.po.FilmMatch" >
+    insert into film_match
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="filmId != null" >
+        film_id,
+      </if>
+      <if test="filmName != null" >
+        film_name,
+      </if>
+      <if test="actorIndex != null" >
+        actor_index,
+      </if>
+      <if test="actorName != null" >
+        actor_name,
+      </if>
+      <if test="actorSex != null" >
+        actor_sex,
+      </if>
+      <if test="actorType1 != null" >
+        actor_type1,
+      </if>
+      <if test="actorType2 != null" >
+        actor_type2,
+      </if>
+      <if test="actorCountry != null" >
+        actor_country,
+      </if>
+      <if test="tagFilm != null" >
+        tag_film,
+      </if>
+      <if test="tagCharacter != null" >
+        tag_character,
+      </if>
+      <if test="actors != null" >
+        actors,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="filmId != null" >
+        #{filmId,jdbcType=INTEGER},
+      </if>
+      <if test="filmName != null" >
+        #{filmName,jdbcType=VARCHAR},
+      </if>
+      <if test="actorIndex != null" >
+        #{actorIndex,jdbcType=INTEGER},
+      </if>
+      <if test="actorName != null" >
+        #{actorName,jdbcType=VARCHAR},
+      </if>
+      <if test="actorSex != null" >
+        #{actorSex,jdbcType=INTEGER},
+      </if>
+      <if test="actorType1 != null" >
+        #{actorType1,jdbcType=CHAR},
+      </if>
+      <if test="actorType2 != null" >
+        #{actorType2,jdbcType=CHAR},
+      </if>
+      <if test="actorCountry != null" >
+        #{actorCountry,jdbcType=CHAR},
+      </if>
+      <if test="tagFilm != null" >
+        #{tagFilm,jdbcType=VARCHAR},
+      </if>
+      <if test="tagCharacter != null" >
+        #{tagCharacter,jdbcType=VARCHAR},
+      </if>
+      <if test="actors != null" >
+        #{actors,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.cf.taurus.common.po.FilmMatch" >
+    update film_match
+    <set >
+      <if test="filmId != null" >
+        film_id = #{filmId,jdbcType=INTEGER},
+      </if>
+      <if test="filmName != null" >
+        film_name = #{filmName,jdbcType=VARCHAR},
+      </if>
+      <if test="actorIndex != null" >
+        actor_index = #{actorIndex,jdbcType=INTEGER},
+      </if>
+      <if test="actorName != null" >
+        actor_name = #{actorName,jdbcType=VARCHAR},
+      </if>
+      <if test="actorSex != null" >
+        actor_sex = #{actorSex,jdbcType=INTEGER},
+      </if>
+      <if test="actorType1 != null" >
+        actor_type1 = #{actorType1,jdbcType=CHAR},
+      </if>
+      <if test="actorType2 != null" >
+        actor_type2 = #{actorType2,jdbcType=CHAR},
+      </if>
+      <if test="actorCountry != null" >
+        actor_country = #{actorCountry,jdbcType=CHAR},
+      </if>
+      <if test="tagFilm != null" >
+        tag_film = #{tagFilm,jdbcType=VARCHAR},
+      </if>
+      <if test="tagCharacter != null" >
+        tag_character = #{tagCharacter,jdbcType=VARCHAR},
+      </if>
+      <if test="actors != null" >
+        actors = #{actors,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.cf.taurus.common.po.FilmMatch" >
+    update film_match
+    set film_id = #{filmId,jdbcType=INTEGER},
+      film_name = #{filmName,jdbcType=VARCHAR},
+      actor_index = #{actorIndex,jdbcType=INTEGER},
+      actor_name = #{actorName,jdbcType=VARCHAR},
+      actor_sex = #{actorSex,jdbcType=INTEGER},
+      actor_type1 = #{actorType1,jdbcType=CHAR},
+      actor_type2 = #{actorType2,jdbcType=CHAR},
+      actor_country = #{actorCountry,jdbcType=CHAR},
+      tag_film = #{tagFilm,jdbcType=VARCHAR},
+      tag_character = #{tagCharacter,jdbcType=VARCHAR},
+      actors = #{actors,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="getAllData" resultMap="BaseResultMap">
+    select * from film_match
+  </select>
+</mapper>
