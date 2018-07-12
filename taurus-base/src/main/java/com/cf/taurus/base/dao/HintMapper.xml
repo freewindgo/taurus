@@ -7,11 +7,12 @@
     <result column="user_id" property="userId" jdbcType="INTEGER" />
     <result column="user_name" property="userName" jdbcType="VARCHAR" />
     <result column="content" property="content" jdbcType="VARCHAR" />
+    <result column="key_word" property="keyWord" jdbcType="VARCHAR" />
     <result column="ctime" property="ctime" jdbcType="CHAR" />
     <result column="deleted" property="deleted" jdbcType="INTEGER" />
   </resultMap>
   <sql id="Base_Column_List" >
-    id, title, user_id, user_name, content, ctime, deleted
+    id, title, user_id, user_name, content, key_word, ctime, deleted
   </sql>
   <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
     select 
@@ -25,10 +26,10 @@
   </delete>
   <insert id="insert" parameterType="com.cf.taurus.common.po.Hint" >
     insert into hint (id, title, user_id, 
-      user_name, content, ctime, 
+      user_name, content, key_word, ctime,
       deleted)
     values (#{id,jdbcType=INTEGER}, #{title,jdbcType=VARCHAR}, #{userId,jdbcType=INTEGER}, 
-      #{userName,jdbcType=VARCHAR}, #{content,jdbcType=VARCHAR}, #{ctime,jdbcType=CHAR}, 
+      #{userName,jdbcType=VARCHAR}, #{content,jdbcType=VARCHAR}, #{keyWord,jdbcType=VARCHAR}, #{ctime,jdbcType=CHAR},
       #{deleted,jdbcType=INTEGER})
   </insert>
   <insert id="insertSelective" parameterType="com.cf.taurus.common.po.Hint" >
@@ -48,6 +49,9 @@
       </if>
       <if test="content != null" >
         content,
+      </if>
+      <if test="keyWord != null" >
+        key_word,
       </if>
       <if test="ctime != null" >
         ctime,
@@ -72,6 +76,9 @@
       <if test="content != null" >
         #{content,jdbcType=VARCHAR},
       </if>
+      <if test="keyWord != null" >
+        #{key_word,jdbcType=VARCHAR},
+      </if>
       <if test="ctime != null" >
         #{ctime,jdbcType=CHAR},
       </if>
@@ -95,6 +102,9 @@
       <if test="content != null" >
         content = #{content,jdbcType=VARCHAR},
       </if>
+      <if test="keyWord != null" >
+        key_word = #{keyWord,jdbcType=VARCHAR},
+      </if>
       <if test="ctime != null" >
         ctime = #{ctime,jdbcType=CHAR},
       </if>
@@ -110,6 +120,7 @@
       user_id = #{userId,jdbcType=INTEGER},
       user_name = #{userName,jdbcType=VARCHAR},
       content = #{content,jdbcType=VARCHAR},
+      key_word = #{keyWord,jdbcType=VARCHAR},
       ctime = #{ctime,jdbcType=CHAR},
       deleted = #{deleted,jdbcType=INTEGER}
     where id = #{id,jdbcType=INTEGER}

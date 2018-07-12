@@ -22,4 +22,6 @@ public class Hint  extends PageInfo{
 
     private Integer deleted;
 
+    private String keyWord;
+
 }

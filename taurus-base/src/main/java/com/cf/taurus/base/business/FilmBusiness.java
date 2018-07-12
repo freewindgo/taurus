@@ -15,4 +15,11 @@ public interface FilmBusiness {
 
     Response getFilms(Film film);
 
+    void getMatchActors(Integer countLimit);
+
+    /**
+     * 数据迁移调用方法，用于生成初始的filmType数据
+     */
+    void insertFilmTagToMatch();
+
 }

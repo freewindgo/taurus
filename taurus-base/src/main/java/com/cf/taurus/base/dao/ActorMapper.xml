@@ -251,6 +251,7 @@
     where 1=1
     <if test="searchValue != null and searchValue != '' " >
       AND `name` like concat('%', #{searchValue} ,'%')
+      OR real_name like concat('%', #{searchValue} ,'%')
       OR star like concat('%', #{searchValue} ,'%')
       OR country like concat('%', #{searchValue} ,'%')
       OR strong like concat('%', #{searchValue} ,'%')
@@ -271,6 +272,7 @@
     <if test="searchValue != null and searchValue != '' " >
       AND `name` like concat('%', #{searchValue} ,'%')
       OR star like concat('%', #{searchValue} ,'%')
+      OR real_name like concat('%', #{searchValue} ,'%')
       OR country like concat('%', #{searchValue} ,'%')
       OR strong like concat('%', #{searchValue} ,'%')
     </if>

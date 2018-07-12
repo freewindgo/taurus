@@ -109,12 +109,12 @@ public class UserBusinessImpl implements UserBusiness {
         int actorCount = actorMapper.countByCondition(new Actor());
         int filmCount = filmMapper.countByCondition(new Film());
         int hintCount = hintMapper.countByCondition(new Hint());
-
+        long userCount = userInfoMapper.getMaxId();
         Map resMap = new HashMap();
         resMap.put("actorCount",actorCount);
         resMap.put("filmCount",filmCount);
         resMap.put("hintCount",hintCount);
-
+        resMap.put("userCount",userCount);
         return Response.success(resMap);
     }
 

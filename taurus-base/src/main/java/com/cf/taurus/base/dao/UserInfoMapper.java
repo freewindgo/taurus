@@ -20,4 +20,6 @@ public interface UserInfoMapper {
     long updateByPrimaryKey(UserInfo record);
 
     UserInfo selectByOpenId(String openId);
+
+    long getMaxId();
 }
