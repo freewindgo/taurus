@@ -22,4 +22,6 @@ public interface FilmMatchMapper {
     int updateByPrimaryKey(FilmMatch record);
 
     List<FilmMatch> getAllData();
+
+    List<FilmMatch> getByFilmId(Integer filmId);
 }

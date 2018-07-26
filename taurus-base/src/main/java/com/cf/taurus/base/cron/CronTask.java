@@ -35,9 +35,11 @@ public class CronTask {
     private final Integer EXPIRE_DAY_CONFIG = 1;
     private final Integer MATCH_TAG_NUM_CONFIG = 2;
     private final Integer MATCH_SWITCH_CONFIG = 3;
+    private final Integer SAVE_TAG_NUM_CONFIG = 4;
 
     private final Integer REAL_DELETE_DAYS_DEFAULT = 14;
-    private final Integer MATCH_TAG_NUM_DEFAULT = 3;
+    private final Integer MATCH_TAG_NUM_DEFAULT = 2;
+    private final Integer SAVE_TAG_NUM_DEFAULT = 20;
     private final Integer MATCH_SWITCH_DEFAULT = 2;
     /**
      * 每天1点清理hint数据库中deleted为2并且创建时间已超过realDeleteDays的数据
@@ -59,7 +61,6 @@ public class CronTask {
     @Scheduled(cron = "0 2 0 * * ? ")
     public void getMatchActors(){
         try {
-            Long startTime = new Date().getTime();
             AdminConfig adminConfig = adminBusiness.getAdminConfigById(MATCH_SWITCH_CONFIG);
             if(adminConfig == null || Integer.valueOf(adminConfig.getValue()) == MATCH_SWITCH_DEFAULT){
                 log.info("Auto match actors has already closed");
@@ -67,8 +68,13 @@ public class CronTask {
             }
             adminConfig = adminBusiness.getAdminConfigById(MATCH_TAG_NUM_CONFIG);
             int countLimit = adminConfig == null ? MATCH_TAG_NUM_DEFAULT : Integer.valueOf(adminConfig.getValue());
-            log.info("Auto match actors start working, match tag number is {}", countLimit);
-            filmBusiness.getMatchActors(countLimit);
+
+            adminConfig = adminBusiness.getAdminConfigById(SAVE_TAG_NUM_CONFIG);
+            int saveLimit = adminConfig == null ? SAVE_TAG_NUM_DEFAULT : Integer.valueOf(adminConfig.getValue());
+
+            log.info("Auto match actors start working, match tag number is {}, save actor number is {}", countLimit, saveLimit);
+
+            filmBusiness.getMatchActors(countLimit, saveLimit, null);
         } catch (Exception e) {
             log.error("cron getMatchActors error, e:{}", e);
         }

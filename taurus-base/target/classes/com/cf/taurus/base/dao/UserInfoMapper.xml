@@ -228,4 +228,8 @@
       utime = #{utime,jdbcType=CHAR}
     where id = #{id,jdbcType=BIGINT}
   </update>
+
+  <select id="getMaxId" resultType="java.lang.Long">
+    select max(id) from user_info
+  </select>
 </mapper>

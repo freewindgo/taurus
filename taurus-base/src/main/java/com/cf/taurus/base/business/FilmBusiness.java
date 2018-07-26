@@ -1,6 +1,7 @@
 package com.cf.taurus.base.business;
 
 import com.cf.taurus.common.po.Film;
+import com.cf.taurus.common.po.FilmUcg;
 import com.cf.taurus.common.util.Response;
 
 /**
@@ -15,7 +16,13 @@ public interface FilmBusiness {
 
     Response getFilms(Film film);
 
-    void getMatchActors(Integer countLimit);
+    Response getFilmMatch(Integer filmId);
+
+    Response getFilmUcgLimit(Integer userId, Integer filmId);
+
+    Response saveFilmUcg(FilmUcg filmUcg);
+
+    void getMatchActors(Integer countLimit, Integer saveLimit, Integer targetId);
 
     /**
      * 数据迁移调用方法，用于生成初始的filmType数据

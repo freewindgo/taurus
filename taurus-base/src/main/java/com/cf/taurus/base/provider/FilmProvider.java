@@ -4,6 +4,7 @@ import com.cf.taurus.base.business.FilmBusiness;
 import com.cf.taurus.base.interceptor.TimeCost;
 import com.cf.taurus.common.message.ResponseMessage;
 import com.cf.taurus.common.po.Film;
+import com.cf.taurus.common.po.FilmUcg;
 import com.cf.taurus.common.util.DateUtils;
 import com.cf.taurus.common.util.EmptyUtils;
 import com.cf.taurus.common.util.Response;
@@ -51,6 +52,37 @@ public class FilmProvider {
         }
     }
 
+    @GetMapping("/getFilmMatchByFilmId")
+    public Response getFilmMatchByFilmId(@RequestParam Integer filmId){
+        try {
+            return filmBusiness.getFilmMatch(filmId);
+        } catch (Exception e) {
+            log.error("getFilmMatchByFilmId error, error:{}",e);
+            return Response.error();
+        }
+    }
+
+    @GetMapping("/getFilmUcgLimit")
+    public Response getFilmUcgLimit(@RequestParam Integer userId, @RequestParam Integer filmId){
+        try {
+            return filmBusiness.getFilmUcgLimit(userId, filmId);
+        } catch (Exception e) {
+            log.error("getFilmMatchByFilmId error, error:{}",e);
+            return Response.error();
+        }
+    }
+
+    @PostMapping("/saveFilmUcg")
+    public Response saveFilmUcg(@RequestBody FilmUcg filmUcg){
+        try {
+            return filmBusiness.saveFilmUcg(filmUcg);
+        } catch (Exception e) {
+            log.error("saveFilmUcg error, error:{}",e);
+            return Response.error();
+        }
+    }
+
+
     /**
      * 手动调用方法,迁移film数据进film_match
      * @return
@@ -71,17 +103,22 @@ public class FilmProvider {
     }
 
     /**
-     * 手动调用方法,匹配数据
+     * 手动调用匹配数据
+     * @param password
+     * @param countLimit
+     * @param saveLimit
+     * @param targetId
      * @return
      */
     @GetMapping("/matchActorData")
     @TimeCost
-    public Response matchActorData(@RequestParam("password") String password, @RequestParam("countLimit") Integer countLimit){
+    public Response matchActorData(@RequestParam("password") String password, @RequestParam("countLimit") Integer countLimit, @RequestParam("saveLimit") Integer saveLimit, @RequestParam("targetId") Integer targetId){
         try {
             if(!this.checkPassword(password)){
                 return Response.error(ResponseMessage.PARAM_ERROR);
             }
-            filmBusiness.getMatchActors(countLimit);
+
+            filmBusiness.getMatchActors(countLimit, saveLimit, targetId);
         } catch (Exception e) {
             log.error("getFilms error, error:{}",e);
             return Response.error();

@@ -325,7 +325,7 @@
       OR `name` like concat('%', #{searchValue} ,'%')
       OR film like concat('%', #{searchValue} ,'%')
     </if>
-    ORDER BY star DESC
+    ORDER BY star
     <if test="start != null and size != null" >
       LIMIT #{start},#{size}
     </if>

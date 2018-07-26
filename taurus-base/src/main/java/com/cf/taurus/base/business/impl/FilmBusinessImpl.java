@@ -4,14 +4,18 @@ import com.cf.taurus.base.business.FilmBusiness;
 import com.cf.taurus.base.dao.ActorMapper;
 import com.cf.taurus.base.dao.FilmMapper;
 import com.cf.taurus.base.dao.FilmMatchMapper;
+import com.cf.taurus.base.dao.FilmUcgMapper;
 import com.cf.taurus.common.message.ResponseMessage;
 import com.cf.taurus.common.po.Actor;
 import com.cf.taurus.common.po.Film;
 import com.cf.taurus.common.po.FilmMatch;
+import com.cf.taurus.common.po.FilmUcg;
 import com.cf.taurus.common.util.CommonUtils;
+import com.cf.taurus.common.util.DateUtils;
 import com.cf.taurus.common.util.EmptyUtils;
 import com.cf.taurus.common.util.Response;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -27,7 +31,7 @@ import java.util.*;
 @Slf4j
 @Service
 public class FilmBusinessImpl implements FilmBusiness {
-    
+
     @Autowired
     private FilmMapper filmMapper;
 
@@ -37,6 +41,11 @@ public class FilmBusinessImpl implements FilmBusiness {
     @Autowired
     private ActorMapper actorMapper;
 
+    @Autowired
+    private FilmUcgMapper filmUcgMapper;
+
+    //默认每个用户对每个影片最多提供10条ucg内容
+    private final int DEFAULT_UCG_LIMIT = 10;
 
     @Override
     public Response getFilmById(Integer id) {
@@ -64,13 +73,39 @@ public class FilmBusinessImpl implements FilmBusiness {
         return Response.success(filmList);
     }
 
+    @Override
+    public Response getFilmMatch(Integer filmId) {
+        List<FilmMatch> filmMatchList = filmMatchMapper.getByFilmId(filmId);
+        if (EmptyUtils.isEmpty(filmMatchList)) {
+            return Response.error(ResponseMessage.NO_DATA);
+        }
+        return Response.success(filmMatchList);
+    }
+
+    @Override
+    public Response getFilmUcgLimit(Integer userId, Integer filmId) {
+        int count = filmUcgMapper.countFilmUcgByUserIdAndFilmId(userId, filmId);
+        if(count > DEFAULT_UCG_LIMIT){
+            return Response.success(false);
+        }
+        return Response.success(true);
+    }
+
+    @Transactional
+    @Override
+    public Response saveFilmUcg(FilmUcg filmUcg) {
+        filmUcg.setCtime(DateUtils.formatDate(DateUtils.FORMAT_DEFAULT, new Date()));
+        filmUcgMapper.insertSelective(filmUcg);
+        return Response.success();
+    }
+
     @Transactional
     @Override
     public void insertFilmTagToMatch() {
         List<Film> allFilmList = filmMapper.selectByCondition(new Film());
-        for(Film film : allFilmList){
+        for (Film film : allFilmList) {
             Integer actorNum = film.getActorNum();
-            if(EmptyUtils.isEmpty(actorNum)){
+            if (EmptyUtils.isEmpty(actorNum)) {
                 log.info("Film actorNum has no value, film is {}", film.getId());
                 continue;
             }
@@ -83,53 +118,68 @@ public class FilmBusinessImpl implements FilmBusiness {
     }
 
     @Override
-    public void getMatchActors(Integer countLimit) {
-        List<FilmMatch> filmMatchList = filmMatchMapper.getAllData();
+    public void getMatchActors(Integer countLimit, Integer saveLimit, Integer targetId) {
+        List<FilmMatch> filmMatchList;
+        if (targetId == null || targetId.equals(-1)) {
+            filmMatchList = filmMatchMapper.getAllData();
+        } else {
+            filmMatchList = filmMatchMapper.getByFilmId(targetId);
+        }
 
-        for(FilmMatch filmMatch : filmMatchList){
+
+        for (FilmMatch filmMatch : filmMatchList) {
             String tagFilm = filmMatch.getTagFilm();
             String tagCharacter = filmMatch.getTagCharacter();
-            if(tagFilm.equals("-1") || tagCharacter.equals("-1")){
+
+            if (EmptyUtils.isEmpty(filmMatch.getActorName()) || EmptyUtils.isEmpty(tagFilm) || EmptyUtils.isEmpty(tagCharacter)) {
                 continue;
             }
+
             //初步匹配列表
             List<Actor> preMatchActorList = this.getPreMatchActors(filmMatch);
 
             //匹配标签
-            if(EmptyUtils.isNotEmpty(preMatchActorList)){
+            if (EmptyUtils.isNotEmpty(preMatchActorList)) {
 
                 Map<String, Integer> resMap = new HashMap<>();
                 int initCount = 0;
 
                 //循环actor进行匹配
-                for(Actor preMatchActor : preMatchActorList){
+                for (Actor preMatchActor : preMatchActorList) {
+                    if (EmptyUtils.isEmpty(preMatchActor.getTagCharacter()) || EmptyUtils.isEmpty(preMatchActor.getTagFilm())) {
+                        continue;
+                    }
+
                     String mapKey = preMatchActor.getName();
-                    String [] tagFilmArr = filmMatch.getTagFilm().split(",");
-                    String [] tagCharacterArr = filmMatch.getTagCharacter().split(",");
+                    if(mapKey.contains("·")){
+                        mapKey = mapKey.substring(0, mapKey.lastIndexOf("·"));
+                    }
+                    String[] tagFilmArr = tagFilm.split(",");
+                    String[] tagCharacterArr = tagCharacter.split(",");
 
                     resMap.put(mapKey, initCount);
 
                     String tagFilmOfActor = preMatchActor.getTagFilm();
-                    String tagFilmOfCharacter = preMatchActor.getTagCharacter();
+                    String tagCharacterOfActor = preMatchActor.getTagCharacter();
 
                     //tagFilm匹配
-                    for(String tempTag : tagFilmArr){
-                        if(tagFilmOfActor.contains(tempTag)){
+                    for (String tempTag : tagFilmArr) {
+                        if (tagFilmOfActor.contains(tempTag)) {
                             int count = resMap.get(mapKey) + 1;
-                            resMap.put(mapKey , count);
+                            resMap.put(mapKey, count);
                         }
                     }
                     //tagCharacter匹配
-                    for(String tempTag : tagCharacterArr){
-                        if(tagFilmOfCharacter.contains(tempTag)){
+                    for (String tempTag : tagCharacterArr) {
+                        if (tagCharacterOfActor.contains(tempTag)) {
                             int count = resMap.get(mapKey) + 1;
-                            resMap.put(mapKey , count);
+                            resMap.put(mapKey, count);
                         }
                     }
                 }
 
                 //匹配排序和过滤
-                String matchActors = this.sortResMap(resMap, countLimit);
+                String matchActors = this.sortResMap(resMap, countLimit, saveLimit);
                 filmMatch.setActors(matchActors);
 
                 //数据保存
@@ -141,13 +191,13 @@ public class FilmBusinessImpl implements FilmBusiness {
     }
 
 
-    private FilmMatch generateFilmMatch(Film film, int actorIndex){
+    private FilmMatch generateFilmMatch(Film film, int actorIndex) {
         FilmMatch filmMatch = new FilmMatch();
 
         filmMatch.setFilmId(film.getId());
         filmMatch.setFilmName(film.getFilm());
         filmMatch.setActorIndex(actorIndex);
-        String tagFilm = film.getType()+"片,"+film.getTag();
+        String tagFilm = film.getType() + "片," + film.getTag();
         filmMatch.setTagFilm(tagFilm);
 
         return filmMatch;
@@ -155,42 +205,51 @@ public class FilmBusinessImpl implements FilmBusiness {
 
     /**
      * 初步匹配Actor列表
+     *
      * @param filmMatch
      * @return
      */
-    private List<Actor> getPreMatchActors(FilmMatch filmMatch){
+    private List<Actor> getPreMatchActors(FilmMatch filmMatch) {
         Actor actorCondition = new Actor();
-        actorCondition.setSex(filmMatch.getActorSex().toString());
-        actorCondition.setCountry(filmMatch.getActorCountry());
-        actorCondition.setType1(filmMatch.getActorType1());
-        actorCondition.setType2(filmMatch.getActorType2());
+        actorCondition.setSex(this.dealString(filmMatch.getActorSex().toString()));
+        actorCondition.setCountry(this.dealString(filmMatch.getActorCountry()));
+        actorCondition.setType1(this.dealString(filmMatch.getActorType1()));
+        actorCondition.setType2(this.dealString(filmMatch.getActorType2()));
+        actorCondition.setProperty(this.dealString(filmMatch.getActorProperty()));
         return actorMapper.selectByCondition(actorCondition);
     }
 
+    private String dealString(String input) {
+        String outPut = input == null || input.equals("-1") || input.equals("0") ? null : input;
+        return outPut;
+    }
 
     /**
      * 对value进行逆序排序和过滤后输出需要的字符串
-     * @param resMap        过滤的map
+     *
+     * @param resMap     过滤的map
      * @param matchCount 过滤的数量阈值
+     * @param saveCount  最终存储的数量值
      * @return
      */
-    private String sortResMap(Map<String, Integer> resMap, int matchCount){
+    private String sortResMap(Map<String, Integer> resMap, int matchCount, int saveCount) {
         List<Map.Entry<String, Integer>> list = new ArrayList<>();
         list.addAll(resMap.entrySet());
-        Collections.sort(list,(m1, m2) ->m2.getValue()-m1.getValue());
-        StringBuffer resStr = new StringBuffer();
+        Collections.sort(list, (m1, m2) -> m2.getValue() - m1.getValue());
+        List<String> dealList = new ArrayList<>();
         list.forEach(entry -> {
-            if(entry.getValue() >= matchCount){
-                resStr.append(entry.getKey());
-                resStr.append(entry.getValue());
-                resStr.append(",");
+            if (entry.getValue() >= matchCount) {
+                dealList.add(entry.getKey() + entry.getValue());
             }
         });
-        //去除最后一个逗号
-        resStr.deleteCharAt(resStr.lastIndexOf(","));
-        return resStr.toString();
-    }
 
+        List<String> resList = dealList;
+        if (resList.size() > saveCount) {
+            resList = resList.subList(0, saveCount);
+        }
+
+        return StringUtils.strip(resList.toString(), "[]");
+    }
 
 
 }

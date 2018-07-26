@@ -18,8 +18,8 @@ import java.util.List;
 @Setter
 @ConfigurationProperties(prefix = "data-base-router")
 public class DruidProperties {
-    private List<DruidProperties.DataSourceConfig> single;
-    private List<DruidProperties.DataSourceConfig> cluster;
+    private List<DataSourceConfig> single;
+    private List<DataSourceConfig> cluster;
 
     public String toString() {
         return "DruidProperties(single=" + this.getSingle() + ", cluster=" + this.getCluster() + ")";

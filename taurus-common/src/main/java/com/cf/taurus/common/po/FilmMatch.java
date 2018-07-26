@@ -26,9 +26,12 @@ public class FilmMatch {
 
     private String actorCountry;
 
+    private String actorProperty;
+
     private String tagFilm;
 
     private String tagCharacter;
 
     private String actors;
+
 }

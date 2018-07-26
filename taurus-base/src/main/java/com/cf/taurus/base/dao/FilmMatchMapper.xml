@@ -11,13 +11,14 @@
     <result column="actor_type1" property="actorType1" jdbcType="CHAR" />
     <result column="actor_type2" property="actorType2" jdbcType="CHAR" />
     <result column="actor_country" property="actorCountry" jdbcType="CHAR" />
+    <result column="actor_property" property="actorProperty" jdbcType="CHAR" />
     <result column="tag_film" property="tagFilm" jdbcType="VARCHAR" />
     <result column="tag_character" property="tagCharacter" jdbcType="VARCHAR" />
     <result column="actors" property="actors" jdbcType="VARCHAR" />
   </resultMap>
   <sql id="Base_Column_List" >
     id, film_id, film_name, actor_index, actor_name, actor_sex, actor_type1, actor_type2, 
-    actor_country, tag_film, tag_character, actors
+    actor_country, actor_property, tag_film, tag_character, actors
   </sql>
   <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
     select 
@@ -33,13 +34,13 @@
     insert into film_match (id, film_id, film_name, 
       actor_index, actor_name, actor_sex, 
       actor_type1, actor_type2, actor_country, 
-      tag_film, tag_character, actors
-      )
+      actor_property, tag_film, tag_character, 
+      actors)
     values (#{id,jdbcType=INTEGER}, #{filmId,jdbcType=INTEGER}, #{filmName,jdbcType=VARCHAR}, 
       #{actorIndex,jdbcType=INTEGER}, #{actorName,jdbcType=VARCHAR}, #{actorSex,jdbcType=INTEGER}, 
       #{actorType1,jdbcType=CHAR}, #{actorType2,jdbcType=CHAR}, #{actorCountry,jdbcType=CHAR}, 
-      #{tagFilm,jdbcType=VARCHAR}, #{tagCharacter,jdbcType=VARCHAR}, #{actors,jdbcType=VARCHAR}
-      )
+      #{actorProperty,jdbcType=CHAR}, #{tagFilm,jdbcType=VARCHAR}, #{tagCharacter,jdbcType=VARCHAR}, 
+      #{actors,jdbcType=VARCHAR})
   </insert>
   <insert id="insertSelective" parameterType="com.cf.taurus.common.po.FilmMatch" >
     insert into film_match
@@ -70,6 +71,9 @@
       </if>
       <if test="actorCountry != null" >
         actor_country,
+      </if>
+      <if test="actorProperty != null" >
+        actor_property,
       </if>
       <if test="tagFilm != null" >
         tag_film,
@@ -109,6 +113,9 @@
       <if test="actorCountry != null" >
         #{actorCountry,jdbcType=CHAR},
       </if>
+      <if test="actorProperty != null" >
+        #{actorProperty,jdbcType=CHAR},
+      </if>
       <if test="tagFilm != null" >
         #{tagFilm,jdbcType=VARCHAR},
       </if>
@@ -147,6 +154,9 @@
       <if test="actorCountry != null" >
         actor_country = #{actorCountry,jdbcType=CHAR},
       </if>
+      <if test="actorProperty != null" >
+        actor_property = #{actorProperty,jdbcType=CHAR},
+      </if>
       <if test="tagFilm != null" >
         tag_film = #{tagFilm,jdbcType=VARCHAR},
       </if>
@@ -169,12 +179,19 @@
       actor_type1 = #{actorType1,jdbcType=CHAR},
       actor_type2 = #{actorType2,jdbcType=CHAR},
       actor_country = #{actorCountry,jdbcType=CHAR},
+      actor_property = #{actorProperty,jdbcType=CHAR},
       tag_film = #{tagFilm,jdbcType=VARCHAR},
       tag_character = #{tagCharacter,jdbcType=VARCHAR},
       actors = #{actors,jdbcType=VARCHAR}
     where id = #{id,jdbcType=INTEGER}
   </update>
+
   <select id="getAllData" resultMap="BaseResultMap">
-    select * from film_match
+    select * from film_match order by film_id
+  </select>
+
+
+  <select id="getByFilmId" resultMap="BaseResultMap" parameterType="java.lang.Integer">
+    select * from film_match where film_id = #{filmId}
   </select>
 </mapper>

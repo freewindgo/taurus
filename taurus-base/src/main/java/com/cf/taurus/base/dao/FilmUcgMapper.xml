@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.cf.taurus.base.dao.FilmUcgMapper" >
+  <resultMap id="BaseResultMap" type="com.cf.taurus.common.po.FilmUcg" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="film_id" property="filmId" jdbcType="INTEGER" />
+    <result column="user_id" property="userId" jdbcType="INTEGER" />
+    <result column="actor_tag0" property="actorTag0" jdbcType="VARCHAR" />
+    <result column="actor_tag1" property="actorTag1" jdbcType="VARCHAR" />
+    <result column="actor_tag2" property="actorTag2" jdbcType="VARCHAR" />
+    <result column="actor_tag3" property="actorTag3" jdbcType="VARCHAR" />
+    <result column="actor_tag4" property="actorTag4" jdbcType="VARCHAR" />
+    <result column="actor_tag5" property="actorTag5" jdbcType="VARCHAR" />
+    <result column="remark" property="remark" jdbcType="VARCHAR" />
+    <result column="ctime" property="ctime" jdbcType="CHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    id, film_id, user_id, actor_tag0, actor_tag1, actor_tag2, actor_tag3, actor_tag4, 
+    actor_tag5, remark, ctime
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from film_ucg
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from film_ucg
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.cf.taurus.common.po.FilmUcg" >
+    insert into film_ucg (id, film_id, user_id, 
+      actor_tag0, actor_tag1, actor_tag2, 
+      actor_tag3, actor_tag4, actor_tag5, 
+      remark, ctime)
+    values (#{id,jdbcType=INTEGER}, #{filmId,jdbcType=INTEGER}, #{userId,jdbcType=INTEGER}, 
+      #{actorTag0,jdbcType=VARCHAR}, #{actorTag1,jdbcType=VARCHAR}, #{actorTag2,jdbcType=VARCHAR}, 
+      #{actorTag3,jdbcType=VARCHAR}, #{actorTag4,jdbcType=VARCHAR}, #{actorTag5,jdbcType=VARCHAR}, 
+      #{remark,jdbcType=VARCHAR}, #{ctime,jdbcType=CHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.cf.taurus.common.po.FilmUcg" >
+    insert into film_ucg
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="filmId != null" >
+        film_id,
+      </if>
+      <if test="userId != null" >
+        user_id,
+      </if>
+      <if test="actorTag0 != null" >
+        actor_tag0,
+      </if>
+      <if test="actorTag1 != null" >
+        actor_tag1,
+      </if>
+      <if test="actorTag2 != null" >
+        actor_tag2,
+      </if>
+      <if test="actorTag3 != null" >
+        actor_tag3,
+      </if>
+      <if test="actorTag4 != null" >
+        actor_tag4,
+      </if>
+      <if test="actorTag5 != null" >
+        actor_tag5,
+      </if>
+      <if test="remark != null" >
+        remark,
+      </if>
+      <if test="ctime != null" >
+        ctime,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="filmId != null" >
+        #{filmId,jdbcType=INTEGER},
+      </if>
+      <if test="userId != null" >
+        #{userId,jdbcType=INTEGER},
+      </if>
+      <if test="actorTag0 != null" >
+        #{actorTag0,jdbcType=VARCHAR},
+      </if>
+      <if test="actorTag1 != null" >
+        #{actorTag1,jdbcType=VARCHAR},
+      </if>
+      <if test="actorTag2 != null" >
+        #{actorTag2,jdbcType=VARCHAR},
+      </if>
+      <if test="actorTag3 != null" >
+        #{actorTag3,jdbcType=VARCHAR},
+      </if>
+      <if test="actorTag4 != null" >
+        #{actorTag4,jdbcType=VARCHAR},
+      </if>
+      <if test="actorTag5 != null" >
+        #{actorTag5,jdbcType=VARCHAR},
+      </if>
+      <if test="remark != null" >
+        #{remark,jdbcType=VARCHAR},
+      </if>
+      <if test="ctime != null" >
+        #{ctime,jdbcType=CHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.cf.taurus.common.po.FilmUcg" >
+    update film_ucg
+    <set >
+      <if test="filmId != null" >
+        film_id = #{filmId,jdbcType=INTEGER},
+      </if>
+      <if test="userId != null" >
+        user_id = #{userId,jdbcType=INTEGER},
+      </if>
+      <if test="actorTag0 != null" >
+        actor_tag0 = #{actorTag0,jdbcType=VARCHAR},
+      </if>
+      <if test="actorTag1 != null" >
+        actor_tag1 = #{actorTag1,jdbcType=VARCHAR},
+      </if>
+      <if test="actorTag2 != null" >
+        actor_tag2 = #{actorTag2,jdbcType=VARCHAR},
+      </if>
+      <if test="actorTag3 != null" >
+        actor_tag3 = #{actorTag3,jdbcType=VARCHAR},
+      </if>
+      <if test="actorTag4 != null" >
+        actor_tag4 = #{actorTag4,jdbcType=VARCHAR},
+      </if>
+      <if test="actorTag5 != null" >
+        actor_tag5 = #{actorTag5,jdbcType=VARCHAR},
+      </if>
+      <if test="remark != null" >
+        remark = #{remark,jdbcType=VARCHAR},
+      </if>
+      <if test="ctime != null" >
+        ctime = #{ctime,jdbcType=CHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.cf.taurus.common.po.FilmUcg" >
+    update film_ucg
+    set film_id = #{filmId,jdbcType=INTEGER},
+      user_id = #{userId,jdbcType=INTEGER},
+      actor_tag0 = #{actorTag0,jdbcType=VARCHAR},
+      actor_tag1 = #{actorTag1,jdbcType=VARCHAR},
+      actor_tag2 = #{actorTag2,jdbcType=VARCHAR},
+      actor_tag3 = #{actorTag3,jdbcType=VARCHAR},
+      actor_tag4 = #{actorTag4,jdbcType=VARCHAR},
+      actor_tag5 = #{actorTag5,jdbcType=VARCHAR},
+      remark = #{remark,jdbcType=VARCHAR},
+      ctime = #{ctime,jdbcType=CHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+
+  <select id="countFilmUcgByUserIdAndFilmId" resultType="java.lang.Integer">
+    select count(1) from film_ucg where user_id = #{userId} and film_id = #{filmId}
+  </select>
+</mapper>

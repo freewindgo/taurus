@@ -256,6 +256,21 @@
       OR country like concat('%', #{searchValue} ,'%')
       OR strong like concat('%', #{searchValue} ,'%')
     </if>
+    <if test="sex != null">
+      and sex = #{sex}
+    </if>
+    <if test="country != null">
+      and country = #{country}
+    </if>
+    <if test="type1 != null">
+      and type1 = #{type1}
+    </if>
+    <if test="type2 != null">
+      and type2 = #{type2}
+    </if>
+    <if test="property != null">
+      and property = #{property}
+    </if>
     ORDER BY star DESC
 
     <if test="start != null and size != null" >
