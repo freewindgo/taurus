@@ -30,6 +30,7 @@ public class CronTask {
     @Autowired
     private FilmBusiness filmBusiness;
 
+    @Autowired
     private AdminBusiness adminBusiness;
 
     private final Integer EXPIRE_DAY_CONFIG = 1;
@@ -41,9 +42,9 @@ public class CronTask {
     private final Integer MATCH_TAG_NUM_DEFAULT = 2;
     private final Integer SAVE_TAG_NUM_DEFAULT = 20;
     private final Integer MATCH_SWITCH_DEFAULT = 2;
-    /**
+/*    *//**
      * 每天1点清理hint数据库中deleted为2并且创建时间已超过realDeleteDays的数据
-     */
+     *//*
     @Scheduled(cron = "0 1 0 * * ? ")
     public void deleteExpireData() {
         try {
@@ -53,7 +54,7 @@ public class CronTask {
         } catch (Exception e) {
             log.error("cron deleteExpireData error, e:{}", e);
         }
-    }
+    }*/
 
     /**
      * 每天2点开始计算匹配
